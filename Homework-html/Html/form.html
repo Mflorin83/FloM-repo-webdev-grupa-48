@@ -68,8 +68,24 @@
             </table>
         </fieldset>
 
-        </form>
+        <fieldset>
+            <legend><b><i>In incheiere</i></b></legend><br>
+            <textarea name="propuneri" id="propuneri" cols="130" rows="10">Aici ne puteti transmite sugestiile d-voastra</textarea>
+        <div>
+            <label><input type="checkbox" name="Acord_transmitere_email" value="Sunt de acord" required>Sunt de acord cu transmiterea informatiilor</label>
+        </div> <br>
+            <label for="Contact_ulterior">Cum va putem contacta pe viitor?</label>
+                <select name="viitor" id="Contact_ulterior">
+                    <option value="" selected>--selectati o optiune--</option>
+                    <option value="2" >Email</option>
+                    <option value="3" >Telefon</option>
+                    <option value="4" >Nu doresc</option>
+                </select>
+        </fieldset><br>
+        
+        <input type="submit" value="Trimite formularul">
+        <input type="reset" value="Anuleaza cererea">
 
-    
+        </form>
   
 </html>
