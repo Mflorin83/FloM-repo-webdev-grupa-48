@@ -12,22 +12,64 @@
 
     <body>
         <h1><u>Formular de identificare a satisfactiei clientului</u></h1>
+        <br>
         <p>Va rugam sa va rezervati cateva minute pentru a completat acest formular</p>
         <br>
         
         <form>
             <title>Formular_satisfactie_client</title>
-            <p>Date de contact</p>
-            
-            <span>
+        <fieldset>
+            <legend><b><i>Date de contact</i></b></legend>
                 <label for="nume">Nume</label>
-                <input type="text" id="nume">
+                <input type="text" id="nume" required>
                 <label for="prenume">Prenume</label>
-                <input type="text" id="prenume">
+                <input type="text" id="prenume" required>
                 <label for="telefon">Telefon</label>
-                <input type="number" id="telefon">
-            </span>
+                <input type="number" id="telefon" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend><b><i>Nivel de satisfactie globala</i></b></legend>
+            
+            <table>
+                <tr>
+                    <td><p><B>Accesibilitate</B></p></td>
+                    <td><p><B>Calitatea informatiilor</B></p></td>
+                    <td><p><B>Promptitudine</B></p></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label><input type="radio" name="Accesibilitate" value="foarte_accesibil"> Foarte accesibile</label><br>
+                        <label><input type="radio" name="Accesibilitate" value="accesibile"> Accesibile</label><br>
+                        <label><input type="radio" name="Accesibilitate" value="se_putea_mai_bine"> Se putea mai bine</label><br>
+                        <label><input type="radio" name="Accesibilitate" value="greu_accesibile"> Greu accesibile</label><br>
+                        <label><input type="radio" name="Accesibilitate" value="Trebuie_imbunatatite"> Trebuie imbunatatite</label><br>
+                    </td>
+                               
+                    <td>
+                        <label><input type="radio" name="Calitatea informatiilor" value="Foarte_pertinente"> Foarte pertinente</label><br>
+                        <label><input type="radio" name="Calitatea informatiilor" value="Pertinente"> Pertinente</label><br>
+                        <label><input type="radio" name="Calitatea informatiilor" value="se_putea_mai_bine"> Se putea mai bine</label><br>
+                        <label><input type="radio" name="Calitatea informatiilor" value="Usor_eronate"> Usor eronate</label><br>
+                        <label><input type="radio" name="Calitatea informatiilor" value="Trebuie_imbunatatite"> Trebuie imbunatatite</label><br>
+                    </td>
+                                
+                    <td>
+                        <label><input type="radio" name="Promptitudine" value="Extrem_de_prompte"> Extrem de prompte</label><br>
+                        <label><input type="radio" name="Promptitudine" value="Prompte"> Prompte</label><br>
+                        <label><input type="radio" name="Promptitudine" value="se_putea_mai_bine"> Se putea mai bine</label><br>
+                        <label><input type="radio" name="Promptitudine" value="nu_asa_de_prompte"> Nu asa de prompte</label><br>
+                        <label><input type="radio" name="Promptitudine" value="Trebuie_imbunatatite"> Trebuie imbunatatite</label><br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
         </form>
 
+    
   
 </html>
