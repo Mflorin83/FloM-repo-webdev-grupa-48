@@ -1,0 +1,14 @@
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: var(--margin-md);
+    font-size:var(--font-md);
+    font-family: Trebuchet;
+    font-weight: 800;
+}
+
+p {
+    font-family: Trebuchet;
+    margin-top: var(--margin-xs);
+    font-size:var(--font-xs);
+    font-weight: 500;
+}

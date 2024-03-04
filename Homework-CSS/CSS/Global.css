@@ -1,0 +1,26 @@
+:root {
+    --main-color: #f4fafc;
+    --accent-color: #00a5e0;
+    --hover-color: #1089b6;
+    --text-color: #383d3b;
+    --heading-color: #414066;
+
+    --margin-xs: 4px;
+    --margin-sm: 8px;
+    --margin-md: 12px;
+
+    --padding-xs: 4px;
+    --padding-sm: 8px;
+    --padding-md: 12px;
+    --padding-lg: 20px;
+    --padding-xl: 24px;
+
+    --font-xs: 15px;
+    --font-sm: 20px;
+    --font-md: 25px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
