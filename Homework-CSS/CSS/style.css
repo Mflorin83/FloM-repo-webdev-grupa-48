@@ -1,84 +1,143 @@
+.contact-container {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
 
+.contact-form {
+  width: 48%;
+  box-shadow: 3px 3px 3px 3px #bdbbbb;
+}
+
+.map-container {
+
+  width: 48%;
+
+}
+
+.contact-form {
+  background: #FFF1D0;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+
+}
+
+#contact-form {
+  padding-right: inherit;
+}
+
+.h2,
+p {
+  margin-bottom: var(--margin-md);
+}
+
+.form-group,
+.checkbox-group {
+  margin-bottom: var(--margin-sm);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: var(--padding-sm);
+  margin-bottom: var(--margin-sm);
+  border: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: 24px;
+}
+
+.checkbox-group input {
+  margin-right: var(--margin-sm);
+}
+
+button:disabled {
+  background-color: #FFF1D0;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: var(--padding-sm);
+  border: white;
+  cursor: pointer;
+}
+
+button:hover:enabled {
+  background-color: var(--hover-color);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: var(--padding-xl);
+  padding-bottom: var(--padding-xl);
+}
+
+.contact-geo,
+.contact-phone,
+.contact-email,
+.contact-website {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bi {
+  background-color: var(--hover-color);
+  color: var(--main-color);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
+
+
+@media (max-width: 768px) {
   .contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .map-container {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    padding: var(--padding-xl);
+  }
+
+  .contact-geo,
+  .contact-phone,
+  .contact-email,
+  .contact-website {
     padding: var(--padding-sm)
   }
-  
-  .contact-form, .map-container {
-    width: 48%;
+
+  .contact-form {
+    width: 89%;
+    box-shadow: 10px 10px 10px 10px #bdbbbb;
   }
-  
-  .contact-form, h2, p {
-    margin-bottom: var(--margin-sm);
-  }
-  
-  .form-group, .checkbox-group {
-    margin-bottom: var(--margin-sm);
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: var(--padding-sm);
-    margin-bottom: var(--margin-sm);
-  }
-  
-  textarea {
-    height: 100px; 
-    resize: vertical;
-  }
-  
-  .checkbox-group {
-    display: flex;
-    align-items: center;
-  }
-  
-  .checkbox-group input {
-    margin-right: 0.5em;
-  }
-  
-  button:disabled {
-    background-color: #9a51511a;
-  }
-  
-  button {
-    background-color: var#007bff;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover:enabled {
-    opacity: 0.8;
-  }
-  
-  .map-container iframe {
-    width: 100%;
-    height: 450px; /* Adjust iframe height as needed */
-    border: none;
-  }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-  }
-  
-  .info-item { 
-    text-align: center;
-  }
-  
-  @media (max-width: 768px) {
-    .contact-container {
-      flex-direction: column;
-    }
-  
-    .contact-form, .map-container {
-      width: 100%;
-    }
-  }
-  
+
+}

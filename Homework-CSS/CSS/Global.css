@@ -20,6 +20,22 @@
     --font-md: 25px;
 }
 
+a:visited {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+    
+}
+
+a:link, a:active {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 * {
     padding: 0px;
     margin: 0px;

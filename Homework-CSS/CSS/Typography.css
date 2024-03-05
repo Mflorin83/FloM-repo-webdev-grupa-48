@@ -12,3 +12,10 @@ p {
     font-size:var(--font-xs);
     font-weight: 500;
 }
+
+:placeholder-shown {
+    font-family: Trebuchet;
+    margin-top: var(--margin-xs);
+    font-size:var(--font-xs);
+    font-weight: 500;
+}
