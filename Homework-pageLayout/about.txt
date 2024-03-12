@@ -1,0 +1,5 @@
+Using Divide and Conquer algorithm please implement the below layout page.
+Keep in mind to use display grid for the page layout and flexbox for the specific elements layout.
+Please integrate the contact form as well.
+
+You can use what fonts, colors, images you want. The layout should remain like below.
