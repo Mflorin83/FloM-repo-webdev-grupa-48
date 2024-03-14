@@ -75,19 +75,7 @@ h6 {
     font-weight: 500;
 }
 
-a:visited {
-    color: var(--accent-dark-colorr);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent-light-color-color);
-    text-decoration: none;
-
-}
-
-a:link,
-a:active {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
+a {
+    color: inherit; /* Link-urile vor moșteni culoarea textului din elementul părinte */
+    text-decoration: none; /* Opțional, înlătură sublinierea de la link-uri */
+  }
