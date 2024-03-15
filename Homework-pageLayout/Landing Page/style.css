@@ -2,9 +2,9 @@
 #God-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  max-width: 1200px;
-  margin: 0 auto;
-
+  margin: 0;
+  padding: 0;
+  
 }
 
 .Header-container {
@@ -65,7 +65,7 @@
 
 }
 
-/* first Hero  */
+/*  Hero  */
 
 .frs-hero {
   grid-column: 1 / -1;
@@ -127,6 +127,8 @@ h1 {
 
 }
 
+/* Second Call to Action */
+
 .sec-cta-ctn {
   grid-column: 1 / -1;
   display: grid;
@@ -147,30 +149,127 @@ h1 {
   padding: var(--padding-xxl);
 }
 
-.glass-btn{
+.glass-btn {
   text-decoration: underline;
   text-decoration-color: orange;
   text-decoration-thickness: 4px;
   text-underline-offset: 3px;
 }
 
-.third-ctn{
+/* Descriptive container */
+
+.third-ctn {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 500px;
+
 }
 
-.cherry-ctn{
+.cherry-ctn, .orange-ctn {
   display: flex;
   flex-direction: column;
-  background-image: url(../Media/4.cherry.jpg);
-  max-height: 500px;
   background-repeat: no-repeat;
   background-position: center;
-  justify-content: space-evenly;
   padding: var(--padding-xxl);
- 
+  align-items: center;
+  justify-content: end;
+}
+
+.cherry-ctn {
+  background-image: url(../Media/4.cherry.jpg);
+}
+
+.orange-ctn {
+  background-image: url(../Media/5.mandarin.jpg);
+}
+
+/* Testimonials */
+.forth-ctn {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 550px;
+  place-items: center;
+  align-content:center;
+  padding: var(--padding-xxl);
+}
+
+.testimonial-ctn {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 75px;
+  padding-left: var(--padding-xxl);
+  padding-right: var(--padding-xxl);
+}
+
+.frs-testm-ctn, .sec-testm-ctn, .third-testm-ctn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.frs-clt, .sec-clt, .third-clt {
+  height: 50px;
+  width: 50px;  
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.frs-clt {
+  background-image: url(../Media/Emily.png);   
+}
+
+.sec-clt {
+  background-image: url(../Media/Thomas.png);
+  
+}
+.third-clt {
+  background-image: url(../Media/Jennie.png);
   
 }
 
+.frs-clt-info, .sec-clt-info, .third-clt-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin-xxl);
+}
+
+/* Before footer */
+
+.bfooter-ctn {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  height: 400px;
+  
+}
+
+.milk-ctn, .half-orange-ctn, .icone-ctn, .scubes-ctn {
+ background-position: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ 
+}
+
+.milk-ctn{
+  background-image: url(../Media/6.milk.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.half-orange-ctn {
+  background-image: url(../Media/7.orange.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.icone-ctn{
+  background-image: url(../Media/8.icecone.jpg);
+}
+
+.scubes-ctn{
+  background-image: url(../Media/9.sugarcubes.jpg);
+}
