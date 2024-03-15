@@ -2,9 +2,9 @@
 #God-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 0;
-  padding: 0;
-  
+  margin: 0 auto;
+  width: 1200px;
+
 }
 
 .Header-container {
@@ -166,7 +166,8 @@ h1 {
 
 }
 
-.cherry-ctn, .orange-ctn {
+.cherry-ctn,
+.orange-ctn {
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -191,7 +192,7 @@ h1 {
   grid-template-columns: 1fr;
   height: 550px;
   place-items: center;
-  align-content:center;
+  align-content: center;
   padding: var(--padding-xxl);
 }
 
@@ -203,7 +204,9 @@ h1 {
   padding-right: var(--padding-xxl);
 }
 
-.frs-testm-ctn, .sec-testm-ctn, .third-testm-ctn {
+.frs-testm-ctn,
+.sec-testm-ctn,
+.third-testm-ctn {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -211,27 +214,32 @@ h1 {
   align-items: center;
 }
 
-.frs-clt, .sec-clt, .third-clt {
+.frs-clt,
+.sec-clt,
+.third-clt {
   height: 50px;
-  width: 50px;  
+  width: 50px;
   border-radius: 50px;
   margin-bottom: 20px;
 }
 
 .frs-clt {
-  background-image: url(../Media/Emily.png);   
+  background-image: url(../Media/Emily.png);
 }
 
 .sec-clt {
   background-image: url(../Media/Thomas.png);
-  
-}
-.third-clt {
-  background-image: url(../Media/Jennie.png);
-  
+
 }
 
-.frs-clt-info, .sec-clt-info, .third-clt-info {
+.third-clt {
+  background-image: url(../Media/Jennie.png);
+
+}
+
+.frs-clt-info,
+.sec-clt-info,
+.third-clt-info {
   display: flex;
   flex-direction: column;
   margin-top: var(--margin-xxl);
@@ -244,32 +252,59 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 4fr);
   height: 400px;
-  
+
 }
 
-.milk-ctn, .half-orange-ctn, .icone-ctn, .scubes-ctn {
- background-position: center;
- background-size: contain;
- background-repeat: no-repeat;
- 
-}
-
-.milk-ctn{
-  background-image: url(../Media/6.milk.jpg);
+.milk-ctn,
+.half-orange-ctn,
+.icone-ctn,
+.scubes-ctn {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+
+
 }
 
-.half-orange-ctn {
-  background-image: url(../Media/7.orange.jpg);
-  width: 100%;
-  height: 100%;
+
+
+.fter-ctn {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--accent-dark-color);
 }
 
-.icone-ctn{
-  background-image: url(../Media/8.icecone.jpg);
+.logof {
+  max-width: 30%;
+
+  padding: var(--padding-sm);
+  font-size: var(--font-md);
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
-.scubes-ctn{
-  background-image: url(../Media/9.sugarcubes.jpg);
+.snav-footer {
+  display: flex;
+  gap: var(--padding-lg);
+  text-decoration: none;
+  color: gray;
+  font: var(--primary-font);
+  font-size: var(--font-sm);
+}
+
+.social-icn {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-brands {
+  font-size: 18px;
+  color: gray;
 }

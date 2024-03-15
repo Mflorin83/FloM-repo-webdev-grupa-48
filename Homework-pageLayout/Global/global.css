@@ -36,7 +36,6 @@
 
 body {
     font-family: var(--primary-font);
-    margin-top: var(--margin-xs);
     font-size: var(--font-xs);
     font-weight: 500;
 }
