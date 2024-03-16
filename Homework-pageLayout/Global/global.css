@@ -32,12 +32,14 @@
     --margin-lg: 24px;
     --margin-xl: 32px;
     --margin-xxl: 40px;
+    --margin-wide: 100px;
 }
 
 body {
     font-family: var(--primary-font);
     font-size: var(--font-xs);
     font-weight: 500;
+    line-height: 1.5;
 }
 
 h1,
@@ -53,7 +55,7 @@ h6 {
     font-weight: 800;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
 
     h1,
     h2,
