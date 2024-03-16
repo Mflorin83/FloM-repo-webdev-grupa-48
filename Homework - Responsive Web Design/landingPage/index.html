@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Welcome to our page</Title>
+    <meta charset="utf-8">
+    <meta name="Description" content="Landing-page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Global/global.css">
+    <link rel="stylesheet" href="../landingPage/style.css">
+    <script src="https://kit.fontawesome.com/5f7a9ef8d5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="God-container">
+        <header class="Header-container">
+            <p id="logo">sunnyside</p>
+            <div class="burger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-btn-ctn">
+                <nav class="nav-menu">
+                    <div class="site-nav">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Projects</a>
+                    </div>
+                </nav>
+                <a class="contact-btn" href="../../Homework-CSS/HTML/contact.html">CONTACT</a>
+            </div>
+        </header>
+
+        <div class="frs-hero">
+            <h1>WE ARE CREATIVES</h1>
+            <a href="#heading-client" class="arrow-down"></a>
+        </div>
+        <div class="frs-cta-main">
+            <div class="frs-cta">
+                <h2>Transform your brand</h2>
+                <p>We are a full-service creative agency specializing in helping brands to grow fast. Engage your
+                    clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="egg-btn"><strong>LEARN MORE</strong></a>
+            </div>
+            <div class="egg-ctn"></div>
+        </div>
+        <div class="sec-cta-ctn">
+            <div class="glass-ctn"></div>
+            <div class="sec-cta">
+                <h2>Stand out to the right audience</h2>
+                <p>Using a collaborative formula of designers, researchers, photographers, videographers, and
+                    copyrighters we'll build and extend your brand in digital places. </p>
+                <a href="#" class="glass-btn"><strong>LEARN MORE</strong></a>
+            </div>
+
+        </div>
+        <div class="third-ctn">
+            <div class="cherry-ctn">
+                <h2>Graphic Design</h2>
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and
+                    captures
+                    potential client's attention.</p>
+            </div>
+            <div class="orange-ctn">
+                <h2>Photography</h2>
+                <p>Increase your credibility by getting, the most stunning, high quality photos, that improve your
+                    business image.</p>
+            </div>
+        </div>
+        <div class="forth-ctn">
+            <h2 id="heading-client">CLIENT TESTIMONIALS</h2>
+            <div class="testimonial-ctn">
+                <div class="frs-testm-ctn">
+                    <img class="frs-clt">
+                    <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and
+                        deadlines
+                        were always hit.</p>
+                    <div class="frs-clt-info">
+                        <p><strong>Emily R.</strong></p>
+                        <p class="Job">Marketing Director</p>
+                    </div>
+                </div>
+                <div class="sec-testm-ctn">
+                    <img class="sec-clt">
+                    <p>Sunnyside's enthusiasm coupled with their keen intereset in our brand's success made it a
+                        satisfying and enjoyable experience.</p>
+                    <div class="sec-clt-info">
+                        <p><strong>Thomas S.</strong></p>
+                        <p class="Job">Chief Operating Officer</p>
+                    </div>
+                </div>
+                <div class="third-testm-ctn">
+                    <img class="third-clt">
+                    <p>Incredible end results! Our sales increased over 400% when we worked with Sunnyside. Highly
+                        recommended!</p>
+                    <div class="third-clt-info">
+                        <p><strong>Jennie F.</strong></p>
+                        <p class="Job">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bfooter-ctn">
+            <img class="milk-ctn" src="../Media/6.milk.jpg">
+            <img class="half-orange-ctn" src="../Media/7.orange.jpg">
+            <img class="icone-ctn" src="../Media/8.icecone.jpg">
+            <img class="scubes-ctn" src="../Media/9.sugarcubes.jpg">
+        </div>
+        <footer class="fter-ctn">
+            <p class="logof">sunnyside</p>
+            <nav class="nav-footer">
+                <div class="snav-footer">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                </div>
+            </nav>
+            <div class="social-icn">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.burger-menu').addEventListener('click', function () {
+                document.querySelector('.nav-btn-ctn').classList.toggle('active');
+            });
+        });
+        </script>
+        
+</body>
+
+</html>

@@ -334,4 +334,6 @@ h1 {
   color: gray;
 }
 
-@media screen (max-width: 767px) {}
+@media screen (max-width: 767px) {
+  
+}

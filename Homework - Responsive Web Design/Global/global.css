@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /*Colors*/
+    --main-color: #fffbf8;
+    --secondary-color: #29313c;
+    --accent-light-color: #3dbeff;
+    --accent-dark-color: #90d4c5;
+    --transparent-color: rgba(0, 0, 0, 0);
+
+    /*Typography*/
+    --primary-font: "Trebuchet";
+    --font-xs: 15px;
+    --font-sm: 20px;
+    --font-md: 25px;
+    --font-xl: 40px;
+
+    /*Spacing*/
+    --padding-xs: 4px;
+    --padding-sm: 12px;
+    --padding-md: 14px;
+    --padding-lg: 24px;
+    --padding-xl: 32px;
+    --padding-xxl: 40px;
+
+    --margin-xs: 4px;
+    --margin-sm: 8px;
+    --margin-md: 16px;
+    --margin-lg: 24px;
+    --margin-xl: 32px;
+    --margin-xxl: 40px;
+    --margin-wide: 100px;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: var(--font-xs);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: var(--margin-xl);
+    margin-bottom: var(--margin-xl);
+    font-size: var(--font-xl);
+    font-family: var(--primary-font);
+    font-weight: 800;
+}
+
+
+
+:placeholder-shown {
+    font-family: var(--primary-font);
+    margin-top: var(--margin-xs);
+    font-size: var(--font-xs);
+    font-weight: 500;
+}
+
+a {
+    color: inherit; /* Link-urile vor moșteni culoarea textului din elementul părinte */
+    text-decoration: none; /* Opțional, înlătură sublinierea de la link-uri */
+  }

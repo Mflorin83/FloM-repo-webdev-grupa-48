@@ -1,0 +1,335 @@
+/* Grid Container */
+
+@media screen and (max-width: 640px) {
+
+  #God-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Header-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--accent-light-color);
+    align-items: center;
+    padding: var(--padding-sm);
+  }
+
+  #logo {
+    max-width: 30%;
+    padding: var(--padding-sm);
+    font-size: var(--font-xl);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-color);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  /* Menu Button and Contact */
+  
+  .burger-menu {
+    max-width: 10%;
+    font-size: var(--font-xl);
+    color: white;
+    padding: var(--padding-sm);
+  }
+  
+  .nav-btn-ctn {
+    display: none;
+     
+  }
+   
+    .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-lg);
+    text-decoration: none;
+    color: var(--main-color);
+    font: var(--primary-font);
+    font-size: var(--font-sm);
+  }
+
+
+  .contact-btn {
+   display: none;
+
+  }
+
+  
+
+  /*  Hero  */
+
+  .frs-hero {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: var(--padding-xxl);
+    background: var(--accent-light-color);
+    background-image: url(../Media/1.Greph.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    color: var(--main-color);
+    font-size: 15vh;
+    display: flex;
+    text-align: center;
+}
+    
+  }
+
+  .arrow-down {
+    display: block;
+    height: 100vh;
+    width: 20vh;
+    background-image: url(../Media/1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+
+  /* First Call to Action */
+  .frs-cta-main {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 180vh;
+  }
+
+  .frs-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: var(--padding-xxl);
+    margin: 0 var(--margin-wide) 0 var(--margin-wide);
+    height: 110vh;
+
+  }
+
+  .egg-btn {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 3px;
+  }
+
+
+  .egg-ctn {
+    padding: var(--padding-xxl);
+    background-image: url(../Media/2.egg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+
+    
+  }
+
+
+
+  /* Second Call to Action */
+
+  .sec-cta-ctn {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+  }
+
+  .glass-ctn {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: var(--padding-xxl);
+    align-items: center;
+    justify-content: end;
+    background-image: url(../Media/3.glass.jpg);
+  }
+
+  .sec-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: var(--padding-xxl);
+    margin: 0 var(--margin-wide) 0 var(--margin-wide);
+  }
+
+  .glass-btn {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 3px;
+  }
+
+  /* Descriptive container */
+
+  .third-ctn {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+
+  }
+
+  .cherry-ctn,
+  .orange-ctn {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: var(--padding-xxl);
+    align-items: center;
+    justify-content: end;
+  }
+
+  .cherry-ctn {
+    background-image: url(../Media/4.cherry.jpg);
+  }
+
+  .orange-ctn {
+    background-image: url(../Media/5.mandarin.jpg);
+  }
+
+  /* Testimonials */
+
+  #heading-client {
+    color: gray;
+    opacity: 0.5;
+  }
+
+  .forth-ctn {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 550px;
+    place-items: center;
+    align-content: center;
+    padding: var(--padding-xxl);
+  }
+
+  .testimonial-ctn {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 75px;
+    padding-left: var(--padding-xxl);
+    padding-right: var(--padding-xxl);
+  }
+
+  .frs-testm-ctn,
+  .sec-testm-ctn,
+  .third-testm-ctn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: space-between;
+    align-items: center;
+  }
+
+  .frs-clt,
+  .sec-clt,
+  .third-clt {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+
+  .frs-clt {
+    background-image: url(../Media/Emily.png);
+  }
+
+  .sec-clt {
+    background-image: url(../Media/Thomas.png);
+
+  }
+
+  .third-clt {
+    background-image: url(../Media/Jennie.png);
+
+  }
+
+  .frs-clt-info,
+  .sec-clt-info,
+  .third-clt-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-xxl);
+  }
+
+  .Job {
+    color: gray;
+    opacity: 0.8;
+  }
+
+  /* Before footer */
+
+  .bfooter-ctn {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    height: 400px;
+
+  }
+
+  .milk-ctn,
+  .half-orange-ctn,
+  .icone-ctn,
+  .scubes-ctn {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+  }
+
+
+
+  .fter-ctn {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--accent-dark-color);
+  }
+
+  .logof {
+    max-width: 30%;
+
+    padding: var(--padding-sm);
+    font-size: var(--font-md);
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+
+  .snav-footer {
+    display: flex;
+    gap: var(--padding-lg);
+    text-decoration: none;
+    color: gray;
+    font: var(--primary-font);
+    font-size: var(--font-sm);
+  }
+
+  .social-icn {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .fa-brands {
+    font-size: 18px;
+    color: gray;
+  }
+
+}
