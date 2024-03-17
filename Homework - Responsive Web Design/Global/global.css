@@ -17,6 +17,7 @@
     --font-sm: 20px;
     --font-md: 25px;
     --font-xl: 40px;
+    --font-xxl: 60px;
 
     /*Spacing*/
     --padding-xs: 4px;
@@ -33,6 +34,16 @@
     --margin-xl: 32px;
     --margin-xxl: 40px;
     --margin-wide: 100px;
+
+    /*Spacing small screen*/
+
+    --height-xs: 30vh;
+    --height-sm: 70vh;
+    --height-md: 100vh;
+    --height-lg: 130vh;
+    --height-xl: 170vh;
+    --height-xxl: 200vh;
+    --height-big: 250vh;
 }
 
 body {
@@ -53,6 +64,16 @@ h6 {
     font-size: var(--font-xl);
     font-family: var(--primary-font);
     font-weight: 800;
+}
+
+
+.p {
+    font-size: x-large;
+    color: gray;
+    line-height: 1.8;
+    font-weight: 600;
+    text-align: center;
+
 }
 
 
