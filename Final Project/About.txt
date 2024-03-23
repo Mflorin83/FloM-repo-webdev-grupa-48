@@ -60,15 +60,19 @@ formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 
 								>SubH (max 30 caracthers)
 						> Main
 						    	>Container "whatWeDo"
+													  > H2
 													  > ICON
 													  > Text (max 80 caracthers)
 								>Container "whyYouNeedUS"
+													  > H2
 													  > ICON
 													  > Text (max 80 caracthers)
 								>Container "howWillHelp"
+													   > H2
 													  > ICON
 													  > Text (max 80 caracthers)	  		  
 								>Container "whatYouGet"
+													  > H2
 													  > ICON
 													  > Text (max 80 caracthers)	
 						> Testimonials
