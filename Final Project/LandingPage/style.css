@@ -1,0 +1,28 @@
+@media(max-width:767px){
+    .page-container {
+        grid-template-areas: 
+          "header"
+          "main"
+          "footer";
+        grid-template-columns: 1fr; /* O singură coloană */
+        grid-template-rows: auto 1fr auto auto; /* Rânduri ajustate pentru mobil */
+      }
+
+    
+
+
+
+
+}
+
+.page-container {
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "main main main"
+      "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr; /* Proporțiile coloanelor */
+    grid-template-rows: auto 1fr auto; /* Înălțimile rândurilor */
+    gap: 10px; /* Spațiu între grid items */
+    height: 100vh; /* Înălțimea totală a grid container-ului */
+  }

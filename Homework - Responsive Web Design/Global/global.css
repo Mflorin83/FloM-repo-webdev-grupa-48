@@ -12,7 +12,7 @@
     --transparent-color: rgba(0, 0, 0, 0);
 
     /*Typography*/
-    --primary-font: "Trebuchet";
+    --primary-font: "Inter", sans-serif;
     --font-xs: 15px;
     --font-sm: 20px;
     --font-md: 25px;
