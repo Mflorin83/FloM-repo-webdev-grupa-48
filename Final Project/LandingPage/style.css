@@ -35,17 +35,19 @@
     display: flex;
     justify-content: center;
   }
- 
-.icon-custom {
-  font-size: 24px;
-  color: var(--background-color);
-}
+
 
 .menu-open {
-  font-size: large;
+  font-size: xx-large;
   color: var(--background-color);
+  width: var(--margin-xxl);
 }
 
+.menu-close {
+  font-size: var(--font-size-xxl);
+  color: var(--accent-dark-color);
+  width: var(--margin-xxl);
+}
 
 
 .cta1-ctn{
@@ -68,8 +70,8 @@
   width: 200px;
   height: 50px;
   align-self: center;
-  background-color: var(--accent-dark-color); /* Culoarea de fundal a butonului */
-  color: var(--background-color); /* Culoarea textului */
+  background-color: var(--accent-dark-color); 
+  color: var(--background-color); 
   border: none;
   padding: var(--padding-sm) var(--padding-lg);
   font-size: var(--font-size-sm); 
@@ -84,12 +86,45 @@
 }
 
 .builtCV:active {
-  transform: scale(0.95); /* Micșorează butonul când este apăsat */
-  background-color: #004289; /* Schimbă culoarea de fundal la apăsare */
+  transform: scale(0.95); 
+  background-color: var(--accent-dark-hover); 
+}
+
+.about-ctn{
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md);
+  align-content: space-between ;
+  text-align: center;
+  margin-bottom: var(--margin-xxl);
+  
+}
+
+.about-ctn, p{
+  color: var(--text-color);
 }
 
 
+.icon-hero {
+  font-size: 6rem;
+  color: var(--accent-dark-color);
 }
+
+.what-we-do, .why-You-Need-US, .how-Will-Help, .what-You-Get {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+
+
+
+
+}
+
 
 
 
