@@ -1,28 +1,44 @@
-@media(max-width:767px){
-    .page-container {
-        grid-template-areas: 
-          "header"
-          "main"
-          "footer";
-        grid-template-columns: 1fr; /* O singură coloană */
-        grid-template-rows: auto 1fr auto auto; /* Rânduri ajustate pentru mobil */
-      }
+@media(max-width:767px) {
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-sm);
+    background-color: var(--accent-light-color);
+    align-items: center;
+  }
+ 
+  #logo {
+   max-width: auto;
+   max-height: 50px;
+  }
 
-    
+  header nav.menu ul.site-nav {
+    display: none;
+    gap: 30px;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--primary-color);
+    top: 70px;
+    padding: var(--padding-xl);
+    margin: auto;
+    text-align: center;
+  }
+  header nav.menu ul.site-nav {
+    display: flex;
+    justify-content: center;
+  }
+.icon-custom {
+  font-size: 30px;
+  color: white;
+}
 
 
 
 
 }
 
-.page-container {
-    display: grid;
-    grid-template-areas: 
-      "header header header"
-      "main main main"
-      "footer footer footer";
-    grid-template-columns: 1fr 2fr 1fr; /* Proporțiile coloanelor */
-    grid-template-rows: auto 1fr auto; /* Înălțimile rândurilor */
-    gap: 10px; /* Spațiu între grid items */
-    height: 100vh; /* Înălțimea totală a grid container-ului */
-  }
+.header {
+  display: flex;
+}
