@@ -81,6 +81,7 @@ h6 {
         font-size: var(--font-size-sm);
         font-weight: 500;
         line-height: var(--font-size-md);
+        font-family: var(--primary-font);
         
     }
 
