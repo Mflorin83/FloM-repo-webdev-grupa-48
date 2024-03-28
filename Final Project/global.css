@@ -9,6 +9,7 @@
     --text-color: #202A25;
     --accent-light-color: #2CA6A4;
     --accent-dark-color: #D81159;
+    --accent-dark-hover: #a01246;
     --transparent-color: rgba(0, 0, 0, 0);
 
     /*Typography*/
@@ -68,16 +69,24 @@ h6 {
     h6 {
         margin-top: var(--margin-md);
         margin-bottom: var(--margin-md);
-        font-size: var(--font-size-md);
-        line-height: var(--font-size-md);
+        font-size: var(--font-size-xl);
+        line-height: var(--font-size-xxl);
         font-family: var(--primary-font);
         font-weight: 700;
+        padding-left: var(--padding-md);
+        padding-right: var(--padding-md);
     }
 
     body {
-        font-family: var(--font-size-sm);
+        font-size: var(--font-size-sm);
         font-weight: 500;
-        line-height: var(--font-size-sm)
+        line-height: var(--font-size-md);
+        
+    }
+
+    body p{
+        padding-left: var(--padding-md);
+        padding-right: var(--padding-md);
     }
 }
 

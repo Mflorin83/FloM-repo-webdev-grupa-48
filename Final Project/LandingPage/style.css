@@ -2,7 +2,7 @@
   .header{
     display: flex;
     justify-content: space-between;
-    padding: var(--padding-sm);
+    padding: var(--padding-md);
     background-color: var(--accent-light-color);
     align-items: center;
 
@@ -48,7 +48,50 @@
 
 
 
+.cta1-ctn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 87vh;
+  background-color: var(--accent-light-color);
+  
+  margin-bottom: var(--margin-xxl);
+  text-align: center;
 }
+
+.cta1-ctn, p, h1 {
+  color: var(--background-color);
+}  
+
+
+.builtCV {
+  width: 200px;
+  height: 50px;
+  align-self: center;
+  background-color: var(--accent-dark-color); /* Culoarea de fundal a butonului */
+  color: var(--background-color); /* Culoarea textului */
+  border: none;
+  padding: var(--padding-sm) var(--padding-lg);
+  font-size: var(--font-size-sm); 
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.builtCV:hover {
+  background-color: var(--accent-dark-hover);
+  transform: scale(1.1); 
+}
+
+.builtCV:active {
+  transform: scale(0.95); /* Micșorează butonul când este apăsat */
+  background-color: #004289; /* Schimbă culoarea de fundal la apăsare */
+}
+
+
+}
+
+
 
 .header {
   display: flex;
