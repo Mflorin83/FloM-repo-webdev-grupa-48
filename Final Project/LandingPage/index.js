@@ -3,7 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var mobileNav = document.getElementsByClassName("site-nav")[0];
     var menuIconOpen = document.getElementsByClassName("menu-open")[0];
     var menuIconClose = document.getElementsByClassName("menu-close")[0];
+
+    // Ascunde meniul mobil și iconița de închidere inițial
+    mobileNav.style.display = "none";
+    menuIconClose.style.display = "none";
+    menuIconOpen.style.display = "flex"; // Asigură-te că iconița de deschidere este afișată
+
     menuIcon.addEventListener("click", mobileMenu);
+
     function mobileMenu() {
         if (mobileNav.style.display === "flex") {
             mobileNav.style.display = "none";
@@ -15,4 +22,4 @@ document.addEventListener('DOMContentLoaded', function () {
             menuIconOpen.style.display = "none";
         }
     }
-})
+});

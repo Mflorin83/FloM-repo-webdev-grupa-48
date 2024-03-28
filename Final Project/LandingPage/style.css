@@ -30,10 +30,14 @@
     justify-content: center;
   }
 .icon-custom {
-  font-size: 30px;
+  font-size: 24px;
   color: white;
 }
 
+.menu-open {
+  font-size: large;
+  color: var(--background-color);
+}
 
 
 
