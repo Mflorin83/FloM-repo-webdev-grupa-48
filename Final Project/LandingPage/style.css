@@ -5,6 +5,7 @@
     padding: var(--padding-sm);
     background-color: var(--accent-light-color);
     align-items: center;
+
   }
  
   #logo {
@@ -14,24 +15,30 @@
 
   header nav.menu ul.site-nav {
     display: none;
-    gap: 30px;
+    gap: var(--margin-lg);
     flex-direction: column;
     position: absolute;
     left: 0;
     right: 0;
-    background: var(--primary-color);
+    background: var(--accent-light-color);
     top: 70px;
     padding: var(--padding-xl);
     margin: auto;
     text-align: center;
+    list-style-type: none;
+    font-size: var(--font-size-sm);
+    color: var(--background-color);
+    
   }
-  header nav.menu ul.site-nav {
+
+   header nav.menu ul.site-nav {
     display: flex;
     justify-content: center;
   }
+ 
 .icon-custom {
   font-size: 24px;
-  color: white;
+  color: var(--background-color);
 }
 
 .menu-open {

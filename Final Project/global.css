@@ -93,10 +93,26 @@ a {
     /* Link-urile vor moșteni culoarea textului din elementul părinte */
     text-decoration: none;
     /* Opțional, înlătură sublinierea de la link-uri */
+    position: relative;
+    display: inline-block;
+    padding-bottom: var(--padding-xs);
+    overflow: hidden; /* Asigură-te că pseudo-elementul nu depășește linkul */
 }
 
-a:hover {
-    color: var(--accent-dark-color);
-    text-decoration: underline;
-    text-decoration-color: var(--accent-dark-color);
-}
+  
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosimea sublinierii */
+    background-color: var(--accent-dark-color); /* Culoarea sublinierii */
+    transform: translateX(100%); /* Începe din dreapta */
+    transition: transform 0.5s ease; /* Durata și efectul tranziției */
+  }
+  
+  a:hover::after {
+    transform: translateX(0%); /* Mutați sublinierea complet în vizualizare */
+  }
+  
