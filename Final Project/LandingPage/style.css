@@ -50,18 +50,25 @@
   }
 
 
-  .cta1-ctn, .cta-inside-page {
+  .cta1-ctn,
+  .cta-inside-page,
+  .cta-before-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 90vh;
+    height: 70vh;
     background-color: var(--accent-light-color);
     text-align: center;
+    padding: var(--padding-xxl);
+    margin-bottom: var(--margin-xxl);
+    gap: var(--margin-xxl);
+
   }
 
   .cta1-ctn,
-  .white-text, .cta-inside-page,
-  h1 {
+  .white-text,
+  .cta-inside-page,
+  .cta-before-footer h1 {
     color: var(--background-color);
   }
 
@@ -132,13 +139,13 @@
 
   }
 
-  
+
   .what-we-do,
   .why-You-Need-US,
   .how-Will-Help,
   .what-You-Get {
     background-color: white;
-    border: 1px solid  darkgray;
+    border: 1px solid darkgray;
     box-shadow: 0px 4px 8px darkgray;
     padding: var(--padding-md);
     margin-bottom: 20px;
@@ -160,35 +167,43 @@
     height: auto;
     align-self: center;
   }
+
   .quote {
     position: relative;
     font-style: italic;
     letter-spacing: 1px;
     line-height: 2;
   }
-  
+
   .quote::before {
-    content: open-quote; /* Adaugă ghilimele la începutul citatului */
+    content: open-quote;
+    /* Adaugă ghilimele la începutul citatului */
   }
-  
+
   .quote::after {
-    content: close-quote; /* Adaugă ghilimele la sfârșitul citatului */
+    content: close-quote;
+    /* Adaugă ghilimele la sfârșitul citatului */
   }
-  
-  .cta-inside-page{
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding-xxl);
-    align-content: space-between;
-    text-align: center;
-    margin-bottom: var(--margin-xxl);
-    gap: var(--margin-xxl);
-  }
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: var(--padding-md);
+  margin-bottom: var(--margin-xxl);
+  gap: var(--margin-xxl);
+}
+
+.FAQ p{
+  text-align: justify;
+}
+
+
+
 
 
 }
 
 
-  .header {
-    display: flex;
-  }
+.header {
+  display: flex;
+}
