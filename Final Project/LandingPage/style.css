@@ -9,16 +9,20 @@
   }
 
   #logo {
-    max-width: auto;
-    max-height: 50px;
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+    
+
   }
 
   header nav.menu ul.site-nav {
     display: none;
     gap: var(--margin-lg);
     flex-direction: column;
+    height: 50vh;
     position: absolute;
-    left: 0;
+    left: 40Vw;
     right: 0;
     background: var(--accent-light-color);
     top: 70px;
@@ -26,8 +30,8 @@
     margin: auto;
     text-align: center;
     list-style-type: none;
-    font-size: var(--font-size-sm);
     color: var(--background-color);
+    opacity: 0.9;
 
   }
 
@@ -38,9 +42,9 @@
 
 
   .menu-open {
-    font-size: xx-large;
+    font-size: var(--font-size-mobile);
     color: var(--background-color);
-    width: var(--margin-xxl);
+    min-width: var(--margin-xl);
   }
 
   .menu-close {
@@ -56,7 +60,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 70vh;
     background-color: var(--accent-light-color);
     text-align: center;
     padding: var(--padding-xxl);
@@ -73,14 +76,14 @@
 
 
   .builtCV {
-    width: 200px;
-    height: 50px;
+    width: 33vw;
+    height: auto;
     align-self: center;
     background-color: var(--accent-dark-color);
     color: var(--background-color);
     border: none;
     padding: var(--padding-sm) var(--padding-lg);
-    font-size: var(--font-size-sm);
+    font-size: 0.75em;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -118,7 +121,7 @@
   }
 
   .icon-hero {
-    font-size: 6rem;
+    font-size: var(--font-size-mobile);
     color: var(--accent-dark-color);
   }
 
@@ -205,17 +208,16 @@
     flex-direction: column;
     justify-content: top;
     text-align: justify;
-    height: 80vh;
     width: auto;
     background-color: var(--accent-light-color);
-    padding: var(--padding-md);
-
-    gap: var(--margin-xxl);
+    padding: var(--padding-md) var(--padding-md) var(--padding-xxl) var(--padding-md);
+    gap: var(--margin-sm);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   }
 
   .price H3 {
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .price-arguments {
@@ -226,7 +228,6 @@
   }
 
   .bi-check-circle {
-    font-size: var(--font-size-md);
     color: var(--accent-dark-color);
 
   }
@@ -245,8 +246,50 @@
     color: var(--accent-dark-color);
   }
 
-}
 
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-md);
+    
+  }
+
+  .secondary-menu{
+    display:flex;
+    justify-content: center;
+    gap: var(--font-size-mobile);
+    padding: var(--padding-md);
+
+    
+  }
+  .social-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--margin-md);
+  }
+
+  .social-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .social-ctn .social-links .bi {
+    color: var(--accent-dark-color);
+  }
+.closure{
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-md);
+  align-items: center;
+  
+}
+.legal, .signature{
+  display: flex;
+  margin-bottom: var(--margin-xl);
+}  
+}
 
 .header {
   display: flex;
