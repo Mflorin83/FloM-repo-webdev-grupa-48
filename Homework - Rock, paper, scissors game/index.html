@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <script>
+    function gameON() {
+      const options = ["Rock", "Paper", "Scissors"];
+      let bot = options[Math.floor(Math.random() * options.length)];
+      let user = options[Math.floor(Math.random() * options.length)];
+
+      console.log(`Computer select: "${bot}"`);
+      console.log(`User select: "${user}"`);
+
+
+      if (bot === user) {
+        console.log("It's a draw!");
+      } else if (
+        (bot === "Rock" && user === "Scissors") ||
+        (bot === "Scissors" && user === "Paper") ||
+        (bot === "Paper" && user === "Rock")
+      ) {
+        console.log("Computer wins!");
+      } else {
+        console.log("User wins!");
+      }
+    }
+
+    gameON();
+  </script>
+</body>
+
+</html>

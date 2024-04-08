@@ -5,7 +5,7 @@ defineste o functie care sa includa:
     afiseaza in consola alegerile
     Creeaza structura de control, prin excludere:
         > elimina din start egalitatea si afiseaza mesaj;
-        > else if cu selectarea tuturor optiunilor castigatoare pt bot, afiseaza mesaj (foloseste | |)
+        > else if cu selectarea tuturor optiunilor castigatoare pt bot, afiseaza mesaj (foloseste &&)
         >else pt oricare alta optiune afiseaza mesaj cu user wins.
 
     nu uita sa apelezi functia in afara ei.
