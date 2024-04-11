@@ -1,0 +1,7 @@
+Using function from previous homework and add:
+Add JS Dom Manipulation and add visual items:
+
+Have a score counter: You vs Computer
+Have a visual image for each item: rock, paper, scissor
+Click Play: you choose one item and a random item is chosen for the Computer
+Display who wins
