@@ -4,7 +4,7 @@
 <HEAD>
     <title>Enjoy Rock, Paper & Scissors Game</title>
     <style>
-        :root h1 {
+        body h1 {
             font-size: 100px;
             text-align: center;
             padding: 100px 100px 20px 100px;
@@ -27,7 +27,7 @@
 
         }
 
-        :root img {
+        img {
             width: 200px;
             height: auto;
             border-radius: 10px;
@@ -60,15 +60,105 @@
             <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/scissors.png"
                 alt="Scissors User">
         </div>
+        <div id="botSelection"></div>
+    </div>
+    <div class="Game-selections">
+        <div id="userChoice"></div>
+        <div id="botChoice"></div>
     </div>
     <h3>Rezultat scor</h3>
     <h4>User vs BOT</h4>
     <div class="scores">
-        <div class="user-rec">
+        <div class="user-score">
         </div>
-        <div class="bot-rec">
+        <div class="bot-score">
         </div>
     </div>
+    <script>
+        const userRock = document.querySelector('.user-rock');
+        const userPaper = document.querySelector('.user-paper');
+        const userScissors = document.querySelector('.user-scissors');
+
+        userRock.addEventListener('click', function () {
+            gameOn('Rock');
+            hidePaper();  // Elimină opțiunea de hârtie
+            hideScissors();  // Elimină opțiunea de foarfecă
+        });
+        userPaper.addEventListener('click', function () {
+            gameOn('Paper');
+            hideRock();  // Elimină opțiunea de piatră
+            hideScissors();  // Elimină opțiunea de foarfecă
+        });
+        userScissors.addEventListener('click', function () {
+            gameOn('Scissors');
+            hideRock();  // Elimină opțiunea de piatră
+            hidePaper();  // Elimină opțiunea de hârtie
+        });
+
+
+        function gameOn(userChoice) {
+            const options = ["Rock", "Paper", "Scissors"];
+            let bot = options[Math.floor(Math.random() * options.length)];
+
+            displayBotChoice(bot)
+
+            console.log(`Computer select: "${bot}"`);
+            console.log(`You select: "${userChoice}"`);
+
+            if (bot === userChoice) {
+                console.log("It's a draw!");
+            } else if (
+                (bot === "Rock" && userChoice === "Scissors") ||
+                (bot === "Scissors" && userChoice === "Paper") ||
+                (bot === "Paper" && userChoice === "Rock")
+            ) {
+                console.log("Computer wins!");
+            } else {
+                console.log("You win!");
+            }
+        }
+
+
+        function hideRock() {
+            const rockOption = document.querySelector('.user-rock');
+            if (rockOption) {
+                rockOption.style.display='none';
+            }
+        }
+
+        function hidePaper() {
+            const paperOption = document.querySelector('.user-paper');
+            if (paperOption) {
+                paperOption.style.display='none';
+            }
+        }
+
+        function hideScissors() {
+            const scissorsOption = document.querySelector('.user-scissors');
+            if (scissorsOption) {
+                scissorsOption.style.display='none';
+            }
+        }
+
+        function displayBotChoice(choice) {
+            const botSelection = document.getElementById('botSelection');
+
+            // Curățăm selecția anterioară
+            botSelection.innerHTML = '';
+
+            // Creăm un element de tip img
+            const image = document.createElement('img');
+            image.alt = 'Alegerea bot-ului';
+
+            // Construim calea către imagine și o atribuim proprietății src a elementului img
+            image.src = `Media/${choice}.png`;
+
+            // Adăugăm imaginea în containerul destinat selecției calculatorului
+            botSelection.appendChild(image);
+        }
+
+
+    </script>
 </body>
 
 </HTML>
