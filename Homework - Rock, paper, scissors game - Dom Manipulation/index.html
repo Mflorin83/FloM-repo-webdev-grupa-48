@@ -4,6 +4,13 @@
 <HEAD>
     <title>Enjoy Rock, Paper & Scissors Game</title>
     <style>
+        #godContainer{
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        
+        }
         body h1 {
             font-size: 100px;
             text-align: center;
@@ -27,8 +34,8 @@
 
         }
 
-        img {
-            width: 200px;
+        img, #botSelection {
+            width: 150px;
             height: auto;
             border-radius: 10px;
             box-shadow: darkgray 10px 10px;
@@ -41,157 +48,182 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex-wrap: nowrap;
         }
 
         #playAgain {
             display: none;
+            width: 100px;
+            height: auto;
+            text-align: center;
+            font-size: large;
+            align-self: center;
+        }
+
+        .scores{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            font-size: 25px;
         }
     </style>
 </HEAD>
 
 <body>
-    <h1>Choose</h1>
-    <div class="Main-CTN">
-        <div class="user-rock">
-            <H2>Rock</H2>
-            <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/rock.png" alt="Rock User">
-        </div>
-        <div class="user-paper">
-            <H2>Paper</H2>
-            <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/paper.png" alt="Paper User">
-        </div>
-        <div class="user-scissors">
-            <H2>Scissors</H2>
-            <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/scissors.png"
-                alt="Scissors User">
-        </div>
-        <div class="Bot-game-option">
-            <H2 id="botTextSelection"></H2>
-            <div id="botSelection"></div>
-        </div>
+    <div id="godContainer">
+        <h1>Choose</h1>
+        <div class="Main-CTN">
+            <div class="user-rock">
+                <H2>Rock</H2>
+                <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/rock.png" alt="Rock User">
+            </div>
+            <div class="user-paper">
+                <H2>Paper</H2>
+                <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/paper.png" alt="Paper User">
+            </div>
+            <div class="user-scissors">
+                <H2>Scissors</H2>
+                <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/scissors.png"
+                    alt="Scissors User">
+            </div>
+            <div class="Bot-game-option">
+                <H2 id="botTextSelection"></H2>
+                <div id="botSelection"></div>
+            </div>
 
+        </div>
+        <button id="playAgain"> Joaca din nou! </button>
+        <h3>Rezultat scor</h3>
+        <div class="scores">
+            <div class="user-score">Scorul tau este: <span id="userScore">0</span>
+            </div>
+            <div class="bot-score">Scorul BOT-ului este: <span id="botScore">0</span>
+            </div>
+        </div>
+        <script>
+            const userRock = document.querySelector('.user-rock');
+            const userPaper = document.querySelector('.user-paper');
+            const userScissors = document.querySelector('.user-scissors');
+            let userScore = 0;
+            let botScore = 0;
+
+            userRock.addEventListener('click', function () {
+                gameOn('Rock');
+                hidePaper();  // Elimină opțiunea de hârtie
+                hideScissors();  // Elimină opțiunea de foarfecă
+            });
+            userPaper.addEventListener('click', function () {
+                gameOn('Paper');
+                hideRock();  // Elimină opțiunea de piatră
+                hideScissors();  // Elimină opțiunea de foarfecă
+            });
+            userScissors.addEventListener('click', function () {
+                gameOn('Scissors');
+                hideRock();  // Elimină opțiunea de piatră
+                hidePaper();  // Elimină opțiunea de hârtie
+            });
+
+            document.getElementById('playAgain').addEventListener('click', resetRound);
+
+
+            function gameOn(userChoice) {
+                const options = ["Rock", "Paper", "Scissors"];
+                let bot = options[Math.floor(Math.random() * options.length)];
+
+                displayBotTextSelection(bot)
+                displayBotChoice(bot)
+
+                console.log(`Computer select: "${bot}"`);
+                console.log(`You select: "${userChoice}"`);
+
+                if (bot === userChoice) {
+                    console.log("It's a draw!");
+                } else if (
+                    (bot === "Rock" && userChoice === "Scissors") ||
+                    (bot === "Scissors" && userChoice === "Paper") ||
+                    (bot === "Paper" && userChoice === "Rock")
+                ) {
+                    console.log("Computer wins!");
+                    botScore++;
+                } else {
+                    console.log("You win!");
+                    userScore++
+                }
+                countScore()
+                showPlayAgainButton()
+            }
+
+            function hideRock() {
+                const rockOption = document.querySelector('.user-rock');
+                if (rockOption) {
+                    rockOption.style.display = 'none';
+                }
+            }
+
+            function hidePaper() {
+                const paperOption = document.querySelector('.user-paper');
+                if (paperOption) {
+                    paperOption.style.display = 'none';
+                }
+            }
+
+            function hideScissors() {
+                const scissorsOption = document.querySelector('.user-scissors');
+                if (scissorsOption) {
+                    scissorsOption.style.display = 'none';
+                }
+            }
+
+            function showAgainImages() {
+                const showAgain = document.querySelectorAll('.user-rock, .user-paper, .user-scissors');
+                for (let i = 0; i < showAgain.length; i++) {
+                    showAgain[i].style.display = 'flex'
+
+                }
+
+            }
+
+
+            function displayBotChoice(choice) {
+                const botSelection = document.getElementById('botSelection');
+                botSelection.innerHTML = '';
+                const image = document.createElement('img');
+                image.alt = 'Alegerea bot-ului';
+                image.src = `Media/${choice}.png`;
+                botSelection.appendChild(image);
+            }
+
+            function displayBotTextSelection(choice) {
+                const botTextSelection = document.getElementById('botTextSelection');
+                botTextSelection.innerHTML = '';
+                const text = document.createElement('h2');
+                text.innerText = choice;
+                botTextSelection.appendChild(text)
+            }
+
+            function showPlayAgainButton() {
+                const playAgainBtn = document.getElementById('playAgain');
+                playAgainBtn.style.display = 'block'
+                playAgainBtn.style.alignContent = 'center'
+            }
+
+            function resetRound() {
+                document.getElementById('playAgain').style.display = 'none';
+                showAgainImages();
+                const botSelection = document.getElementById('botSelection')
+                const botTextSelection = document.getElementById('botTextSelection')
+                botSelection.innerHTML = '';
+                botTextSelection.innerHTML = '';
+
+            }
+
+            function countScore() {
+                document.getElementById('userScore').innerText = userScore;
+                document.getElementById('botScore').innerText = botScore;
+            }
+
+        </script>
     </div>
-    <button id="playAgain"> Joaca din nou! </button>
-    <h3>Rezultat scor</h3>
-    <h4>User vs BOT</h4>
-    <div class="scores">
-        <div class="user-score">
-        </div>
-        <div class="bot-score">
-        </div>
-    </div>
-    <script>
-        const userRock = document.querySelector('.user-rock');
-        const userPaper = document.querySelector('.user-paper');
-        const userScissors = document.querySelector('.user-scissors');
-
-        userRock.addEventListener('click', function () {
-            gameOn('Rock');
-            hidePaper();  // Elimină opțiunea de hârtie
-            hideScissors();  // Elimină opțiunea de foarfecă
-        });
-        userPaper.addEventListener('click', function () {
-            gameOn('Paper');
-            hideRock();  // Elimină opțiunea de piatră
-            hideScissors();  // Elimină opțiunea de foarfecă
-        });
-        userScissors.addEventListener('click', function () {
-            gameOn('Scissors');
-            hideRock();  // Elimină opțiunea de piatră
-            hidePaper();  // Elimină opțiunea de hârtie
-        });
-
-        document.getElementById('playAgain').addEventListener('click', resetRound);
-
-
-        function gameOn(userChoice) {
-            const options = ["Rock", "Paper", "Scissors"];
-            let bot = options[Math.floor(Math.random() * options.length)];
-
-            displayBotTextSelection(bot)
-            displayBotChoice(bot)
-
-            console.log(`Computer select: "${bot}"`);
-            console.log(`You select: "${userChoice}"`);
-
-            if (bot === userChoice) {
-                console.log("It's a draw!");
-            } else if (
-                (bot === "Rock" && userChoice === "Scissors") ||
-                (bot === "Scissors" && userChoice === "Paper") ||
-                (bot === "Paper" && userChoice === "Rock")
-            ) {
-                console.log("Computer wins!");
-            } else {
-                console.log("You win!");
-            }
-            showPlayAgainButton()
-        }
-
-        function hideRock() {
-            const rockOption = document.querySelector('.user-rock');
-            if (rockOption) {
-                rockOption.style.display = 'none';
-            }
-        }
-
-        function hidePaper() {
-            const paperOption = document.querySelector('.user-paper');
-            if (paperOption) {
-                paperOption.style.display = 'none';
-            }
-        }
-
-        function hideScissors() {
-            const scissorsOption = document.querySelector('.user-scissors');
-            if (scissorsOption) {
-                scissorsOption.style.display = 'none';
-            }
-        }
-
-        function showAgainImages(){
-            const showAgain = document.querySelectorAll('.user-rock, .user-paper, .user-scissors');
-            for (let i = 0; i < showAgain.length; i++){
-              showAgain[i].style.display = 'flex'
-
-            }
-
-        }
-
-
-        function displayBotChoice(choice) {
-            const botSelection = document.getElementById('botSelection');
-            botSelection.innerHTML = '';
-            const image = document.createElement('img');
-            image.alt = 'Alegerea bot-ului';
-            image.src = `Media/${choice}.png`;
-            botSelection.appendChild(image);
-        }
-
-        function displayBotTextSelection(choice) {
-            const botTextSelection = document.getElementById('botTextSelection');
-            botTextSelection.innerHTML = '';
-            const text = document.createElement('h2');
-            text.innerText = choice;
-            botTextSelection.appendChild(text)
-        }
-
-        function showPlayAgainButton(){
-            const playAgainBtn = document.getElementById ('playAgain');
-            playAgainBtn.style.display = 'block'
-        }
-
-        function resetRound() {
-            document.getElementById('playAgain').style.display= 'none';
-            showAgainImages();
-            const botSelection = document.getElementById('botSelection')
-            const botTextSelection = document.getElementById('botTextSelection')
-            botSelection.innerHTML='';
-            botTextSelection.innerHTML='';
-
-        }
-
-    </script>
 </body>
 
 </HTML>
