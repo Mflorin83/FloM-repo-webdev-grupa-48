@@ -36,10 +36,15 @@
 
         .user-rock,
         .user-paper,
-        .user-scissors {
+        .user-scissors,
+        .Bot-game-option {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        #playAgain {
+            display: none;
         }
     </style>
 </HEAD>
@@ -60,16 +65,13 @@
             <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/scissors.png"
                 alt="Scissors User">
         </div>
-        <div>
-            <h2 id="botTextSelection"></h2>
+        <div class="Bot-game-option">
+            <H2 id="botTextSelection"></H2>
             <div id="botSelection"></div>
         </div>
-        
+
     </div>
-    <div class="Game-selections">
-        <div id="userChoice"></div>
-        <div id="botChoice"></div>
-    </div>
+    <button id="playAgain"> Joaca din nou! </button>
     <h3>Rezultat scor</h3>
     <h4>User vs BOT</h4>
     <div class="scores">
@@ -99,6 +101,8 @@
             hidePaper();  // Elimină opțiunea de hârtie
         });
 
+        document.getElementById('playAgain').addEventListener('click', resetRound);
+
 
         function gameOn(userChoice) {
             const options = ["Rock", "Paper", "Scissors"];
@@ -121,55 +125,71 @@
             } else {
                 console.log("You win!");
             }
+            showPlayAgainButton()
         }
-
 
         function hideRock() {
             const rockOption = document.querySelector('.user-rock');
             if (rockOption) {
-                rockOption.style.display='none';
+                rockOption.style.display = 'none';
             }
         }
 
         function hidePaper() {
             const paperOption = document.querySelector('.user-paper');
             if (paperOption) {
-                paperOption.style.display='none';
+                paperOption.style.display = 'none';
             }
         }
 
         function hideScissors() {
             const scissorsOption = document.querySelector('.user-scissors');
             if (scissorsOption) {
-                scissorsOption.style.display='none';
+                scissorsOption.style.display = 'none';
             }
         }
 
+        function showAgainImages(){
+            const showAgain = document.querySelectorAll('.user-rock, .user-paper, .user-scissors');
+            for (let i = 0; i < showAgain.length; i++){
+              showAgain[i].style.display = 'flex'
+
+            }
+
+        }
+
+
         function displayBotChoice(choice) {
             const botSelection = document.getElementById('botSelection');
-
-            // Curățăm selecția anterioară
             botSelection.innerHTML = '';
-
-            // Creăm un element de tip img
             const image = document.createElement('img');
             image.alt = 'Alegerea bot-ului';
-
-            // Construim calea către imagine și o atribuim proprietății src a elementului img
             image.src = `Media/${choice}.png`;
-
-            // Adăugăm imaginea în containerul destinat selecției calculatorului
             botSelection.appendChild(image);
         }
 
-        function displayBotTextSelection (choice) {
+        function displayBotTextSelection(choice) {
             const botTextSelection = document.getElementById('botTextSelection');
             botTextSelection.innerHTML = '';
-            const text = document.createElement ('h2');
+            const text = document.createElement('h2');
             text.innerText = choice;
             botTextSelection.appendChild(text)
         }
 
+        function showPlayAgainButton(){
+            const playAgainBtn = document.getElementById ('playAgain');
+            playAgainBtn.style.display = 'block'
+        }
+
+        function resetRound() {
+            document.getElementById('playAgain').style.display= 'none';
+            showAgainImages();
+            const botSelection = document.getElementById('botSelection')
+            const botTextSelection = document.getElementById('botTextSelection')
+            botSelection.innerHTML='';
+            botTextSelection.innerHTML='';
+
+        }
 
     </script>
 </body>
