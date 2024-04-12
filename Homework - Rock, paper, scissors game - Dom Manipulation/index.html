@@ -60,7 +60,11 @@
             <img src="../Homework - Rock, paper, scissors game - Dom Manipulation/Media/scissors.png"
                 alt="Scissors User">
         </div>
-        <div id="botSelection"></div>
+        <div>
+            <h2 id="botTextSelection"></h2>
+            <div id="botSelection"></div>
+        </div>
+        
     </div>
     <div class="Game-selections">
         <div id="userChoice"></div>
@@ -100,6 +104,7 @@
             const options = ["Rock", "Paper", "Scissors"];
             let bot = options[Math.floor(Math.random() * options.length)];
 
+            displayBotTextSelection(bot)
             displayBotChoice(bot)
 
             console.log(`Computer select: "${bot}"`);
@@ -155,6 +160,14 @@
 
             // Adăugăm imaginea în containerul destinat selecției calculatorului
             botSelection.appendChild(image);
+        }
+
+        function displayBotTextSelection (choice) {
+            const botTextSelection = document.getElementById('botTextSelection');
+            botTextSelection.innerHTML = '';
+            const text = document.createElement ('h2');
+            text.innerText = choice;
+            botTextSelection.appendChild(text)
         }
 
 
