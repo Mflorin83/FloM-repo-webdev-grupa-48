@@ -2,70 +2,90 @@
 <HTML>
 
 <HEAD>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enjoy Rock, Paper & Scissors Game</title>
     <style>
-        #godContainer{
-            padding: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        
-        }
-        body h1 {
-            font-size: 100px;
-            text-align: center;
-            padding: 100px 100px 20px 100px;
-        }
+        * {
+            padding: 0;
+            margin: 0;}
 
-        body h3 {
-            font-size: 50px;
-            text-align: center;
-        }
+            #godContainer {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
 
 
-        body h4 {
-            font-size: 30px;
-            text-align: center;
-        }
 
-        .Main-CTN {
-            display: flex;
-            justify-content: space-evenly;
+            }
 
-        }
+            body h1 {
+                font-size: 100px;
+                text-align: center;
+                padding: 30px 100px 20px 100px;
+            }
 
-        img, #botSelection {
-            width: 150px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: darkgray 10px 10px;
-        }
+            h2 {
+                font-size: 50px;
 
-        .user-rock,
-        .user-paper,
-        .user-scissors,
-        .Bot-game-option {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: nowrap;
-        }
 
-        #playAgain {
-            display: none;
-            width: 100px;
-            height: auto;
-            text-align: center;
-            font-size: large;
-            align-self: center;
-        }
+            }
 
-        .scores{
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            font-size: 25px;
-        }
+            body h3 {
+                font-size: 50px;
+                text-align: center;
+            }
+
+
+            body h4 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .Main-CTN {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            img,
+            #botSelection {
+                width: 150px;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: darkgray 10px 10px;
+            }
+
+            .user-rock,
+            .user-paper,
+            .user-scissors,
+            .Bot-game-option {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+            #info {
+                align-self: center;
+                color: red;
+            }    
+            #playAgain {
+                display: none;
+                width: 100px;
+                height: auto;
+                margin: auto;
+                font-size: large;
+                align-self: center;
+            }
+
+            .scores {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+                font-size: 25px;
+            }
     </style>
 </HEAD>
 
@@ -87,11 +107,12 @@
                     alt="Scissors User">
             </div>
             <div class="Bot-game-option">
-                <H2 id="botTextSelection"></H2>
+                <div id="botTextSelection"></div>
                 <div id="botSelection"></div>
             </div>
 
         </div>
+        <h2 id="info"></h2>
         <button id="playAgain"> Joaca din nou! </button>
         <h3>Rezultat scor</h3>
         <div class="scores">
@@ -109,18 +130,18 @@
 
             userRock.addEventListener('click', function () {
                 gameOn('Rock');
-                hidePaper();  // Elimină opțiunea de hârtie
-                hideScissors();  // Elimină opțiunea de foarfecă
+                hidePaper();
+                hideScissors();
             });
             userPaper.addEventListener('click', function () {
                 gameOn('Paper');
-                hideRock();  // Elimină opțiunea de piatră
-                hideScissors();  // Elimină opțiunea de foarfecă
+                hideRock();
+                hideScissors();
             });
             userScissors.addEventListener('click', function () {
                 gameOn('Scissors');
-                hideRock();  // Elimină opțiunea de piatră
-                hidePaper();  // Elimină opțiunea de hârtie
+                hideRock();
+                hidePaper();
             });
 
             document.getElementById('playAgain').addEventListener('click', resetRound);
@@ -138,15 +159,20 @@
 
                 if (bot === userChoice) {
                     console.log("It's a draw!");
+                    info.innerText = "It's a draw!";
+                    
                 } else if (
                     (bot === "Rock" && userChoice === "Scissors") ||
                     (bot === "Scissors" && userChoice === "Paper") ||
                     (bot === "Paper" && userChoice === "Rock")
                 ) {
                     console.log("Computer wins!");
+                    info.innerText = "Computer wins!";
+                    
                     botScore++;
                 } else {
                     console.log("You win!");
+                    info.innerText = "You win!";
                     userScore++
                 }
                 countScore()
@@ -178,7 +204,6 @@
                 const showAgain = document.querySelectorAll('.user-rock, .user-paper, .user-scissors');
                 for (let i = 0; i < showAgain.length; i++) {
                     showAgain[i].style.display = 'flex'
-
                 }
 
             }
@@ -204,7 +229,7 @@
             function showPlayAgainButton() {
                 const playAgainBtn = document.getElementById('playAgain');
                 playAgainBtn.style.display = 'block'
-                playAgainBtn.style.alignContent = 'center'
+
             }
 
             function resetRound() {
@@ -214,6 +239,7 @@
                 const botTextSelection = document.getElementById('botTextSelection')
                 botSelection.innerHTML = '';
                 botTextSelection.innerHTML = '';
+                info.innerText = '';
 
             }
 
