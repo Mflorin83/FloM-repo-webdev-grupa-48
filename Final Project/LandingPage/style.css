@@ -500,4 +500,62 @@
 
   }
 
+  .testimonial-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: var(--margin-xxl);
+    
+  }
+  .testimonial-ctn p {
+    font-size: var(--font-size-sm);
+  }
+  
+  @keyframes slideReviews {
+    0% {  /* Delay la început pentru a menține primul testimonial vizibil */
+      transform: translateX(-100%);
+    }
+    25% {
+      transform: translateX(-75%); /* Ajustează aceste valori pentru a se potrivi cu alinierea corectă */
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-25%);
+    }
+    90%, 100% {  /* Asigură că ultimul testimonial este vizibil la sfârșit */
+      transform: translateX(0%);
+    }
+  }
+ 
+  .client-reviews {
+    display: flex;
+    width: 100%; /* Asigură-te că containerul poate conține toate review-urile pe ecran */
+    animation: slideReviews 20s linear infinite;
+    /* Adaugă un delay de 2 secunde la începutul animației */
+  }
+
+ 
+ 
+  .first-reviw,
+  .second-reviw,
+  .third-reviw,
+  .forth-reviw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--padding-md);
+    margin-bottom: var(--margin-lg);
+    height: 275px;
+    text-align: center;
+  }
+  
+  .friends-pic {
+    height: auto;
+    align-self: center;
+  }
+  
 }
