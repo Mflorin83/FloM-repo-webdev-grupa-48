@@ -20,6 +20,7 @@
     --font-size-md: 2.5rem;
     --font-size-xl: 3.5rem;
     --font-size-xxl: 4.5rem;
+    --font-size-3xl: 6rem;
     --font-size-mobile:10vw;
 
 
@@ -42,9 +43,10 @@
 }
 
 body {
-    font-family: var(--font-size-md);
-    font-weight: 500;
-    line-height: var(--font-size-md)
+    font-family: var(--primary-font);
+    font-size: calc(var(--font-size-xs)*1.6);
+    line-height: var(--font-size-xl)
+
 }
 
 h1,
@@ -53,12 +55,12 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: var(--margin-xl);
-    margin-bottom: var(--margin-xl);
-    font-size: var(--font-size-xl);
-    line-height: var(--font-size-xxl);
+    font-size: var(--font-size-3xl);
+    line-height: var(--font-size-3xl);
     font-family: var(--primary-font);
     font-weight: 800;
+    padding-left: var(--padding-sm);
+    padding-right: var(--padding-sm);
 }
 
 @media(max-width: 767px) {

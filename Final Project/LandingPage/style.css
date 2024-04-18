@@ -1,4 +1,3 @@
-
 @media(max-width:767px) {
   .header {
     display: flex;
@@ -13,7 +12,7 @@
     width: 25%;
     height: auto;
     object-fit: contain;
-    
+
 
   }
 
@@ -252,17 +251,18 @@
     display: flex;
     flex-direction: column;
     padding: var(--padding-md);
-    
+
   }
 
-  .secondary-menu{
-    display:flex;
+  .secondary-menu {
+    display: flex;
     justify-content: center;
     gap: var(--font-size-mobile);
     padding: var(--padding-md);
 
-    
+
   }
+
   .social-ctn {
     display: flex;
     flex-direction: column;
@@ -279,18 +279,23 @@
   .social-ctn .social-links .bi {
     color: var(--accent-dark-color);
   }
-.closure{
-  display: flex;
-  flex-direction: column;
-  padding: var(--padding-md);
-  align-items: center;
-  
+
+  .closure {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-md);
+    align-items: center;
+
+  }
+
+  .legal,
+  .signature {
+    display: flex;
+    margin-bottom: var(--margin-xl);
+  }
 }
-.legal, .signature{
-  display: flex;
-  margin-bottom: var(--margin-xl);
-}  
-}
+
+/* Optimizare pentru DESKTOP */
 
 @media (min-width: 768px) {
 
@@ -301,8 +306,8 @@
     align-items: center;
     background-color: var(--accent-light-color);
   }
-  
-  #logo{
+
+  #logo {
     width: 20%;
     height: auto;
     object-fit: contain;
@@ -312,23 +317,29 @@
     display: flex;
     gap: var(--margin-xxl);
     /* Resetează orice alte stiluri care ar putea interfera cu afișarea meniului */
-    padding: var(--padding-xl); /* Ajustează după necesități */
-    margin: 0; /* Resetează la 'auto' dacă este necesar */
-    background: var(--accent-light-color); /* Ajustează după necesități */
-    color: var(--background-color); /* Ajustează după necesități */
-    text-align: center; /* Ajustează după necesități */
-    list-style-type: none; /* Ajustează după necesități */
+    padding: var(--padding-xl);
+    /* Ajustează după necesități */
+    margin: auto;
+    /* Resetează la 'auto' dacă este necesar */
+    background: var(--accent-light-color);
+    /* Ajustează după necesități */
+    color: var(--background-color);
+    /* Ajustează după necesități */
+    text-align: center;
+    /* Ajustează după necesități */
+    list-style-type: none;
+    /* Ajustează după necesități */
     font-size: var(--font-size-md);
   }
 
   .site-nav-mobile {
-    display: none; /* Ascunde butonul de hamburger */
+    display: none;
+    /* Ascunde butonul de hamburger */
   }
-  
+
   .site-nav {
     display: flex;
-    width: 100%; /* Afișează meniul */
-    /* Alte stiluri pentru a ajusta meniul pe desktop */
+
   }
 
   header nav.menu .site-nav .login-btn {
@@ -344,6 +355,7 @@
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
+
   header nav.menu .site-nav .login-btn:hover {
     background-color: var(--accent-dark-hover);
     transform: scale(1.1);
@@ -353,16 +365,139 @@
     transform: scale(0.95);
     background-color: var(--accent-dark-hover);
   }
+
   .cta1-ctn,
   .cta-inside-page,
   .cta-before-footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(--accent-light-color);
     text-align: center;
     padding: var(--padding-xxl);
-    gap: var(--margin-xxl);
+    gap: var(--margin-xl);
 
-}
+  }
+
+  .cta1-ctn,
+  .white-text,
+  .cta-inside-page,
+  .cta-before-footer h1 {
+    color: var(--background-color);
+  }
+
+  .cta1-ctn p,
+  .cta-inside-page p,
+  .cta-before-footer p {
+    font-size: var(--font-size-md);
+  }
+
+  .builtCV {
+    width: 200px;
+    height: auto;
+    align-self: center;
+    background-color: var(--accent-dark-color);
+    color: var(--background-color);
+    border: none;
+    padding: var(--padding-sm) var(--padding-lg);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .builtCV:hover {
+    background-color: var(--accent-dark-hover);
+    transform: scale(1.1);
+  }
+
+  .builtCV:active {
+    transform: scale(0.95);
+    background-color: var(--accent-dark-hover);
+  }
+
+  .highlight {
+    font-weight: bold;
+    background: linear-gradient(to right, var(--accent-dark-color), var(--background-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+
+  }
+
+  .about-ctn {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--padding-xxl);
+    padding-left: var(--margin-wide);
+    padding-right: var(--margin-wide);
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--margin-xxl);
+    gap: var(--margin-xxl);
+    background-color: rgba(243, 239, 239, 0.712);
+    transition: transform 0.3 ease;
+  }
+
+  .about-ctn :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+  }
+
+  .about-ctn p,
+  .about-ctn i,
+  .about-ctn h2 {
+    transition: transform 0.3s ease;
+  }
+
+  .about-ctn:hover i,
+  .about-ctn:hover p,
+  .about-ctn:hover h2 {
+    transform: scale(0.9);
+  }
+
+  .about-ctn h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .about-ctn p {
+    color: var(--text-color);
+    font-size: var(--font-size-sm);
+  }
+
+
+
+  .icon-hero {
+    font-size: var(--font-size-xl);
+    color: var(--accent-dark-color);
+  }
+
+  .what-we-do,
+  .why-You-Need-US,
+  .how-Will-Help,
+  .what-You-Get {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-around;
+    gap: var(--margin-xl);
+
+
+  }
+
+  .what-we-do,
+  .why-You-Need-US,
+  .how-Will-Help,
+  .what-You-Get {
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 0px 4px 8px darkgray;
+    padding: var(--padding-md);
+    margin-bottom: var(--margin-lg);
+    border-radius: 10px;
+
+  }
+
 }
