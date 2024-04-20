@@ -370,6 +370,8 @@
   .cta-inside-page,
   .cta-before-footer {
     display: flex;
+    min-height: 300px;
+    width: auto;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--accent-light-color);
@@ -483,14 +485,6 @@
     width: 75%;
     justify-content: space-around;
     gap: var(--margin-xl);
-
-
-  }
-
-  .what-we-do,
-  .why-You-Need-US,
-  .how-Will-Help,
-  .what-You-Get {
     background-color: white;
     border: 1px solid white;
     box-shadow: 0px 4px 8px darkgray;
@@ -500,45 +494,57 @@
 
   }
 
+
+
   .testimonial-ctn {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
     gap: var(--margin-xxl);
-    
+
   }
+
   .testimonial-ctn p {
     font-size: var(--font-size-sm);
   }
-  
+
   @keyframes slideReviews {
-    0% {  /* Delay la început pentru a menține primul testimonial vizibil */
+    0% {
+      /* Delay la început pentru a menține primul testimonial vizibil */
       transform: translateX(-100%);
     }
+
     25% {
-      transform: translateX(-75%); /* Ajustează aceste valori pentru a se potrivi cu alinierea corectă */
+      transform: translateX(-75%);
+      /* Ajustează aceste valori pentru a se potrivi cu alinierea corectă */
     }
+
     50% {
       transform: translateX(-50%);
     }
+
     75% {
       transform: translateX(-25%);
     }
-    90%, 100% {  /* Asigură că ultimul testimonial este vizibil la sfârșit */
+
+    90%,
+    100% {
+      /* Asigură că ultimul testimonial este vizibil la sfârșit */
       transform: translateX(0%);
     }
   }
- 
+
   .client-reviews {
     display: flex;
-    width: 100%; /* Asigură-te că containerul poate conține toate review-urile pe ecran */
+    width: 100%;
+    /* Asigură-te că containerul poate conține toate review-urile pe ecran */
     animation: slideReviews 20s linear infinite;
     /* Adaugă un delay de 2 secunde la începutul animației */
   }
 
- 
- 
+
+
   .first-reviw,
   .second-reviw,
   .third-reviw,
@@ -552,10 +558,113 @@
     height: 275px;
     text-align: center;
   }
-  
+
   .friends-pic {
     height: auto;
     align-self: center;
   }
-  
+
+  .quote {
+    position: relative;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 2;
+  }
+
+  .quote::before {
+    content: open-quote;
+    /* Adaugă ghilimele la începutul citatului */
+  }
+
+  .quote::after {
+    content: close-quote;
+    /* Adaugă ghilimele la sfârșitul citatului */
+  }
+
+
+  .FAQ {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-xxl);
+    gap: var(--margin-xxl);
+    text-align: justify;
+  }
+
+  .FAQ H2 {
+    font-size: var(--font-size-xxl);
+    text-align: center;
+  }
+
+  .FAQ>p:first-of-type {
+    font-size: var(--font-size-md);
+    text-align: center;
+  }
+
+  .FAQ .Whats-in H3,
+  .FAQ .what-is-cv H3 {
+    font-size: var(--font-size-sm);
+    margin-left: -13px;
+  }
+
+  .price-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    text-align: center;
+    min-height: 300px;
+    width: auto;
+    background-color: var(--accent-light-color);
+    padding: var(--padding-xxl);
+    gap: var(--margin-xxl);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+  }
+
+  .price-details P {
+    font-size: var(--font-size-md);
+  }
+
+  .price-main-ctn .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: var(--padding-xl);
+
+  }
+
+   .price-arguments{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    border: 1px solid var(--background-color);
+    box-shadow: 0px 4px 8px darkgray;
+    padding: var(--padding-md);
+    margin-bottom: var(--margin-lg);
+    border-radius: 10px;
+
+   }
+ 
+  .price H3 {
+    text-align: center;
+    margin-bottom: var(--margin-xxl);
+  }
+
+  .bi-check-circle {
+    color: var(--accent-dark-color);
+
+  }
+  .checked {
+    display: flex;
+    padding: var(--padding-xl);
+    gap: var(--margin-md)
+  }
+
+  .checked:hover {
+    transform: translate3d(12px, -5px, 3rem)
+  }
+
+  .checked span b {
+    color: var(--accent-dark-color);
+  }
+
+
 }
