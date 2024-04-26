@@ -17,7 +17,8 @@
   }
 
   header nav.menu ul.site-nav {
-    display: none;
+    display: flex;
+    justify-content: center;
     gap: var(--margin-lg);
     flex-direction: column;
     height: 50vh;
@@ -32,12 +33,21 @@
     list-style-type: none;
     color: var(--background-color);
     opacity: 0.9;
-
   }
 
-  header nav.menu ul.site-nav {
-    display: flex;
-    justify-content: center;
+  .flag {
+    width: var(--font-size-xl);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+  }
+
+  .hidden-flag {
+    opacity: 0;
+  }
+
+  .active-flag {
+    opacity: 1;
   }
 
 
@@ -206,7 +216,7 @@
   .price-details {
     display: flex;
     flex-direction: column;
-    
+
     text-align: justify;
     min-height: 80vh;
     width: auto;
@@ -317,20 +327,14 @@
   header nav.menu ul.site-nav {
     display: flex;
     gap: var(--margin-xxl);
-    /* Resetează orice alte stiluri care ar putea interfera cu afișarea meniului */
     padding: var(--padding-xl);
-    /* Ajustează după necesități */
     margin: auto;
-    /* Resetează la 'auto' dacă este necesar */
     background: var(--accent-light-color);
-    /* Ajustează după necesități */
     color: var(--background-color);
-    /* Ajustează după necesități */
     text-align: center;
-    /* Ajustează după necesități */
     list-style-type: none;
-    /* Ajustează după necesități */
     font-size: var(--font-size-md);
+    align-items: center;
   }
 
   .site-nav-mobile {
@@ -712,47 +716,65 @@
 
   .social-ctn H2 {
     font-size: var(--font-size-xl);
-    
+
   }
 
-  .social-ctn{
+  .social-ctn {
     display: flex;
     flex-direction: column;
     gap: var(--margin-xxl);
   }
- .social-links{
-  display: flex;
-  width: auto;
-  justify-content: space-between;
-  text-align: center;
-  font-size: var(--font-size-xl);
- }
- .closure{
-  display: flex;
-  flex-direction: column;
- }
 
- .legal{
-  display: flex;
-  gap: var(--margin-lg);
-  margin-bottom: var(--margin-xl);
-  text-align: center;
-  font-size: var(--font-size-sm);
- }
- #signature{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: var(--font-size-xs);
- }
- 
-  /* Adauga clase suplimentare pe JS */
-  .transformText{
-    transform: scale(1.1);
-    
+  .social-links {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    text-align: center;
+    font-size: var(--font-size-xl);
   }
 
- }
+  .closure {
+    display: flex;
+    flex-direction: column;
+  }
 
- 
+  .legal {
+    display: flex;
+    gap: var(--margin-lg);
+    margin-bottom: var(--margin-xl);
+    text-align: center;
+    font-size: var(--font-size-sm);
+  }
 
+  #signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-size-xs);
+  }
+
+  /* Adauga clase suplimentare pe JS */
+  .transformText {
+    transform: scale(1.1);
+
+  }
+
+  .flag {
+    width: var(--font-size-md);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+  }
+
+  .hidden-flag {
+    opacity: 0;
+  }
+
+  .active-flag, .active-flag:hover  {
+    opacity: 1;
+    transform: scale(1.1);
+    }
+
+
+
+}

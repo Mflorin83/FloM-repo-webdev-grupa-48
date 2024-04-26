@@ -1,0 +1,13 @@
+Choose a public API or create a private API and
+
+For 9:
+
+Display data on a page
+Load data from the API
+Display data on html using DOM Manipulation
+For 10:
+
+Implement the add, edit and delete functionalities 
+For Add/Edit read the data from inputs
+Pass data to API and save it
+For delete you can use an input hidden to keep the id of each element

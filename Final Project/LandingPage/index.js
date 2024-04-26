@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Inițial, nu seta display: none; aici pentru mobileNav sau menuIconClose
 
-    menuIcon.addEventListener("click", function() {
+    menuIcon.addEventListener("click", function () {
         // Verifică dimensiunea ecranului înainte de a modifica stilurile
         if (window.innerWidth < 768) {
             if (mobileNav.style.display === "flex") {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Opțional: Ascunde meniul mobil și iconița de închidere când pagina se încarcă,
     // dar doar pe ecrane mici.
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.innerWidth < 768) {
             mobileNav.style.display = "none";
             menuIconClose.style.display = "none";
@@ -39,3 +39,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // Aplică logica de resize imediat, pentru a asigura starea corectă inițială.
     window.dispatchEvent(new Event('resize'));
 });
+
+const enSwitch = document.getElementById("usaflag").addEventListener("click", function () {
+    // Faceți apel la API pentru a aduce traducerile în limba engleză
+    // După primirea răspunsului, actualizați elementele HTML cu traducerile
+    // Ascundeți steagul SUA și afișați steagul României
+});
+
+document.getElementById("roflag").addEventListener("click", function () {
+    // Faceți apel la API pentru a aduce traducerile în limba română
+    // După primirea răspunsului, actualizați elementele HTML cu traducerile
+    // Ascundeți steagul României și afișați steagul SUA
+});
+
