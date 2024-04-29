@@ -40,15 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.dispatchEvent(new Event('resize'));
 });
 
-const enSwitch = document.getElementById("usaflag").addEventListener("click", function () {
-    // Faceți apel la API pentru a aduce traducerile în limba engleză
-    // După primirea răspunsului, actualizați elementele HTML cu traducerile
-    // Ascundeți steagul SUA și afișați steagul României
-});
 
-document.getElementById("roflag").addEventListener("click", function () {
-    // Faceți apel la API pentru a aduce traducerile în limba română
-    // După primirea răspunsului, actualizați elementele HTML cu traducerile
-    // Ascundeți steagul României și afișați steagul SUA
-});
+
+
+
+
+
 
