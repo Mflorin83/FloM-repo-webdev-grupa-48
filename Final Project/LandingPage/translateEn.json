@@ -1,5 +1,5 @@
 {
-    "en": {
+    "translateEn": {
         "genCv": "Build CV",
         "price": "Price",
         "ctaOneHeading": "Generate your successful CV in the blink of an eye",
@@ -58,6 +58,6 @@
         "priceLink": "Price",
         "followUs": "Follow Us",
         "terms": "Terms",
-        "cookies": "Cookies",
+        "cookies": "Cookies"
     }
 }
