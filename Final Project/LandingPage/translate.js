@@ -7,14 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function loadTranslations() {
-    const apiUrlEn = "http://localhost:5500/translateEn";
+    const apiUrlEn = "http://localhost:3000/translateEn";
     fetch(apiUrlEn)
       .then(response => response.json())
       .then(data => {
 
         const translations = data[0];
-        const spanOnline = document.getElementById('ctaOneHeading').innerHTML = translations.ctaOneHeading;
-        const styleOnline = spanOnline.replace('online', '<span style="background: linear-gradient(to right, var(--accent-dark-color), var(--background-color));font-weight: bold; -webkit-background-clip: text; background-clip: text; color: transparent; display: inline;">online</span>');
+
+        const styleOnline = translations.ctaOneHeading.replace('online', `<span style="background: linear-gradient(to right, var(--accent-dark-color), var(--background-color)); font-weight: bold; -webkit-background-clip: text; background-clip: text; color: transparent; display: inline;">online</span>`);
+        const quickly = translations.increaseChancesTitle.replace('quickly', `<span style="background: linear-gradient(to right, var(--accent-dark-color), var(--background-color)); font-weight: bold; -webkit-background-clip: text; background-clip: text; color: transparent; display: inline;">quickly</span>`);
+        const personalInfoStyle = translations.personalInfo.replace('Personal Informations', '<strong>Personal Informations</strong>');
+        const professionalExperienceStyle = translations.professionalExperience.replace('Professional Experience', '<strong>Professional Experience</strong>');
+        const studiesStyle = translations.studies.replace('Studies', '<strong>Studies</strong>');
+        const studiesDetails2Style = translations.studiesDetails2.replace('These essential details should be included in the CV for each application. However, to distinguish yourself from other candidates, it is recommended to make additional efforts. If you want to convince potential employers that you are the ideal candidate for the position, consider adding extra sections to your CV.', '<strong>These essential details should be included in the CV for each application. However, to distinguish yourself from other candidates, it is recommended to make additional efforts. If you want to convince potential employers that you are the ideal candidate for the position, consider adding extra sections to your CV.</strong>');
+        const skillsStyle = translations.skills.replace('Skills and Competencies', '<strong>Skills and Competencies</strong>');
+        const coursesStyle = translations.courses.replace('Courses and Training', '<strong>Courses and Training</strong>');
+        const personalActivitiesStyle = translations.personalActivities.replace('Personal Sphere Activities', '<strong>Personal Sphere Activities</strong>');
+        const priceArgument5Style = translations.priceArgument5.replace('19.9 RON per download', '<span style="color: var(--accent-dark-color); font-weight: bold ;">19.9 RON per download</span>');
+        const tryUsOutStyle = translations.tryUsOut.replace('ready', `<span style="background: linear-gradient(to right, var(--accent-dark-color), var(--background-color)); font-weight: bold; -webkit-background-clip: text; background-clip: text; color: transparent; display: inline;">ready</span>`);
 
         document.getElementById('genCv').innerHTML = translations.genCv;
         document.getElementById('price').innerHTML = translations.price;
@@ -36,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('testimonial2').innerHTML = translations.testimonial2;
         document.getElementById('testimonial3').innerHTML = translations.testimonial3;
         document.getElementById('testimonial4').innerHTML = translations.testimonial4;
-        document.getElementById('increaseChancesTitle').innerHTML = translations.increaseChancesTitle;
+        document.getElementById('increaseChancesTitle').innerHTML = quickly;
         document.getElementById('attractAttention').innerHTML = translations.attractAttention;
         document.getElementById('newCta').innerHTML = translations.newCta;
         document.getElementById('timeEconomy').innerHTML = translations.timeEconomy;
@@ -46,18 +56,18 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('cvDescription').innerHTML = translations.cvDescription;
         document.getElementById('howToWriteCV').innerHTML = translations.howToWriteCV;
         document.getElementById('cvWritingTips').innerHTML = translations.cvWritingTips;
-        document.getElementById('personalInfo').innerHTML = translations.personalInfo;
+        document.getElementById('personalInfo').innerHTML = personalInfoStyle;
         document.getElementById('personalInfoDetail').innerHTML = translations.personalInfoDetail;
-        document.getElementById('professionalExperience').innerHTML = translations.professionalExperience;
+        document.getElementById('professionalExperience').innerHTML = professionalExperienceStyle;
         document.getElementById('professionalExpDetails').innerHTML = translations.professionalExpDetails;
-        document.getElementById('studies').innerHTML = translations.studies;
+        document.getElementById('studies').innerHTML = studiesStyle;
         document.getElementById('studiesDetails1').innerHTML = translations.studiesDetails1;
-        document.getElementById('studiesDetails2').innerHTML = translations.studiesDetails2;
-        document.getElementById('skills').innerHTML = translations.skills;
-        document.getElementById('skillsDetails').textContent = translations.skillsDetails;
-        document.getElementById('courses').textContent = translations.courses;
+        document.getElementById('studiesDetails2').innerHTML = studiesDetails2Style;
+        document.getElementById('skills').innerHTML = skillsStyle;
+        document.getElementById('skillsDetails').innerHTML = translations.skillsDetails;
+        document.getElementById('courses').innerHTML = coursesStyle;
         document.getElementById('coursesDetails').innerHTML = translations.coursesDetails;
-        document.getElementById('personalActivities').innerHTML = translations.personalActivities;
+        document.getElementById('personalActivities').innerHTML = personalActivitiesStyle;
         document.getElementById('personalActivitiesDetails').innerHTML = translations.personalActivitiesDetails;
         document.getElementById('timeSavingClaim').innerHTML = translations.timeSavingClaim;
         document.getElementById('cvAccessibility').innerHTML = translations.cvAccessibility;
@@ -66,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('priceArgument2').innerHTML = translations.priceArgument2;
         document.getElementById('priceArgument3').innerHTML = translations.priceArgument3;
         document.getElementById('priceArgument4').innerHTML = translations.priceArgument4;
-        document.getElementById('priceArgument5').innerHTML = translations.priceArgument5;
-        document.getElementById('tryUsOut').innerHTML = translations.tryUsOut;
+        document.getElementById('priceArgument5').innerHTML = priceArgument5Style;
+        document.getElementById('tryUsOut').innerHTML = tryUsOutStyle;
         document.getElementById('finalizeQuickly').innerHTML = translations.finalizeQuickly;
         document.getElementById('anotherCtaButton').innerHTML = translations.anotherCtaButton;
         document.getElementById('createMoreTime').innerHTML = translations.createMoreTime;
