@@ -1,11 +1,37 @@
 document.addEventListener('DOMContentLoaded', function () {
+  innitialFlag();
   document.getElementById('usaflag').addEventListener('click', function () {
     loadTranslations();
+    switchFlags();
   });
   document.getElementById('roflag').addEventListener('click', function () {
-    resetToRomanian();
+    location.reload();
   });
 
+
+  function innitialFlag() {
+    document.getElementById('usaflag').style.display = 'inline';  // Show US flag because text is in romanian.
+    document.getElementById('roflag').style.display = 'none';    
+  }
+
+  function switchFlags() {
+    // Accesează elementele pentru steaguri
+    const usaFlag = document.getElementById('usaflag');
+    const roFlag = document.getElementById('roflag');
+
+    // Verifică dacă steagul SUA este ascuns
+    if (usaFlag.style.display === 'none') {
+        // Dacă steagul SUA este ascuns, îl afișează
+        usaFlag.style.display = 'inline';
+        // Ascunde steagul României
+        roFlag.style.display = 'none';
+    } else {
+        // Dacă steagul SUA nu este ascuns, îl ascunde
+        usaFlag.style.display = 'none';
+        // Afișează steagul României
+        roFlag.style.display = 'inline';
+    }
+}
   function loadTranslations() {
     const apiUrlEn = "http://localhost:3000/translateEn";
     fetch(apiUrlEn)
@@ -88,8 +114,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       })
-      .catch(error => console.log('Error loading the translations:', error));
+      .catch(error => console.log('Error loading', error));
   }
 
 
-});
+})

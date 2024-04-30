@@ -43,7 +43,7 @@
   }
 
   .hidden-flag {
-    opacity: 0;
+    opacity: 100;
   }
 
   .active-flag {
@@ -622,7 +622,7 @@
     background-color: var(--accent-light-color);
     padding: var(--padding-xxl);
     gap: var(--margin-xxl);
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   }
 
   .price-details P {
@@ -767,12 +767,12 @@
   }
 
   .hidden-flag {
-    opacity: 0;
+    display: none;
   }
 
-  .active-flag, .active-flag:hover  {
-    opacity: 1;
-    transform: scale(1.1);
+  .active-flag {
+    display: inline;
+    
     }
 
 
