@@ -775,6 +775,8 @@
     
     }
 
-
+    a:hover::after {
+      transform: translateX(0%); /* Mutați sublinierea complet în vizualizare */
+    }
 
 }

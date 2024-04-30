@@ -126,7 +126,5 @@ a {
     transition: transform 0.5s ease; /* Durata și efectul tranziției */
   }
   
-  a:hover::after {
-    transform: translateX(0%); /* Mutați sublinierea complet în vizualizare */
-  }
+  
   
