@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 }
   function loadTranslations() {
-    const apiUrlEn = "http://localhost:3000/translateEn";
+    const apiUrlEn = "http://localhost:5500/translateEn";
     fetch(apiUrlEn)
       .then(response => response.json())
       .then(data => {

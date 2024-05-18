@@ -1,35 +1,49 @@
-<div class="container mt-5">
-  <h1>Bootstrap Test</h1>
-  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          This is a Bootstrap modal.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Dropdown -->
-  <div class="dropdown mt-3">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown button
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-  </div>
+<p>
+	You should use <code>class="nav-pills"</code> if you need pills and the <code>[orientation]</code> input to change nav
+	orientation
+</p>
+
+<div class="d-flex">
+	<div ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills flex-column" orientation="vertical">
+		<ng-container ngbNavItem="top">
+			<button ngbNavLink>Top</button>
+			<ng-template ngbNavContent>
+				<p>
+					Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+					master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
+					keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+					salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+				</p>
+			</ng-template>
+		</ng-container>
+		<ng-container ngbNavItem="middle">
+			<button ngbNavLink>Middle</button>
+			<ng-template ngbNavContent>
+				<p>
+					Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
+					farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
+					ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
+					helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson
+					8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+					stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+				</p>
+			</ng-template>
+		</ng-container>
+		<ng-container ngbNavItem="bottom">
+			<button ngbNavLink>Bottom</button>
+			<ng-template ngbNavContent>
+				<p>
+					Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla
+					facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu,
+					congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices
+					et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus
+					faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci
+					varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem
+					aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.
+				</p>
+			</ng-template>
+		</ng-container>
+	</div>
+
+	<div [ngbNavOutlet]="nav" class="ms-4"></div>
 </div>
