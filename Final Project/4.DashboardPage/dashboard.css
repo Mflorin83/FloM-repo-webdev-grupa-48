@@ -1,259 +1,180 @@
-@media (max-width: 767px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    padding: var(--padding-md);
-    background-color: var(--accent-light-color);
-    align-items: center;
-  }
+body {
+  padding-top: 56px;
+  /* Înălțimea header-ului sticky */
+}
+
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+.sidebar {
+  width: 250px;
+  /* Lățimea sidebar-ului */
+  position: fixed;
+  top: 56px;
+  /* Începe sub header */
+  left: -250px;
+  /* Ascuns inițial în partea stângă */
+  transition: left 0.3s;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+.sidebar.show {
+  left: 0;
+  /* Afișează sidebar-ul */
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 25px;
+  /* Lățimea elementului de toggle */
+  height: 50px;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+.content.shift {
+  margin-left: 250px;
+  /* Spațiu pentru sidebar */
+}
+
+.hamburger-menu {
+  height: 100vh;
+  width: 50vw;
+  /* Lățimea meniului hamburger */
+  position: fixed;
+  top: 0;
+  right: -50vw;
+  /* Ascuns inițial în partea dreaptă */
+  transition: right 0.3s;
+  background-color: #343a40;
+  color: white;
+  overflow-y: auto;
+  z-index: 1040;
+  /* Peste conținutul principal */
+}
+
+.hamburger-menu.show {
+  right: 0;
+  /* Afișează meniul */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+
+
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+/* Mobile optimisation */
+
+
+@media (max-width: 767.98px) {
 
   #logo {
     width: 25%;
     height: auto;
     object-fit: contain;
+
+
   }
 
-  header nav.menu ul.site-nav {
-    display: flex;
-    justify-content: center;
-    gap: var(--margin-lg);
-    flex-direction: column;
-    height: 50vh;
-    position: absolute;
-    left: 40vw;
-    right: 0;
-    background: var(--accent-light-color);
-    top: 70px;
-    padding: var(--padding-xl);
-    margin: auto;
-    text-align: center;
-    list-style-type: none;
-    color: var(--background-color);
-    opacity: 0.9;
+  .sidebar {
+    width: 50vw;
+    /* Ajustează lățimea sidebar-ului pe ecranele mici */
+    left: -50vw;
+    /* Ascunde sidebar-ul pe ecranele mici */
   }
 
-  .flag {
-    width: var(--font-size-xl);
-    cursor: pointer;
-    border-radius: 50%;
-    transition: opacity 0.3s;
+  .sidebar.show {
+    left: 0;
+    /* Afișează sidebar-ul pe ecranele mici */
   }
 
-  .hidden-flag {
-    opacity: 100;
+  .nav-item {
+    display: block;
+    margin-top: 10px;
+    /* Afișează linkurile în meniul hamburger */
   }
 
-  .active-flag {
-    opacity: 1;
+  .navbar-nav {
+    display: none;
+    /* Ascunde linkurile în navbar */
   }
 
-  .menu-open {
-    font-size: var(--font-size-mobile);
-    color: var(--background-color);
-    min-width: var(--margin-xl);
-  }
 
-  .menu-close {
-    font-size: var(--font-size-xxl);
-    color: var(--accent-dark-color);
-    width: var(--margin-xxl);
-  }
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
+  /* Footer  */
 
-  .cta1-ctn,
-  .cta-inside-page,
-  .cta-before-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: var(--accent-light-color);
-    text-align: center;
-    padding: var(--padding-xxl);
-    gap: var(--margin-xxl);
-  }
-
-  .cta1-ctn,
-  .white-text,
-  .cta-inside-page,
-  .cta-before-footer h1 {
-    color: var(--background-color);
-  }
-
-  .builtCV {
-    width: 33vw;
-    height: auto;
-    align-self: center;
-    background-color: var(--accent-dark-color);
-    color: var(--background-color);
-    border: none;
-    padding: var(--padding-sm) var(--padding-lg);
-    font-size: 0.75em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-
-  .builtCV:hover {
-    background-color: var(--accent-dark-hover);
-    transform: scale(1.1);
-  }
-
-  .builtCV:active {
-    transform: scale(0.95);
-    background-color: var(--accent-dark-hover);
-  }
-
-  .about-ctn,
-  .testimonial-ctn {
-    display: flex;
-    flex-direction: column;
-    padding: var(--padding-xxl);
-    align-content: space-around;
-    text-align: center;
-    margin-bottom: var(--margin-xxl);
-    gap: var(--margin-xxl);
-  }
-
-  .about-ctn,
-  p {
-    color: var(--text-color);
-  }
-
-  .about-ctn {
-    background-color: rgba(243, 239, 239, 0.712);
-  }
-
-  .icon-hero {
-    font-size: var(--font-size-mobile);
-    color: var(--accent-dark-color);
-  }
-
-  .what-we-do,
-  .why-You-Need-US,
-  .how-Will-Help,
-  .what-You-Get,
-  .first-reviw,
-  .second-reviw,
-  .third-reviw,
-  .forth-reviw {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: var(--margin-xl);
-  }
-
-  .what-we-do,
-  .why-You-Need-US,
-  .how-Will-Help,
-  .what-You-Get {
-    background-color: white;
-    border: 1px solid darkgray;
-    box-shadow: 0px 4px 8px darkgray;
-    padding: var(--padding-md);
-    margin-bottom: var(--margin-lg);
-  }
-
-  .first-reviw,
-  .second-reviw,
-  .third-reviw,
-  .forth-reviw,
-  .price-arguments {
-    border: 1px solid darkgray;
-    box-shadow: 0px 4px 8px darkgray;
-    padding: var(--padding-md);
-    margin-bottom: var(--margin-lg);
-  }
-
-  .friends-pic {
-    width: 140px;
-    height: auto;
-    align-self: center;
-  }
-
-  .quote {
-    position: relative;
-    font-style: italic;
-    letter-spacing: 1px;
-    line-height: 2;
-  }
-
-  .quote::before {
-    content: open-quote;
-    /* Adaugă ghilimele la începutul citatului */
-  }
-
-  .quote::after {
-    content: close-quote;
-    /* Adaugă ghilimele la sfârșitul citatului */
-  }
-
-  .FAQ,
-  .price-main-ctn {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: var(--padding-md);
-    margin-bottom: var(--margin-xxl);
-    gap: var(--margin-xxl);
-  }
-
-  .FAQ p {
-    text-align: justify;
-  }
-
-  .price-details {
-    display: flex;
-    flex-direction: column;
-
-    text-align: justify;
-    min-height: 80vh;
-    width: auto;
-    background-color: var(--accent-light-color);
-    padding: var(--padding-md) var(--padding-md) var(--padding-xxl)
-      var(--padding-md);
-    gap: var(--margin-sm);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  }
-
-  .price H3 {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  .price-arguments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bi-check-circle {
-    color: var(--accent-dark-color);
-  }
-
-  .price {
-    padding: var(--padding-xxl);
-  }
-
-  .checked {
-    display: flex;
-    padding: var(--padding-xl);
-  }
-
-  .checked span b {
-    color: var(--accent-dark-color);
-  }
 
   .footer {
     display: flex;
     flex-direction: column;
     padding: var(--padding-md);
+
   }
+
 
   .secondary-menu {
     display: flex;
     justify-content: center;
     gap: var(--font-size-mobile);
     padding: var(--padding-md);
+
+
   }
 
   .social-ctn {
@@ -278,6 +199,7 @@
     flex-direction: column;
     padding: var(--padding-md);
     align-items: center;
+
   }
 
   .legal,
@@ -285,131 +207,44 @@
     display: flex;
     margin-bottom: var(--margin-xl);
   }
+
 }
 
-/* Optimizare pentru DESKTOP */
-/* Optimizare pentru DESKTOP */
-/* Optimizare pentru DESKTOP */
-/* Optimizare pentru DESKTOP */
-/* Optimizare pentru DESKTOP */
-
-
 @media (min-width: 768px) {
-  .header {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: var(--padding-md);
-    align-items: center;
-    background-color: var(--background-color);
-  }
-
   #logo {
-    width: 15%;
+    width: 25%;
     height: auto;
     object-fit: contain;
+
+
   }
 
-  .user-menu {
-    display: inline-block;
-    cursor: pointer;
-    background-color: var(--background-color);
-    padding: var(--padding-sm) var(--padding-sm);
-    position: relative;
-  }
-
-  .user-initials {
-    display: inline-block;
-    width: 50px;
-    vertical-align: middle;
-    text-align: center;
-    box-shadow: 0px 0px 3px 1px lightgray;
-    border-radius: 100%;
-    font-weight: 500;
-    color: var(--text-color);
-  }
-
-  .dropdown-arrow {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
-  }
-
-  .dropdown-content {
+  .hamburger-menu {
     display: none;
-    position: absolute;
-    background-color: var(--background-color);
-    opacity: 0.8;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 0;
-    border-radius: 5px;
-    top: 60px;
-    list-style-type: none;
+    /* Ascunde meniul hamburger pe ecranele mari */
   }
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+  .nav-item {
     display: block;
-    white-space: nowrap;
+    /* Afișează linkurile în navbar pe ecranele mari */
   }
 
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-
-  /* /* header nav.menu ul.site-nav {
-    display: flex;
-    gap: var(--margin-xxl);
-    padding: var(--padding-xl);
-    margin: auto;
-    background: var(--accent-light-color);
-    color: var(--background-color);
-    text-align: center;
-    list-style-type: none;
-    font-size: var(--font-size-md);
-    align-items: center;
-  } */
-
-
-  /* header nav.menu .site-nav .login-btn {
-    width: 100px;
-    margin-top: -10px;
-    height: auto;
-    background-color: var(--accent-dark-color);
-    color: var(--background-color);
-    border: none;
-    padding: var(--padding-sm) var(--padding-lg);
-    font-size: 0.9em;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  } */
-
-  /* header nav.menu .site-nav .login-btn:hover {
-    background-color: var(--accent-dark-hover);
-    transform: scale(1.1);
-  }
-
-  header nav.menu .site-nav .login-btn:active {
-    transform: scale(0.95);
-    background-color: var(--accent-dark-hover);
-  } */
-
-
-  .footer {
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  /* Footer */
+  
+  #ctnFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--margin-xl);
-    background-color: var(--text-color);
-  }
-
-  #blendFooter {
-    background-color: var(--text-color);
+    
   }
 
   .secondary-menu,
@@ -425,10 +260,12 @@
     justify-content: center;
     gap: var(--margin-xxl);
     font-size: var(--font-size-sm);
+
   }
 
   .social-ctn H2 {
     font-size: var(--font-size-xl);
+
   }
 
   .social-ctn {
@@ -465,28 +302,205 @@
     font-size: var(--font-size-xs);
   }
 
-  /* Adauga clase suplimentare pe JS */
-  .transformText {
-    transform: scale(1.1);
-  }
+}
 
-  .flag {
-    width: var(--font-size-md);
-    cursor: pointer;
-    border-radius: 50%;
-    transition: opacity 0.3s;
-  }
 
-  .hidden-flag {
-    display: none;
-  }
 
-  .active-flag {
-    display: inline;
-  }
+/* Alte clase și stiluri personalizate */
 
-  a:hover::after {
-    transform: translateX(0%);
-    /* Mutați sublinierea complet în vizualizare */
-  }
+/* .transformText {
+  transform: scale(1.1);
+}
+
+.flag {
+  width: var(--font-size-md);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+
+.hidden-flag {
+  display: none;
+}
+
+.active-flag {
+  display: inline;
+}
+
+a:hover::after {
+  transform: translateX(0%);
+  /* Mutați sublinierea complet în vizualizare */
+
+
+
+/* Optimizare pentru DESKTOP */
+
+/* Alte clase și stiluri pentru versiunea desktop */
+
+/* .header {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-md);
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+#logo {
+  width: 15%;
+  height: auto;
+  object-fit: contain;
+}
+
+.user-menu {
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--background-color);
+  padding: var(--padding-sm) var(--padding-sm);
+  position: relative;
+}
+
+.user-initials {
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 0px 0px 3px 1px lightgray;
+  border-radius: 100%;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  opacity: 0.8;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  border-radius: 5px;
+  top: 60px;
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.header nav.menu ul.site-nav {
+  display: flex;
+  gap: var(--margin-xxl);
+  padding: var(--padding-xl);
+  margin: auto;
+  background: var(--accent-light-color);
+  color: var(--background-color);
+  text-align: center;
+  list-style-type: none;
+  font-size: var(--font-size-md);
+  align-items: center;
+}
+
+.header nav.menu .site-nav .login-btn {
+  width: 100px;
+  margin-top: -10px;
+  height: auto;
+  background-color: var(--accent-dark-color);
+  color: var(--background-color);
+  border: none;
+  padding: var(--padding-sm) var(--padding-lg);
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header nav.menu .site-nav .login-btn:hover {
+  background-color: var(--accent-dark-hover);
+  transform: scale(1.1);
+}
+
+.header nav.menu .site-nav .login-btn:active {
+  transform: scale(0.95);
+  background-color: var(--accent-dark-hover);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--margin-xl);
+  background-color: var(--text-color);
+}
+
+#blendFooter {
+  background-color: var(--text-color);
+}
+
+.secondary-menu,
+.social-ctn h2,
+.social-links,
+.closure {
+  color: var(--background-color);
+}
+
+.secondary-menu {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  gap: var(--margin-xxl);
+  font-size: var(--font-size-sm);
+}
+
+.social-ctn h2 {
+  font-size: var(--font-size-xl);
+}
+
+.social-ctn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin-xxl);
+}
+
+.social-links {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+
+.closure {
+  display: flex;
+  flex-direction: column;
+}
+
+.legal {
+  display: flex;
+  gap: var(--margin-lg);
+  margin-bottom: var(--margin-xl);
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+
+#signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--font-size-xs);
 }
