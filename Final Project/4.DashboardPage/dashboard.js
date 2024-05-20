@@ -74,13 +74,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', function () {
         const sidebar = document.getElementById('sidebarMenu');
-        const footer = document.getElementById('footer');
+        
         if (sidebar && footer) {
             const footerRect = footer.getBoundingClientRect();
             const sidebarHeight = window.innerHeight - 56; // Înălțimea sidebar-ului minus header-ul
 
-            if (footerRect.top >= sidebarHeight) {
-                sidebar.style.top = (footerRect.top - sidebarHeight + 56) + 'px';
+            if (footerRect.top <= sidebarHeight) {
+                sidebar.style.top = (footerRect.top - sidebarHeight) + 'px';
             } else {
                 sidebar.style.top = '56px';
             }
