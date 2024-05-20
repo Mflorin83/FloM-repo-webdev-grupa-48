@@ -26,7 +26,7 @@ function loadStyle({ href, rel = 'stylesheet', crossorigin = null }) {
     loadStyle({ href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }),
     loadStyle({ href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css' }),
     loadStyle({ href: '../Bootstrap/bootstrap.min.css' }),
-    loadStyle({ href: '../global.css' }),
+    // loadStyle({ href: '../global.css' }),
     
   ]).then(() => {
     console.log('All CSS loaded OK.');

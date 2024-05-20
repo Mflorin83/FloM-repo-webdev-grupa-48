@@ -1,0 +1,55 @@
+:root {
+    --bs-body-bg: #F5F5F5;
+    --bs-body-color: #202A25;
+    --bs-primary: #2CA6A4;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #D81159;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: #202A25;
+    --bs-body-color: #e5e5e5;
+    --bs-primary: #2CA6A4;
+    --bs-secondary: #adb5bd;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #a01246;
+    --bs-light: #343a40;
+    --bs-dark: #121212;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+
+.card-wrapper {
+    max-width: 400px;
+    /* Redimensionează formularul */
+    margin-top: 50px;
+    /* Spațiu de la partea de sus a paginii */
+}
+
+.brand img {
+    max-width: 250px;
+    /* Redimensionează logo-ul */
+}
+
