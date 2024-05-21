@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --bs-body-bg: #F5F5F5;
     --bs-body-color: #202A25;
     --bs-primary: #2CA6A4;
@@ -27,7 +27,7 @@
 body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
-}
+} */
 
 .theme-toggle {
     position: fixed;

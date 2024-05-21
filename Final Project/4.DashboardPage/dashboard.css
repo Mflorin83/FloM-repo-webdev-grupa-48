@@ -1,7 +1,12 @@
 body {
   padding-top: 56px;
-  /* Înălțimea header-ului sticky */
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+ 
 }
+
+
+
 
 .navbar-nav.ml-auto {
   margin-left: auto;
@@ -215,8 +220,14 @@ body {
 }
 
 @media (min-width: 768px) {
+
+  
+
+
+
+
   #logo {
-    width: 30%;
+    width: 150px;
     height: auto;
     object-fit: contain;
 
