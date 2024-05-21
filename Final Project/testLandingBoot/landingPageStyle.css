@@ -6,7 +6,7 @@
     margin-right: 8px;
 }
 
-.fa-language {
+.fa-language, .icon-hero {
     color: var(--bs-link-color);
     
 }
@@ -31,8 +31,29 @@
 .animatel:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+
 }
 
+
+.shadow-side {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.col-card-inner {
+    background: white; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.col-card-inner:hover {
+    transform: translateY(-15px); /* Ridică cardul cu 10px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+
+}
 /* Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
@@ -64,6 +85,7 @@ Desktop // Desktop // Desktop // Desktop // Desktop // Desktop // */
     height: 100px;
     object-fit: contain;
  }
+
 
 
 }
