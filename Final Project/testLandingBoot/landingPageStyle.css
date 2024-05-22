@@ -5,10 +5,9 @@
     margin-right: 8px;
 }
 
-.fa-language,
 .icon-hero {
     color: var(--bs-link-color);
-
+    
 }
 
 .animatel {
@@ -36,6 +35,10 @@
 
 }
 
+
+.col-card-inner {
+    background: var(--bs-primary);
+}
 
 .shadow-side {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -77,8 +80,49 @@
 .hover-lift:hover {
     transform: translateY(-5px);
     color: var(--bs-link-color);
+
 }
 
+.price-details {
+    min-height: 350px;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);}
+
+
+.cta-before-footer{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+min-height: 500px;
+}
+
+
+/* Potentiale variabile globale */
+/* Potentiale variabile globale */
+/* Potentiale variabile globale */
+/* Potentiale variabile globale */
+/* Potentiale variabile globale */
+/* Potentiale variabile globale */
+
+.main-color-bcg {
+    background-color: var(--bs-primary);
+}
+
+.secondary-color-bcg {
+    background-color: var(--bs-secondary-color);
+}
+
+.third-color-bcg {
+    background-color: var(--bs-tertiary-bg);
+}
+
+
+
+.highlight {
+    font-weight: bold;
+    background: linear-gradient(to bottom, #D81159, #F5F5F5);
+    background-clip: text;
+    color: transparent;
+    display: inline;
+
+}
 
 
 
@@ -93,7 +137,6 @@ Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile  */
 @media(max-width:767px) {
 
     .col-card-inner {
-        background: white;
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -133,7 +176,7 @@ Desktop // Desktop // Desktop // Desktop // Desktop // Desktop // */
 
 
     .col-card-inner {
-        background: white;
+
         overflow: hidden;
         display: flex;
         flex-direction: column;
