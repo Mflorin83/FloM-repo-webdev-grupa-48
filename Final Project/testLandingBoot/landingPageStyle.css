@@ -39,8 +39,31 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    max-width: 300px;
+}
+.friends-pic {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.fa-star {
+    color: var( --bs-warning);
+
+}
 
 
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 24px;
+    color: var(--bs-secondary) /* Schimbă culoarea dacă e necesar */
+}
 /* Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 

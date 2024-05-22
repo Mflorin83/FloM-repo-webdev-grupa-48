@@ -58,11 +58,11 @@
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fa-solid fa-language fs-4"></i>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item fs-5 animatel" href="#"><img src="../Media/us.svg"
+                                    <ul class="dropdown-menu rounded-3">
+                                        <li><a class="dropdown-item fs-5 animatel  " href="#"><img src="../Media/us.svg"
                                                     class="flag-icon" alt="English Flag"> English</a></li>
-                                        <li><a class="dropdown-item fs-5 animatel" href="#"><img src="../Media/ro.svg"
-                                                    class="flag-icon " alt="Romanian Flag"> Romana</a></li>
+                                        <li><a class="dropdown-item fs-5 animatel " href="#"><img src="../Media/ro.svg"
+                                                    class="flag-icon  " alt="Romanian Flag"> Romana</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -177,43 +177,69 @@
             <!-- TESTIMONIALS -->
 
 
-            <div class="testimonial-ctn container py-5">
-                <h2 id="testimonialHeading" class="text-center">Afla ce zic prietenii nostri</h2>
-                <p id="testimonialIntro" class="text-center">Cu un CV de top au ajuns repede in interviuri</p>
+            <div class="testimonial-ctn d-flex flex-column justify-content-evenly mb-5 py-5">
+                <h2 id="testimonialHeading" class="text-center h1 mb-5">Afla ce zic prietenii nostri</h2>
+                <p id="testimonialIntro" class="text-center h6 mb-5">Cu un CV de top au ajuns repede in interviuri</p>
                 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="friends-pic" src="../Media/first-review.png" alt="BuildCV client 1 multumit">
-                            <p class="quote" id="testimonial1">Serviciu fantastic si usor de utilizat. A iesit un CV de nota 10!</p>
-                            <p><strong>Mihai</strong></p>
-                            <p>Front End Developer</p>
+                    <div class="carousel-inner col text-center d-flex ">
+                        <div class="carousel-item active ">
+                            <img class="friends-pic " src="../Media/first-review.png" alt="BuildCV client 1 multumit">
+                            <p class="quote lead" id="testimonial1">Serviciu fantastic si usor de utilizat. A iesit un CV de nota 10!</p>
+                            <p ><strong>Mihai</strong></p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="lead mt-3">Front End Developer</p>
                         </div>
                         <div class="carousel-item">
                             <img class="friends-pic" src="../Media/second-review.png" alt="BuildCV client 2 multumit">
-                            <p class="quote" id="testimonial2">Datorită buildCV, am obținut jobul dorit în doar câteva zile. Excepțional!</p>
+                            <p class="quote lead" id="testimonial2">Datorită buildCV, am obținut jobul dorit în doar câteva zile. Excepțional!</p>
                             <p><strong>Adriana</strong></p>
-                            <p>Customer Care</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="lead mt-3">Customer Care</p>
                         </div>
                         <div class="carousel-item">
                             <img class="friends-pic" src="../Media/third-review.png" alt="BuildCV client 3 multumit">
-                            <p class="quote" id="testimonial3">Cu CV-ul creat aici, angajarea a venit rapid. Recomand cu încredere!</p>
+                            <p class="quote lead" id="testimonial3">Cu CV-ul creat aici, angajarea a venit rapid. Recomand cu încredere!</p>
                             <p><strong>Daniel</strong></p>
-                            <p>Call Center</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="lead mt-3">Call Center</p>
                         </div>
                         <div class="carousel-item">
-                            <img class="friends-pic" src="../Media/forth-review.png" alt="BuildCV client 4 multumit">
-                            <p class="quote" id="testimonial4">Serviciul vostru mi-a deschis usile succesului. Angajat intr-o saptamana!</p>
+                            <img class="friends-pic " src="../Media/forth-review.png" alt="BuildCV client 4 multumit">
+                            <p class="quote lead" id="testimonial4">Serviciul vostru mi-a deschis usile succesului. Angajat intr-o saptamana!</p>
                             <p><strong>Alina</strong></p>
-                            <p>Business Analyst</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="lead mt-3">Business Analyst</p>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <i class="fas fa-chevron-left"></i>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
