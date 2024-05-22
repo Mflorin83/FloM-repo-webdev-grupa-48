@@ -1,5 +1,3 @@
-
-
 .flag-icon {
     width: 20px;
     height: 20px;
@@ -7,16 +5,18 @@
     margin-right: 8px;
 }
 
-.fa-language, .icon-hero {
+.fa-language,
+.icon-hero {
     color: var(--bs-link-color);
-    
+
 }
 
 .animatel {
     position: relative;
     display: inline-block;
-   
+
 }
+
 .animatel::after {
     content: '';
     position: absolute;
@@ -25,10 +25,11 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: var( --bs-link-color);
+    background-color: var(--bs-link-color);
     transform-origin: bottom left;
     transition: transform 0.35s ease-out;
 }
+
 .animatel:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -37,16 +38,18 @@
 
 
 .shadow-side {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item {
     display: flex;
     justify-content: center;
 }
+
 .card {
     max-width: 300px;
 }
+
 .friends-pic {
     border-radius: 50%;
     margin-bottom: 15px;
@@ -55,7 +58,7 @@
 }
 
 .fa-star {
-    color: var( --bs-warning);
+    color: var(--bs-warning);
 
 }
 
@@ -63,15 +66,19 @@
 .carousel-control-prev i,
 .carousel-control-next i {
     font-size: 24px;
-    color: var(--bs-secondary) /* Schimbă culoarea dacă e necesar */
+    color: var(--bs-secondary)
+        /* Schimbă culoarea dacă e necesar */
 }
+
 .hover-lift {
     transition: transform 0.3s ease-in-out;
 }
+
 .hover-lift:hover {
     transform: translateY(-5px);
     color: var(--bs-link-color);
 }
+
 
 
 
@@ -83,30 +90,31 @@ Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile  */
 
 
-@media(max-width:767px){
+@media(max-width:767px) {
 
     .col-card-inner {
-        background: white; 
-        overflow: hidden; 
+        background: white;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100%; 
+        height: 100%;
     }
 
-#logo {
-    
-    max-width: auto;
-    height: 10vh;;
-    object-fit: contain;
+    #logo {
+
+        max-width: auto;
+        height: 10vh;
+        ;
+        object-fit: contain;
+    }
+
+    .hover-lift:hover {
+        color: var(--bs-link-color);
+    }
+
+
 }
-
-.hover-lift:hover {
-    color: var(--bs-link-color);
-}
-
-
-} 
 
 /* 
 Desktop // Desktop // Desktop // Desktop // Desktop // Desktop //
@@ -115,30 +123,31 @@ Desktop // Desktop // Desktop // Desktop // Desktop // Desktop //
 Desktop // Desktop // Desktop // Desktop // Desktop // Desktop // */
 
 
-@media(min-width: 768px){
-    #logo{
-    max-width: auto;
-    height: 100px;
-    object-fit: contain;
- }
+@media(min-width: 768px) {
+    #logo {
+        max-width: auto;
+        height: 100px;
+        object-fit: contain;
+    }
 
 
 
- .col-card-inner {
-    background: white; 
-    overflow: hidden; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; 
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
+    .col-card-inner {
+        background: white;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    }
 
-.col-card-inner:hover {
-    transform: translateY(-15px); /* Ridică cardul cu 10px */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    .col-card-inner:hover {
+        transform: translateY(-15px);
+        /* Ridică cardul cu 10px */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
-}
+    }
 
 
 }
