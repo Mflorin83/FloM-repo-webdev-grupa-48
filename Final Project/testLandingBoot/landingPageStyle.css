@@ -65,6 +65,17 @@
     font-size: 24px;
     color: var(--bs-secondary) /* Schimbă culoarea dacă e necesar */
 }
+.hover-lift {
+    transition: transform 0.3s ease-in-out;
+}
+.hover-lift:hover {
+    transform: translateY(-5px);
+    color: var(--bs-link-color);
+}
+
+
+
+
 /* Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
@@ -89,6 +100,11 @@ Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile  */
     height: 10vh;;
     object-fit: contain;
 }
+
+.hover-lift:hover {
+    color: var(--bs-link-color);
+}
+
 
 } 
 
