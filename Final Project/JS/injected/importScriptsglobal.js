@@ -20,9 +20,11 @@ loadScript('https://code.jquery.com/jquery-3.5.1.min.js')
     .then(() => loadScript('https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'))
     .then(() => loadScript('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'))
     .then(() => loadScript('https://kit.fontawesome.com/5f7a9ef8d5.js', true))
-    .then(() => loadScript('../Bootstrap/bootstrap.bundle.min.js'))
+    .then(() => loadScript('../global/bootstrap.bundle.min.js'))
+    .then(() => loadScript('../global/switchTheme.js'))
+    .then(() => loadScript('../global/translate.js'))
     .then(() => {
-        console.log('Scripts loaded ok!');
+        console.log('Full Scripts loaded ok!');
     })
     .catch(error => {
         console.error('Error loading scripts:', error);

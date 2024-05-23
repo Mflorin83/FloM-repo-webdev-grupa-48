@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="utf-8">
+	<title>Conecteaza-te la serviciul BuildCV</title>
+	<meta name="Description" content="Permite utilizatorilor sa se conecteze la contul pe care il au prin intermediul credentialelor si accesarea butonului de submit.">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Conecteaza-te la cont</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../LoginPage/LoginStyle.css">
+
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<a href="../LandingPage/index.html">
+							<img src="../Media/logo-dark.png" alt="logo">
+						</a>
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<p class="card-title">Conecteaza-te</p>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="email">Adresa de email</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required
+										autofocus>
+									<div class="invalid-feedback">
+										Emailul nu este valid!
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Parola
+										<a href="forgot.html" class="float-right">
+											Ti-ai uitat parola?
+										</a>
+									</label>
+									<input id="password" type="password" class="form-control" name="password" required
+										data-eye>
+									<div class="invalid-feedback">
+										Parola este obligatorie
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="remember" id="remember"
+											class="custom-control-input">
+										<label for="remember" class="custom-control-label">Tine minte</label>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Conecteaza-te
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									Nu ai cont la noi? <a href="register.html">Creeaza acum</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						BuildCV &copy; 2024
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="../LoginPage/LoginPage.js"></script>
+</body>
+
+</html>

@@ -40,25 +40,18 @@
     background: var(--bs-primary);
 }
 
-.shadow-side {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-item {
-    display: flex;
-    justify-content: center;
-}
-
 .card {
     max-width: 300px;
 }
 
-.friends-pic {
-    border-radius: 50%;
-    margin-bottom: 15px;
-    width: 100px;
-    height: 100px;
+
+.shadow-side {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
 
 .fa-star {
     color: var(--bs-warning);
@@ -116,11 +109,11 @@ min-height: 500px;
 
 
 .highlight {
-    font-weight: bold;
+  
     background: linear-gradient(to bottom, #D81159, #F5F5F5);
     background-clip: text;
     color: transparent;
-    display: inline;
+   
 
 }
 

@@ -1,0 +1,138 @@
+ - documentatie initiala
+	- alegerea proiectului
+	- general objective
+	- investigare/analiza alte proiecte similare
+		- pages
+		- components
+
+
+formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 3 template-uri. 
+
+1. ALEGEREA PROIECTULUI
+	Crearea unui website, optimizat pentru mobile si tableta, prin care un utilizator inregistrat 
+	isi poate crea un Curriculum Vitae din 2 formate prestabilitate, pe care ulterior le poate descarca / trimite pe email.
+
+2. Objectives: 
+
+   >Ce trebuie sa faca? 
+      -site weightlight, animatii limitate;
+	  -responsive  mobile/desktop;
+	  -permite crearea de user pe platforma;
+	  -ofera acces userul inregistrat la un tablou de comanda pentru schimbarea limbii, temei site-ului, deconectare;
+      -permite inserarea datelor personale  de catre utilizator logat;
+	  -salveaza aceste date si le distribuie in baza unor placeholdere in cele 2 template-uri de CV;
+	  -cv-ul generat poate fi descarcat sau trimis pe email.
+
+	>Cum trebuie sa faca?
+	  -Limitarea multiclick-urilor la un nivel minimal pentru o eficienta sporita&userfriendly;
+	  -Meniu simplu, limitat la functionalitatile de baza ex. Login/Creeaza CV > Login / Contact
+	  -....
+
+	>Cel mai rau lucru care NU trebuie sa se intample?
+	  -Pierderea datelor personale;
+	  -Operarea fara acord GDPR;
+	  -Lipsa Terms&condition si Privacy Policy;
+	  -Lipsa acordului ca si operator de date personale;
+	  -Nerespectarea Terms&condition.
+
+	>Cine sunt utilizatorii?
+	  -tineri, aflati la primul lor job care inca nu au experienta realizarii unui CV;
+	  -pasionati de tehnologie, adepti ai  eficienti, dispusi sa incerce o abordare rapida si testata;
+
+
+3. Investigare proiecte similare:
+
+    https://cvmaker.ro 
+
+	Structura pagini:
+
+	> Landing Page	    > Header 
+	  							> Logo
+								> mainMeniu
+								    		> Make CV
+											> #Prices
+											> Contact
+											> Login
+					  	> CTA 1
+								>H1 (max 30 caracthers)
+								>SubH (max 40 caracthers)
+								>Make CV btn
+								>SubH (max 30 caracthers)
+						> Main
+						    	>Container "whatWeDo"
+													  > H2
+													  > ICON
+													  > Text (max 80 caracthers)
+								>Container "whyYouNeedUS"
+													  > H2
+													  > ICON
+													  > Text (max 80 caracthers)
+								>Container "howWillHelp"
+													   > H2
+													  > ICON
+													  > Text (max 80 caracthers)	  		  
+								>Container "whatYouGet"
+													  > H2
+													  > ICON
+													  > Text (max 80 caracthers)	
+						> Testimonials
+								>Card 1 
+								        > Image > Round
+										> Name
+										> Opinion
+										> job
+								>Card 2 
+								        > Image > Round
+										> Name
+										> Opinion
+										> job					
+								>Card 3 
+								        > Image > Round
+										> Name
+										> Opinion
+										> job
+								>Card 4 
+								        > Image > Round
+										> Name
+										> Opinion
+										> job
+						> CTA 2
+								>H2 (max 30 caracthers)
+								>SubH (max 40 caracthers)
+								>Make CV btn
+								>SubH (max 30 caracthers)
+						> Prices
+								>H3 (max 30 caracthers)
+								>SubH (max 40 caracthers)
+								>Price Card
+										   >H4 (max 20 caracthers)	
+										   >checklist benefits
+						> CV FAQ
+							>H2 What is it? 
+							>H2 How To? 		
+							>H2 What is it? 
+							>H2 How To?		
+						> CTA 3
+								>H2 (max 30 caracthers)
+								>SubH (max 40 caracthers)
+								>Make CV btn
+								>SubH (max 30 caracthers)
+						> Footer
+							 	>Terms and condition;
+								>Contact;
+								>Privacy Policy;
+								>Social Icons container
+    > Login page
+	 			>H1
+				>SubH
+				>Input email
+				>Input passw
+				>Forget pasw? link
+				>Login button
+
+	> Administrative Panel (workInprogress)			
+	> Contact 
+			> Contact form
+	> Make CV
+			> Forms 
+

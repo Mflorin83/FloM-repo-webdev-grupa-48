@@ -25,7 +25,7 @@ function loadStyle({ href, rel = 'stylesheet', crossorigin = null }) {
     loadStyle({ href: 'https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap' }),
     loadStyle({ href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }),
     loadStyle({ href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css' }),
-    loadStyle({ href: '../CSS/bootstrapGlobalEdit.css' }),
+    loadStyle({ href: 'C:/Users/flori/OneDrive/Desktop/Git/FloM-repo-webdev-grupa-48/Final Project/CSS/bootstrapGlobalEdit.css' }),
     // loadStyle({ href: '../global.css' }),
     
   ]).then(() => {
