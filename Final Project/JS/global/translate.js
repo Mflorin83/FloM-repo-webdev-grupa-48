@@ -236,3 +236,66 @@ function loadRoLandingP() {
     })
     .catch(error => console.log('Error loading', error));
 }
+
+function loadEnRegister() {
+  const apiUrl = "http://localhost:5500/translateEnRegister";
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+
+      const translations = data[0];
+
+      document.getElementById('usLang').innerHTML = translations.usLang;
+      document.getElementById('romLang').innerHTML = translations.romLang;
+      document.getElementById('Home').innerHTML = translations.Home;
+      document.getElementById('price').innerHTML = translations.price;
+      document.getElementById('register').innerHTML = translations.register;
+      document.getElementById('surname').innerHTML = translations.surname;
+      document.getElementById('wrongSurname').innerHTML = translations.wrongSurname;
+      document.getElementById('name').innerHTML = translations.name;
+      document.getElementById('wrongName').innerHTML = translations.wrongName;
+      document.getElementById('phone').innerHTML = translations.phone;
+      document.getElementById('wrongPhone').innerHTML = translations.wrongPhone;
+      document.getElementById('wrongEmail').innerHTML = translations.wrongEmail;
+      document.getElementById('mustPass').innerHTML = translations.mustPass;
+      document.getElementById('agreeWith').innerHTML = translations.agreeWith;
+      document.getElementById('mustAgree').innerHTML = translations.mustAgree;
+      document.getElementById('createAcc').innerHTML = translations.createAcc;
+      document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
+      document.getElementById('connect').innerHTML = translations.connect;
+
+    })
+    .catch(error => console.log('Error loading', error));
+
+}
+
+function loadRoRegister() {
+  const apiUrl = "http://localhost:5500/translateRoRegister";
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+
+      const translations = data[0];
+
+      document.getElementById('usLang').innerHTML = translations.usLang;
+      document.getElementById('romLang').innerHTML = translations.romLang;
+      document.getElementById('Home').innerHTML = translations.Home;
+      document.getElementById('price').innerHTML = translations.price;
+      document.getElementById('register').innerHTML = translations.register;
+      document.getElementById('surname').innerHTML = translations.surname;
+      document.getElementById('wrongSurname').innerHTML = translations.wrongSurname;
+      document.getElementById('name').innerHTML = translations.name;
+      document.getElementById('wrongName').innerHTML = translations.wrongName;
+      document.getElementById('phone').innerHTML = translations.phone;
+      document.getElementById('wrongPhone').innerHTML = translations.wrongPhone;
+      document.getElementById('wrongEmail').innerHTML = translations.wrongEmail;
+      document.getElementById('mustPass').innerHTML = translations.mustPass;
+      document.getElementById('agreeWith').innerHTML = translations.agreeWith;
+      document.getElementById('mustAgree').innerHTML = translations.mustAgree;
+      document.getElementById('createAcc').innerHTML = translations.createAcc;
+      document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
+      document.getElementById('connect').innerHTML = translations.connect;      
+
+    })
+    .catch(error => console.log('Error loading', error));
+}

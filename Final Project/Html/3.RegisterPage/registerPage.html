@@ -79,19 +79,20 @@
 									</a>
 									<ul class="dropdown-menu p-0">
 										<li><a class="dropdown-item fs-5 p-2 d-flex align-items-center " id="usaflag"
-												onclick="loadEnLandingP()">
+												onclick="loadEnRegister()">
+												<div>
 												<img src="../../Media/us.svg" class="flag-icon"
-													alt="English Flag">English</a></li>
+													alt="English Flag" id="usLang">English</div></a></li>
 										<li><a class=" dropdown-item fs-5 p-2 d-flex align-items-center " id="roFlag"
-												onclick="loadRoLandingP()"><img src="../../Media/ro.svg"
-													class="flag-icon" alt="Romanian Flag">Romana</a></li>
+												onclick="loadRoRegister()"><img src="../../Media/ro.svg"
+													class="flag-icon" alt="Romanian Flag" id="romLang">Romana</a></li>
 									</ul>
 
 
 								</li>
 								<li class="nav-item">
 									<a class="nav-link active fs-5 animatel" aria-current="page" id="genCv"
-										href="#">Acasa
+										href="../1.landingPage/index.html" id="homeDIrect">Acasa
 									</a>
 								</li>
 								<li class="nav-item">
@@ -128,12 +129,12 @@
 
 						<div class="card fat">
 							<div class="card-body">
-								<h4 class="card-title text-center">Inregistreaza-te</h4>
+								<h4 class="card-title text-center" id="register">Inregistreaza-te</h4>
 								<form method="POST" class="my-login-validation" novalidate>
 									<div class="form-floating mb-3">
 										<input type="text" class="form-control" id="surname" placeholder=" " required>
 										<label for="surname">Prenume</label>
-										<div class="invalid-feedback display-5">
+										<div class="invalid-feedback display-5" id="wrongSurname">
 											Care este prenumele?
 										</div>
 									</div>
@@ -141,7 +142,7 @@
 									<div class="form-floating mb-3">
 										<input type="text" class="form-control" id="name" placeholder=" " required>
 										<label for="name">Nume</label>
-										<div class="invalid-feedback">
+										<div class="invalid-feedback" id="wrongName">
 											Care este numele?
 										</div>
 									</div>
@@ -149,7 +150,7 @@
 									<div class="form-floating mb-3">
 										<input type="tel" class="form-control" id="phone" placeholder=" " name="phone">
 										<label for="phone">Telefon</label>
-										<div class="invalid-feedback">
+										<div class="invalid-feedback" id="wrongPhone">
 											Introduceți un număr de telefon valid.
 										</div>
 									</div>
@@ -158,7 +159,7 @@
 										<input type="email" class="form-control" id="email" placeholder=" " name="email"
 											required>
 										<label for="email">E-Mail</label>
-										<div class="invalid-feedback">
+										<div class="invalid-feedback" id="wrongEmail">
 											E-mailul este invalid.
 										</div>
 									</div>
@@ -167,7 +168,7 @@
 										<input type="password" class="form-control" id="password" placeholder=" "
 											name="password" required>
 										<label for="password">Parola</label>
-										<div class="invalid-feedback">
+										<div class="invalid-feedback" id="mustPass">
 											Parola este obligatorie.
 										</div>
 									</div>
@@ -176,21 +177,21 @@
 										<div class="custom-checkbox custom-control">
 											<input type="checkbox" name="agree" id="agree" class="custom-control-input"
 												required="">
-											<label for="agree" class="custom-control-label">Sunt de acord cu <a
+											<label for="agree" class="custom-control-label" id="agreeWith">Sunt de acord cu <a
 													href="#">Termeni si Conditii</a></label>
-											<div class="invalid-feedback">
+											<div class="invalid-feedback" id="mustAgree">
 												Sunt de acord cu Termenii si conditiile
 											</div>
 										</div>
 									</div>
 
 									<div class="form-group mt-3 text-center">
-										<button type="submit" class="btn btn-primary-me btn-block">
+										<button type="submit" class="btn btn-primary-me btn-block" id="createAcc">
 											Creeaza cont
 										</button>
 									</div>
-									<div class="mt-4 text-center">
-										Ai deja cont creat? <a href="index.html">Conecteaza-te</a>
+									<div class="mt-4 text-center" id="allreadyAcc">
+										Ai deja cont creat? <a href="index.html" id="connect">Conecteaza-te</a>
 									</div>
 								</form>
 							</div>
@@ -203,9 +204,6 @@
 			</div>
 	</section>
 
-	<script defer src="../JS/importCSSglobal.js"></script>
-	<script defer src="../Bootstrap/bootstrap.bundle.min.js"></script>
-	<script defer src="./switchTheme.js"></script>
-</body>
+	
 
 </html>

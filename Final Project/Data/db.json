@@ -197,5 +197,54 @@
             "followUs": "Urmareste-ne",
             "terms": "Termeni"
         }
+    ],
+
+    "translateEnRegister": [
+        {
+            "usLang": "English",
+            "romLang": "Romanian",
+            "homeDIrect": "Home",
+            "price": "Price",
+            "register": "Sign UP",
+            "surname": "First Name",
+            "wrongSurname": "What is your First name?",
+            "name": "Last Name",
+            "wrongName": "What is your Name?",
+            "phone": "Phone",
+            "wrongPhone": "Please enter a valid phone number",
+            "wrongEmail": "Email is invalid. Please try again",
+            "mustPass": "You must enter a password",
+            "agreeWith": "I Agree with",
+            "mustAgree": "I agree to the Terms and Conditions",
+            "createAcc": "Create Account",
+            "allreadyAcc": "Do you already have an account?",
+            "connect": "Login"
+        }
+    ],
+
+
+    "translateRoRegister": [
+        {
+            "usLang": "Engleza",
+            "romLang": "Romana",
+            "homeDIrect": "Acasa",
+            "price": "Pret",
+            "register": "Inregistreaza-te",
+            "surname": "Prenume",
+            "wrongSurname": "Care este prenumele tau?",
+            "name": "Nume",
+            "wrongName": "Care este numele tau?",
+            "phone": "Telefon",
+            "wrongPhone": "Va rugam introduceti un numar valid de telefon.",
+            "wrongEmail": "Emailul nu este valid. Va rugam reincercati",
+            "mustPass": "Trebuie sa introduceti o parola",
+            "agreeWith": "Sunt de acord cu",
+            "mustAgree": "Sunt de acord cu Termenii si conditiile",
+            "createAcc": "Creaza-mi cont",
+            "allreadyAcc": "Ai deja cont creat?",
+            "connect": "Conecteaza-te"
+
+
+        }
     ]
 }
