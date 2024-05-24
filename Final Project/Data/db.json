@@ -282,6 +282,16 @@
       "email": "florinionut.mihai@gmail.com",
       "password": "12345",
       "agree": true
+    },
+    {
+      "id": "343b",
+      "surname": "Daniel",
+      "name": "Daniel",
+      "phone": "0745000000",
+      "email": "daniel.daniel@yahoo.com",
+      "password": "123456",
+      "agree": true
     }
+  
   ]
 }

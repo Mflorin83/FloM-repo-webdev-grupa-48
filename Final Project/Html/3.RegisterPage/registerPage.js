@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
 function createClientFromForm() {
     const form = document.getElementById('signUpForm');
     if (!form) {
-        console.error('Form not found');
         return null;
     }
 
@@ -87,14 +86,15 @@ function sendDataToServer(clientData, apiUrl) {
             return response.json();
         })
         .then(data => {
-            console.log('Data saved:', data);
             alert('Account created successfully!');
         })
         .catch(error => {
-            console.error('Error:', error);
             alert('Failed to create account.');
         });
 }
+
+
+  
 
 function showPassword(PassId, switchButtonId, switchiconID) {
     const password = document.getElementById(PassId);
