@@ -282,7 +282,7 @@ function loadRoRegister() {
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
-      document.getElementById('surname').innerHTML = translations.surname;
+      document.getElementById('surnameID').innerHTML = translations.surnameID;
       document.getElementById('wrongSurname').innerHTML = translations.wrongSurname;
       document.getElementById('nameID').innerHTML = translations.nameID;
       document.getElementById('wrongName').innerHTML = translations.wrongName;
