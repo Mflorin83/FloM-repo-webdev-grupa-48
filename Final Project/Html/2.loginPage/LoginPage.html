@@ -32,6 +32,7 @@
 	<script defer src="../../JS/global/bootstrap.bundle.min.js"></script>
 	<script defer src="../../JS/global/switchTheme.js"></script>
 	<script defer src="../../JS/global/translate.js"></script>
+	<script defer src="./LoginPage.js"></script>
 
 </head>
 
@@ -120,10 +121,12 @@
 							<img src="../../Media/logo-dark.png" alt="logo">
 						</a>
 					</div>
-					<div class="card">
+					<div id="alertContainer"></div>
+
+					<div class="card secondary-color-bcg">
 						<div class="card-body">
 							<p class="card-title text-center " id="tryLogin">Conecteaza-te</p>
-							<form method="POST" class="my-login-validation" novalidate="">
+							<form method="POST" class="my-login-validation" id="loginForm" novalidate="">
 								<div class="form-floating mb-3">
 									<input id="email" type="email" class="form-control" name="email" placeholder=""
 										required autofocus>
@@ -140,31 +143,29 @@
 										Parola este obligatorie.
 									</div>
 								</div>
-								<div> <a href="#" class="float-right mb-3" id="forgotPass">
+								<div>
+									<a href="#" class="float-right mb-3" id="forgotPass">
 										Ti-ai uitat parola?
-									</a></div>
-
-
-
+									</a>
+								</div>
 								<div class="form-floating mb-3">
 									<div class="custom-checkbox custom-control">
 										<input type="checkbox" name="remember" id="remember"
 											class="custom-control-input">
-										<label for="remember" class="custom-control-label mt-3" id="rememberMe">Tine minte</label>
+										<label for="remember" class="custom-control-label mt-3" id="rememberMe">Tine
+											minte</label>
 									</div>
 								</div>
-
-								<div class="form-group m-0">
+								<div class="form-group d-flex justify-content-center m-0">
 									<button type="submit" class="btn btn-primary-me btn-block" id="connect">
 										Conecteaza-te
 									</button>
 								</div>
-								<div class="mt-4 text-center">
-									<p id="notAuser">Nu ai cont la noi? </p>
-									<a id="tryRegister"  href="../3.RegisterPage/registerPage.html">Creeaza acum</a>
-
-								</div>
 							</form>
+							<div class="mt-4 text-center">
+								<p id="notAuser">Nu ai cont la noi? </p>
+								<a id="tryRegister" href="../3.RegisterPage/registerPage.html">Creeaza acum</a>
+							</div>
 						</div>
 					</div>
 
@@ -172,7 +173,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 </body>
 
 </html>
