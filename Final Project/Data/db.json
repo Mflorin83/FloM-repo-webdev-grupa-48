@@ -213,7 +213,7 @@
             "passEnter": "Password",
             "mustPass": "You must enter a password",
             "agreeWith": "I Agree with",
-            "termsCondition" : "Terms and Conditions", 
+            "termsCondition": "Terms and Conditions",
             "mustAgree": "I agree to the Terms and Conditions",
             "createAcc": "Create Account",
             "allreadyAcc": "Do you already have an account?",
@@ -235,11 +235,44 @@
             "passEnter": "Parola",
             "mustPass": "Trebuie sa introduceti o parola",
             "agreeWith": "Sunt de acord cu",
-            "termsCondition" : "Termeni si conditii", 
+            "termsCondition": "Termeni si conditii",
             "mustAgree": "Sunt de acord cu Termenii si conditiile",
             "createAcc": "Creaza-mi cont",
             "allreadyAcc": "Ai deja cont creat?",
             "connect": "Conecteaza-te"
+        }
+    ],
+
+    "translateEnLogin": [
+        {
+            "homeDirect": "Home",
+            "price": "Price",
+            "tryLogin" : "Login",
+            "emailNotvalid": "Email invalid. Try again",
+            "passEnter": "Password",
+            "mustPass": "You must enter a password",
+            "forgotPass": "Forgot password?",
+            "rememberMe": "Remember Me",
+            "connect": "Login",
+            "notAuser": "Not a User?",
+            "tryRegister": "Register Now"
+        }
+    ],
+
+
+    "translateRoLogin": [
+        {
+            "homeDirect": "Acasa",
+            "price": "Pret",
+            "tryLogin": "Conecteaza-te",
+            "emailNotvalid" : "Email eronat. Reincearca",
+            "passEnter": "Parola",
+            "mustPass": "Trebuie sa introduceti o parola",
+            "forgotPass": "Ti-ai uitat parola?",
+            "rememberMe" : "Tine minte",
+            "connect": "Conecteaza-te",
+            "notAuser": "Nu ai user?",
+            "tryRegister": "Inregistreaza-te acum"
         }
     ]
 }

@@ -301,3 +301,58 @@ function loadRoRegister() {
     })
     .catch(error => console.log('Error loading', error));
 }
+
+
+function loadEnLogin() {
+  const apiUrl = "http://localhost:5500/translateEnLogin";
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+
+      const translations = data[0];
+
+     
+      document.getElementById('homeDirect').innerHTML = translations.homeDirect;
+      document.getElementById('price').innerHTML = translations.price;
+      document.getElementById('tryLogin').innerHTML = translations.tryLogin;
+      document.getElementById('emailNotvalid').innerHTML = translations.emailNotvalid;
+      document.getElementById('passEnter').innerHTML = translations.passEnter;
+      document.getElementById('mustPass').innerHTML = translations.mustPass;
+      document.getElementById('forgotPass').innerHTML = translations.forgotPass;
+      document.getElementById('rememberMe').innerHTML = translations.rememberMe;
+      document.getElementById('connect').innerHTML = translations.connect;
+      document.getElementById('notAuser').innerHTML = translations.notAuser;
+      document.getElementById('tryRegister').innerHTML = translations.tryRegister;
+
+
+    })
+    .catch(error => console.log('Error loading', error));
+
+}
+
+function loadRoLogin() {
+  const apiUrl = "http://localhost:5500/translateRoLogin";
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+
+      const translations = data[0];
+
+     
+      document.getElementById('homeDirect').innerHTML = translations.homeDirect;
+      document.getElementById('price').innerHTML = translations.price;
+      document.getElementById('tryLogin').innerHTML = translations.tryLogin;
+      document.getElementById('emailNotvalid').innerHTML = translations.emailNotvalid;
+      document.getElementById('passEnter').innerHTML = translations.passEnter;
+      document.getElementById('mustPass').innerHTML = translations.mustPass;
+      document.getElementById('forgotPass').innerHTML = translations.forgotPass;
+      document.getElementById('rememberMe').innerHTML = translations.rememberMe;
+      document.getElementById('connect').innerHTML = translations.connect;
+      document.getElementById('notAuser').innerHTML = translations.notAuser;
+      document.getElementById('tryRegister').innerHTML = translations.tryRegister;
+
+
+    })
+    .catch(error => console.log('Error loading', error));
+
+}
