@@ -198,53 +198,48 @@
             "terms": "Termeni"
         }
     ],
-
     "translateEnRegister": [
         {
-            "usLang": "English",
-            "romLang": "Romanian",
-            "homeDIrect": "Home",
+            "homeDirect": "Home",
             "price": "Price",
             "register": "Sign UP",
-            "surname": "First Name",
+            "surnameID": "First Name",
             "wrongSurname": "What is your First name?",
-            "name": "Last Name",
+            "nameID": "Last Name",
             "wrongName": "What is your Name?",
-            "phone": "Phone",
+            "phoneDetails": "Phone",
             "wrongPhone": "Please enter a valid phone number",
             "wrongEmail": "Email is invalid. Please try again",
+            "passEnter": "Password",
             "mustPass": "You must enter a password",
             "agreeWith": "I Agree with",
+            "termsCondition" : "Terms and Conditions", 
             "mustAgree": "I agree to the Terms and Conditions",
             "createAcc": "Create Account",
             "allreadyAcc": "Do you already have an account?",
             "connect": "Login"
         }
     ],
-
-
     "translateRoRegister": [
         {
-            "usLang": "Engleza",
-            "romLang": "Romana",
-            "homeDIrect": "Acasa",
+            "homeDirect": "Acasa",
             "price": "Pret",
             "register": "Inregistreaza-te",
-            "surname": "Prenume",
+            "surnameID": "Prenume",
             "wrongSurname": "Care este prenumele tau?",
-            "name": "Nume",
+            "nameID": "Nume",
             "wrongName": "Care este numele tau?",
-            "phone": "Telefon",
+            "phoneDetails": "Telefon",
             "wrongPhone": "Va rugam introduceti un numar valid de telefon.",
             "wrongEmail": "Emailul nu este valid. Va rugam reincercati",
+            "passEnter": "Parola",
             "mustPass": "Trebuie sa introduceti o parola",
             "agreeWith": "Sunt de acord cu",
+            "termsCondition" : "Termeni si conditii", 
             "mustAgree": "Sunt de acord cu Termenii si conditiile",
             "createAcc": "Creaza-mi cont",
             "allreadyAcc": "Ai deja cont creat?",
             "connect": "Conecteaza-te"
-
-
         }
     ]
 }

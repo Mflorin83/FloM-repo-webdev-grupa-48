@@ -245,20 +245,21 @@ function loadEnRegister() {
 
       const translations = data[0];
 
-      document.getElementById('usLang').innerHTML = translations.usLang;
-      document.getElementById('romLang').innerHTML = translations.romLang;
-      document.getElementById('Home').innerHTML = translations.Home;
+     
+      document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
-      document.getElementById('surname').innerHTML = translations.surname;
+      document.getElementById('surnameID').innerHTML = translations.surnameID;
       document.getElementById('wrongSurname').innerHTML = translations.wrongSurname;
-      document.getElementById('name').innerHTML = translations.name;
+      document.getElementById('nameID').innerHTML = translations.nameID;
       document.getElementById('wrongName').innerHTML = translations.wrongName;
-      document.getElementById('phone').innerHTML = translations.phone;
+      document.getElementById('phoneDetails').innerHTML = translations.phoneDetails;
       document.getElementById('wrongPhone').innerHTML = translations.wrongPhone;
       document.getElementById('wrongEmail').innerHTML = translations.wrongEmail;
+      document.getElementById('passEnter').innerHTML = translations.passEnter;
       document.getElementById('mustPass').innerHTML = translations.mustPass;
       document.getElementById('agreeWith').innerHTML = translations.agreeWith;
+      document.getElementById('termsCondition').innerHTML = translations.termsCondition;
       document.getElementById('mustAgree').innerHTML = translations.mustAgree;
       document.getElementById('createAcc').innerHTML = translations.createAcc;
       document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
@@ -277,20 +278,21 @@ function loadRoRegister() {
 
       const translations = data[0];
 
-      document.getElementById('usLang').innerHTML = translations.usLang;
-      document.getElementById('romLang').innerHTML = translations.romLang;
-      document.getElementById('Home').innerHTML = translations.Home;
+     
+      document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
       document.getElementById('surname').innerHTML = translations.surname;
       document.getElementById('wrongSurname').innerHTML = translations.wrongSurname;
-      document.getElementById('name').innerHTML = translations.name;
+      document.getElementById('nameID').innerHTML = translations.nameID;
       document.getElementById('wrongName').innerHTML = translations.wrongName;
-      document.getElementById('phone').innerHTML = translations.phone;
+      document.getElementById('phoneDetails').innerHTML = translations.phoneDetails;
       document.getElementById('wrongPhone').innerHTML = translations.wrongPhone;
       document.getElementById('wrongEmail').innerHTML = translations.wrongEmail;
+      document.getElementById('passEnter').innerHTML = translations.passEnter;
       document.getElementById('mustPass').innerHTML = translations.mustPass;
       document.getElementById('agreeWith').innerHTML = translations.agreeWith;
+      document.getElementById('termsCondition').innerHTML = translations.termsCondition;
       document.getElementById('mustAgree').innerHTML = translations.mustAgree;
       document.getElementById('createAcc').innerHTML = translations.createAcc;
       document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
