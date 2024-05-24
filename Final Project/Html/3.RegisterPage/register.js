@@ -1,15 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-     verifyFormInput();
-     showPassword('password','togglePassword2','togglePasswordIcon2' );
+    verifyFormInput();
+    showPassword('password', 'togglePassword2', 'togglePasswordIcon2');
 
 
 },
 )
 
 
-function  verifyFormInput() {
+function verifyFormInput() {
 
     const form = document.getElementById('signUpForm');
     if (!form) {
@@ -62,6 +62,57 @@ function showPassword(PassId, switchButtonId, switchiconID) {
         toggleIcon.classList.toggle('bi-eye-slash');
     });
 }
+
+function loadDataIntoDb(formId, apiIp, apiPostAction) {
+
+    const form = document.getElementById(formId);
+    if (!form) {
+        console.error('Form not found');
+        return;
+    }
+
+    // Colectează datele din formular
+    const formDataObj = {
+        surname: document.getElementById('surname').value,
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        password: document.getElementById('password').value,
+        agree: document.getElementById('agree').checked // acesta va fi true sau false
+    };
+
+    let apiPostAction = 'POST';
+    
+
+    const fetchOptions = {
+        method: apiPostAction,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataObj) // Convertește obiectul într-un șir JSON
+    };
+
+    const apiIp = 'http://localhost:3000/users'
+    // Trimiterea datelor la server prin fetch
+    fetch(apiIp, fetchOptions)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Data saved:', data);
+            alert('Account created successfully!');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to create account.');
+        });
+}
+
+
+
 
 
 //         // Verificare email existent
