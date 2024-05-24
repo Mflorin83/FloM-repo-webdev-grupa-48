@@ -4,17 +4,7 @@
 }
 
 .secondary-color-bcg {
-    position: relative;
     background-color: var(--bs-secondary-color);
-}
-.secondary-color-bcg::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 30px; /* Adjust height to control the fade effect */
-    background: linear-gradient(to top, transparent, var(--bs-secondary-color));
 }
 
 
