@@ -1,4 +1,4 @@
-function loadEnLandingP() {
+ function loadEnLandingP() {
   const apiUrl = "http://localhost:5500/translateEnLandingPage";
   fetch(apiUrl)
     .then(response => response.json())
@@ -118,7 +118,7 @@ function loadEnLandingP() {
 }
 
 
-function loadRoLandingP() {
+ function loadRoLandingP() {
   const apiUrl = "http://localhost:5500/translateRoLandingPage";
   fetch(apiUrl)
     .then(response => response.json())
@@ -237,7 +237,7 @@ function loadRoLandingP() {
     .catch(error => console.log('Error loading', error));
 }
 
-function loadEnRegister() {
+ function loadEnRegister() {
   const apiUrl = "http://localhost:5500/translateEnRegister";
   fetch(apiUrl)
     .then(response => response.json())
@@ -245,7 +245,7 @@ function loadEnRegister() {
 
       const translations = data[0];
 
-     
+
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
@@ -270,7 +270,7 @@ function loadEnRegister() {
 
 }
 
-function loadRoRegister() {
+ function loadRoRegister() {
   const apiUrl = "http://localhost:5500/translateRoRegister";
   fetch(apiUrl)
     .then(response => response.json())
@@ -278,7 +278,7 @@ function loadRoRegister() {
 
       const translations = data[0];
 
-     
+
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
@@ -296,14 +296,14 @@ function loadRoRegister() {
       document.getElementById('mustAgree').innerHTML = translations.mustAgree;
       document.getElementById('createAcc').innerHTML = translations.createAcc;
       document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
-      document.getElementById('connect').innerHTML = translations.connect;      
+      document.getElementById('connect').innerHTML = translations.connect;
 
     })
     .catch(error => console.log('Error loading', error));
 }
 
 
-function loadEnLogin() {
+ function loadEnLogin() {
   const apiUrl = "http://localhost:5500/translateEnLogin";
   fetch(apiUrl)
     .then(response => response.json())
@@ -311,7 +311,7 @@ function loadEnLogin() {
 
       const translations = data[0];
 
-     
+
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('tryLogin').innerHTML = translations.tryLogin;
@@ -330,7 +330,7 @@ function loadEnLogin() {
 
 }
 
-function loadRoLogin() {
+ function loadRoLogin() {
   const apiUrl = "http://localhost:5500/translateRoLogin";
   fetch(apiUrl)
     .then(response => response.json())
@@ -338,7 +338,7 @@ function loadRoLogin() {
 
       const translations = data[0];
 
-     
+
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('tryLogin').innerHTML = translations.tryLogin;

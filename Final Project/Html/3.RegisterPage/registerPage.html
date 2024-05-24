@@ -33,6 +33,9 @@
 	<script defer src="../../JS/global/bootstrap.bundle.min.js"></script>
 	<script defer src="../../JS/global/switchTheme.js"></script>
 	<script defer src="../../JS/global/translate.js"></script>
+	<script defer src="./register.js"> </script>
+
+
 
 
 
@@ -131,7 +134,7 @@
 						<div class="card ">
 							<div class="card-body secondary-color-bcg">
 								<h4 class="card-title text-center" id="register">Inregistreaza-te</h4>
-								<form method="POST" class="my-login-validation" novalidate>
+								<form method="POST" class="my-login-validation" id="signUpForm" novalidate>
 									<div class="form-floating mb-3">
 										<input type="text" class="form-control" id="surname" placeholder=" " required>
 										<label for="surname" id="surnameID">Prenume</label>
@@ -168,6 +171,11 @@
 										<div class="invalid-feedback" id="mustPass">
 											Parola este obligatorie.
 										</div>
+										<button type="button"
+											class="btn btn-outline-secondary position-absolute end-0 top-50 translate-middle-y me-2"
+											id="togglePassword2">
+											<i class="bi bi-eye " id="togglePasswordIcon2"></i>
+										</button>
 									</div>
 									<div class="form-group">
 										<div class="custom-checkbox custom-control">
@@ -177,21 +185,20 @@
 												acord
 												cu
 											</label>
+											<div class="invalid-feedback" id="mustAgree">
+												Sunt de acord cu Termenii si conditiile
+											</div>
+											<a href="#" class="ms-2" id="termsCondition">Termeni si
+												Conditii
+											</a>
+
 											
-												<a href="#" class="ms-2" id="termsCondition">Termeni si
-													Conditii
-												</a>
-										
 										</div>
-										<div class="invalid-feedback" id="mustAgree">
-											Sunt de acord cu Termenii si conditiile
+										<div class=" my-3 d-flex justify-content-center">
+											<button type="submit" class="btn btn-primary-me btn-block" id="createAcc">
+												Creeaza cont
+											</button>
 										</div>
-									</div>
-									<div class=" my-3 d-flex justify-content-center">
-										<button type="submit" class="btn btn-primary-me btn-block" id="createAcc">
-											Creeaza cont
-										</button>
-									</div>
 								</form>
 							</div>
 
@@ -210,6 +217,7 @@
 		</div>
 		</div>
 	</section>
+
 
 </body>
 
