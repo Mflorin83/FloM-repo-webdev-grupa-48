@@ -89,34 +89,15 @@
 
   <section>
     <header>
-      <div class="theme-toggle">
-        <i class="bi bi-sun"></i>
-        <div class="form-check form-switch mx-2">
-          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onclick="switchTheme()">
-        </div>
-        <i class="bi bi-moon"></i>
-      </div>
       <nav class="navbar navbar-expand-md ">
-        <div class="container-fluid">
-          <a class="navbar-brand d-none d-md-block" href="../1.landingPage/index.html">
+        <div class="container-fluid mx-4">
+          <a class="navbar-brand d-md-block" href="../1.landingPage/index.html">
             <img id="logo" src="../../../Media/logo-dark.png" alt="Logo">
           </a>
 
-          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="   offcanvas-header">
-              <h5 class="offcanvas-title fs-3" id="offcanvasNavbarLabel">Build with US!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-
-              <ul class="  navbar-nav justify-content-end flex-grow-1 pe-3 gap-3 fs-5">
+              <ul class="  navbar-nav justify-content-end   pe-3  fs-5">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                  <a class="nav-link dropdown-toggle fs-5 mx-5" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fa-solid fa-globe fs-4"></i>
                   </a>
@@ -129,21 +110,7 @@
                         onclick="loadRoLogin()">
                         <img src="../../../Media/ro.svg" class="flag-icon" alt="Romanian Flag">Romana</a></li>
                   </ul>
-
-
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active fs-5 animatel" aria-current="page" href="../1.landingPage/index.html"
-                    id="homeDirect">Acasa
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active fs-5 animatel" aria-current="page" id="price" href="#goodPrice">Pret</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active fs-5 animatel" aria-current="page" href="#">Contact</a>
-                </li>
-
 
               </ul>
 
@@ -154,10 +121,14 @@
     </header>
   </section>
 
-  <main class="d-flex gap-2 b-example-vr container-fluid ">
+  <main class="container-fluid ">
 
-    <div class="d-flex flex-column  bg-body-tertiary">
-      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center nav-flush-to-bottom mt-5">
+    <div class="d-flex bg-body-tertiary justify-content-end gap-4">
+      <ul class="nav nav-pills nav-flush  mb-auto text-center nav-flush-to-bottom gap-4">
+
+
+
+
         <li>
           <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Modele Cv-uri" data-bs-toggle="popover"
             data-bs-placement="right" data-bs-trigger="hover focus"
@@ -186,23 +157,35 @@
           </a>
         </li> -->
         <li>
-          <a href="#" id="usersUpdate" class="nav-link py-3 border-bottom rounded-0" title="Utilizatori" data-bs-toggle="popover"
-            data-bs-placement="right" data-bs-trigger="hover focus" data-bs-content="Gestioneaza informatii utilizatori"
-            data-bs-title="Utilizatori">
+          <a href="#" id="usersUpdate" class="nav-link py-3 border-bottom rounded-0" title="Utilizatori"
+            data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="hover focus"
+            data-bs-content="Gestioneaza informatii utilizatori" data-bs-title="Utilizatori">
             <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Utilizatori">
               <use xlink:href="#people-circle" />
             </svg>
           </a>
         </li>
       </ul>
-      <div class="dropdown border-top">
+      <div class="dropdown">
         <a href="#"
           class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="../../../Media/poweUser.png" alt="Admin" width="24" height="24" class="rounded-circle">
+          <img src="../../../Media/poweUser.png" alt="Admin" width="40" height="auto" class="rounded-circle">
         </a>
-        <ul class=" ms-3 dropdown-menu text-small shadow">
+        <ul class=" ms-3 dropdown-menu gap-4 text-small shadow">
           <!-- <li><a class="dropdown-item" href="#">New project...</a></li> -->
+          <li>
+            <div class="theme-toggle mb-3">
+              <i class="bi bi-sun"></i>
+              <div class="form-check form-switch mx-2">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onclick="switchTheme()">
+              </div>
+              <i class="bi bi-moon"></i>
+            </div>
+          </li>
+
+
+          <hr class="dropdown-divider">
           <li><a class="dropdown-item" href="#">Setari</a></li>
           <li><a class="dropdown-item" href="#">Profil</a></li>
           <li>
@@ -225,7 +208,7 @@
         </div>
       </div>
 
-      <div class="container mt-5 " >
+      <div class="container mt-5 ">
         <h2>User Information</h2>
         <form id="userTableForm">
           <div class="table-responsive">

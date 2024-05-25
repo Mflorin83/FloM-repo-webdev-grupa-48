@@ -30,9 +30,10 @@
 }
 
   
-  .b-example-vr {
-   height: 100vh;
-  }
+   .dropdown{
+    align-content: end;
+    max-width: 120px;
+   }
 
   .bi {
     vertical-align: -.125em;
@@ -56,9 +57,6 @@
     display: block !important;
   }
 
-  .nav-flush-to-bottom{
-    max-height: 87%;
-  }
 
   @media (max-width: 767.98px) {
     .nav-flush-to-bottom {
