@@ -55,12 +55,14 @@ function createClientFromForm() {
     }
 
     return {
+        
         surname: form.querySelector('#surname').value,
         name: form.querySelector('#name').value,
         phone: form.querySelector('#phone').value,
         email: form.querySelector('#email').value,
         password: form.querySelector('#password').value,
-        agree: form.querySelector('#agree').checked
+        agree: form.querySelector('#agree').checked,
+        role: 'user'
     };
 }
 

@@ -96,7 +96,8 @@
       "priceLink": "Price",
       "followUs": "Follow Us",
       "terms": "Terms",
-      "cookies": "Cookies"
+      "cookies": "Cookies",
+      "id": "7337"
     }
   ],
   "translateRoLandingPage": [
@@ -195,7 +196,8 @@
       "createMoreTime": "Tocmai ti-ai creat mai mult timp pentru tine",
       "priceLink": "Pret",
       "followUs": "Urmareste-ne",
-      "terms": "Termeni"
+      "terms": "Termeni",
+      "id": "fe3e"
     }
   ],
   "translateEnRegister": [
@@ -217,7 +219,8 @@
       "mustAgree": "I agree to the Terms and Conditions",
       "createAcc": "Create Account",
       "allreadyAcc": "Do you already have an account?",
-      "connect": "Login"
+      "connect": "Login",
+      "id": "4a97"
     }
   ],
   "translateRoRegister": [
@@ -239,7 +242,8 @@
       "mustAgree": "Sunt de acord cu Termenii si conditiile",
       "createAcc": "Creaza-mi cont",
       "allreadyAcc": "Ai deja cont creat?",
-      "connect": "Conecteaza-te"
+      "connect": "Conecteaza-te",
+      "id": "e676"
     }
   ],
   "translateEnLogin": [
@@ -254,7 +258,8 @@
       "rememberMe": "Remember Me",
       "connect": "Login",
       "notAuser": "Not a User?",
-      "tryRegister": "Register Now"
+      "tryRegister": "Register Now",
+      "id": "d97e"
     }
   ],
   "translateRoLogin": [
@@ -269,11 +274,14 @@
       "rememberMe": "Tine minte",
       "connect": "Conecteaza-te",
       "notAuser": "Nu ai user?",
-      "tryRegister": "Inregistreaza-te acum"
+      "tryRegister": "Inregistreaza-te acum",
+      "id": "0094"
     }
   ],
   "Users": [
-    {},
+    {
+      "id": "7c33"
+    },
     {
       "id": "e460",
       "surname": "Florin",
@@ -291,7 +299,16 @@
       "email": "daniel.daniel@yahoo.com",
       "password": "123456",
       "agree": true
+    },
+    {
+      "id": "2c0c",
+      "surname": "Dani",
+      "name": "Dani",
+      "phone": "",
+      "email": "d@d.ro",
+      "password": "12345",
+      "agree": true,
+      "role": "user"
     }
-  
   ]
 }

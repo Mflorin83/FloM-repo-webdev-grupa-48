@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ro">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Bine ai venit in contul de Administrator!</title>
+  <meta name="Description"
+    content="Permite administratorilor sa gestioneze setari mai avansate de intretinere a bazei de date. ">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="pre-connect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../../CSS/bootstrapGlobalEdit.css">
+  <link rel="stylesheet" href="../../../CSS/globalLocalStyle.CSS">
+  <link rel="stylesheet" href="../dashboardAdmin/dashboardAdmin.css">
+
+
+
+  <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script defer src="https://kit.fontawesome.com/5f7a9ef8d5.js"></script>
+  <script defer src="../../../JS/global/bootstrap.bundle.min.js"></script>
+  <script defer src="../../../JS/global/switchTheme.js"></script>
+  <script defer src="../../../JS/global/translate.js"></script>
+  <script type="module" src="../dashboardAdmin/dashboardAdmin.js"></script>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+      </path>
+    </symbol>
+    <symbol id="home" viewBox="0 0 16 16">
+      <path
+        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+    </symbol>
+    <symbol id="speedometer2" viewBox="0 0 16 16">
+      <path
+        d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+      <path fill-rule="evenodd"
+        d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+    </symbol>
+    <symbol id="table" viewBox="0 0 16 16">
+      <path
+        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+    </symbol>
+    <symbol id="people-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+      <path fill-rule="evenodd"
+        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+    </symbol>
+    <symbol id="grid" viewBox="0 0 16 16">
+      <path
+        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+    </symbol>
+  </svg>
+
+
+  <section>
+    <header>
+      <div class="theme-toggle">
+        <i class="bi bi-sun"></i>
+        <div class="form-check form-switch mx-2">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" onclick="switchTheme()">
+        </div>
+        <i class="bi bi-moon"></i>
+      </div>
+      <nav class="navbar navbar-expand-md ">
+        <div class="container-fluid">
+          <a class="navbar-brand d-none d-md-block" href="../1.landingPage/index.html">
+            <img id="logo" src="../../../Media/logo-dark.png" alt="Logo">
+          </a>
+
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="   offcanvas-header">
+              <h5 class="offcanvas-title fs-3" id="offcanvasNavbarLabel">Build with US!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+              <ul class="  navbar-nav justify-content-end flex-grow-1 pe-3 gap-3 fs-5">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-globe fs-4"></i>
+                  </a>
+                  <ul class="dropdown-menu p-0">
+                    <li><a class="dropdown-item fs-5 p-2 d-flex align-items-center " id="usaflag"
+                        onclick="loadEnLogin()">
+
+                        <img src="../../../Media/us.svg" class="flag-icon" alt="English Flag">English</a></li>
+                    <li><a class=" dropdown-item fs-5 p-2 d-flex align-items-center " id="roFlag"
+                        onclick="loadRoLogin()">
+                        <img src="../../../Media/ro.svg" class="flag-icon" alt="Romanian Flag">Romana</a></li>
+                  </ul>
+
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 animatel" aria-current="page" href="../1.landingPage/index.html"
+                    id="homeDirect">Acasa
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 animatel" aria-current="page" id="price" href="#goodPrice">Pret</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 animatel" aria-current="page" href="#">Contact</a>
+                </li>
+
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+  </section>
+
+  <main class="d-flex gap-2">
+
+ 
+
+    <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary">
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center nav-flush-to-bottom mt-5">
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Dashboard" data-bs-toggle="popover"
+            data-bs-placement="right" data-bs-trigger="hover focus" data-bs-content="Dashboard overview and stats"
+            data-bs-title="Dashboard Info">
+            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Dashboard">
+              <use xlink:href="#speedometer2" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Orders" data-bs-toggle="popover"
+            data-bs-placement="right" data-bs-trigger="hover focus" data-bs-content="View and manage orders"
+            data-bs-title="Orders Info">
+            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Orders">
+              <use xlink:href="#table" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Products" data-bs-toggle="popover"
+            data-bs-placement="right" data-bs-trigger="hover focus" data-bs-content="Manage your products"
+            data-bs-title="Products Info">
+            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Products">
+              <use xlink:href="#grid" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link py-3 border-bottom rounded-0" title="Customers" data-bs-toggle="popover"
+            data-bs-placement="right" data-bs-trigger="hover focus" data-bs-content="Customer relationships"
+            data-bs-title="Customers Info">
+            <svg class="bi pe-none" width="24" height="24" role="img" aria-label="Customers">
+              <use xlink:href="#people-circle" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown border-top">
+        <a href="#"
+          class="d-flex align-items-center justify-content-center p-3 link-body-emphasis text-decoration-none dropdown-toggle"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
+        </a>
+        <ul class="dropdown-menu text-small shadow">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="ms-3 dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+    
+   
+
+    <div class="ms-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sed. In quisquam explicabo deserunt. Vitae
+      cum eaque ipsa optio numquam accusantium provident voluptatibus praesentium nisi! Similique cum, ab aliquid hic
+      facilis optio consectetur, sint blanditiis officiis accusamus itaque! Vero sit consequuntur veritatis reiciendis
+      sequi pariatur. Enim iste officiis est magnam explicabo reprehenderit officia odio dolores deserunt magni aperiam
+      tenetur ab delectus quasi maxime, molestias recusandae modi fuga? Enim nostrum veritatis incidunt quos consectetur
+      dolor blanditiis eaque expedita magnam inventore praesentium nihil, vitae ipsa explicabo suscipit quisquam illo
+      laudantium dolorum. Deleniti voluptatibus accusamus sed quisquam nisi quos pariatur dolores omnis, eos, ullam esse
+      ut placeat? Molestias impedit itaque voluptatibus, enim perspiciatis repellat? Unde velit iure, dicta minima
+      reiciendis et magni deleniti temporibus assumenda dolore quasi architecto obcaecati repellendus. Repellat
+      aspernatur voluptates omnis deserunt exercitationem pariatur consectetur, unde dolorum quis deleniti dolore quia
+      nemo, facilis nesciunt officia magnam aut officiis provident veritatis molestias a odit laborum. Optio iste
+      voluptatibus praesentium, numquam quo soluta eaque dignissimos eius dicta iusto. Debitis modi alias quidem
+      assumenda laboriosam laborum obcaecati qui quas quibusdam accusamus harum necessitatibus pariatur fugiat tenetur
+      ipsum unde, nihil nemo impedit exercitationem. Odio ea, temporibus eos consequatur deleniti placeat dolorem, dolor
+      magni cumque nisi, reiciendis impedit enim ab. Maxime tempore animi beatae odit quos deleniti delectus fugiat
+      corrupti dolore error, saepe assumenda magnam in accusantium omnis possimus facilis hic a inventore numquam
+      ratione iure, nobis cum! Repudiandae eaque ipsam quidem velit consequatur culpa accusamus odio esse unde corporis
+      exercitationem hic dolorum, illo eveniet dolorem ratione dolore iusto itaque nihil! Porro exercitationem libero
+      nobis labore placeat, perspiciatis vel esse dolorum magnam fugiat error impedit harum rerum ad minus quia non eum
+      quos ratione quae! Repudiandae voluptatem, repellendus a saepe aut at ad nesciunt itaque amet, facere, culpa
+      architecto. Repudiandae sint ullam vitae, delectus consectetur cum commodi, veniam error obcaecati necessitatibus
+      perferendis totam, dolore non. Molestiae et placeat aliquid voluptatum repudiandae? Eum perspiciatis, voluptatem
+      neque at deleniti consequuntur doloremque aspernatur iusto asperiores voluptatum perferendis? Delectus cum porro
+      ratione laudantium distinctio facere obcaecati accusamus aspernatur sunt placeat omnis officia animi explicabo
+      neque repellat aliquid, dignissimos eligendi optio odit fuga ab beatae quidem non! Repellat harum, deserunt vero
+      nihil praesentium molestiae dolores obcaecati sed animi inventore. Enim, hic ratione! Eius quod ad facilis
+      similique ab sit atque natus voluptas, doloremque mollitia magni? Magnam recusandae fugiat molestias incidunt
+      totam culpa dignissimos dolorum et. Nisi dolorem cupiditate fugit inventore eveniet molestias, quasi porro,
+      deleniti dolor voluptatibus, neque sunt vero maxime quos eius in aperiam et quibusdam laudantium minima. Rem quos
+      fuga placeat eum iure ratione enim illum, eveniet distinctio odit quis quaerat cupiditate vel. Velit non iusto
+      suscipit facilis cumque excepturi quasi repellendus commodi magnam cupiditate sapiente ratione cum, quibusdam
+      provident, laborum officia error, neque sed aliquid voluptatibus enim nulla. Soluta vero corporis sit provident
+      molestias deserunt, cupiditate repellendus amet totam rem facere mollitia, ea nulla et ratione possimus, nihil non
+      ullam voluptatem est necessitatibus? Impedit explicabo voluptatem nisi voluptatibus corrupti placeat quibusdam,
+      illo tempora doloremque voluptas aspernatur molestias.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae velit nisi, tempora itaque dicta laboriosam! Sed
+      maxime ipsum nobis alias expedita, suscipit, labore odit tempora libero accusantium natus molestias deserunt
+      optio, adipisci fuga hic in rerum similique assumenda eius. Praesentium, ratione ab deserunt accusantium maxime
+      velit repellat quisquam quos reprehenderit? Fuga voluptas labore quia laboriosam pariatur sed eius repellendus
+      animi sequi consectetur aspernatur expedita blanditiis ipsum, cumque magnam minus atque maiores, maxime, nesciunt
+      odio nulla corrupti hic ex? Consequatur nemo voluptas eaque doloremque, corrupti unde neque ratione aliquid
+      officiis maxime, fuga quisquam id maiores amet aperiam explicabo provident adipisci aspernatur consectetur
+      pariatur, vel iusto architecto? Molestias alias accusantium ex saepe quisquam, quae dolores sit expedita doloribus
+      tempora eligendi fugiat. Doloribus blanditiis perspiciatis quasi, nisi similique porro fuga, earum, maiores facere
+      vitae voluptatem atque labore recusandae accusantium officiis qui nihil architecto. Repudiandae voluptates officia
+      nisi natus cumque soluta quasi voluptatibus explicabo, sit officiis voluptatum, voluptate rem quia eligendi
+      reprehenderit unde facilis, saepe corrupti non tempore? Dolores quidem inventore debitis hic qui aspernatur
+      nesciunt voluptas laborum, laudantium magnam! Aliquid veniam, neque minus alias eveniet vel vitae hic error
+      dolorem odit dolorum nihil cumque assumenda culpa atque enim soluta facere, expedita rerum maxime voluptatibus in
+      pariatur tempore? Animi cumque cum numquam earum minima placeat itaque illum, est praesentium! Tempora voluptatum
+      aut, assumenda repudiandae repellat minus at, perspiciatis debitis sequi laudantium reiciendis eaque. Aliquid sunt
+      unde placeat atque vel libero voluptates ut in quibusdam accusantium, autem recusandae. Illum cupiditate provident
+      dolores placeat illo maiores, a tempora error dolorem quisquam enim vitae ratione, quis in quia commodi amet
+      tempore? Accusamus cum corporis aspernatur sapiente ipsam doloribus aut necessitatibus earum ab, pariatur illum
+      consequatur voluptate, numquam harum! Ipsum saepe distinctio quaerat cumque et iure error natus expedita, aut
+      accusamus veritatis excepturi nesciunt dolorum illum nam aliquam cum, soluta vitae debitis molestias tempora
+      cupiditate? Pariatur natus modi distinctio aut mollitia? Vitae doloremque impedit sit sapiente voluptatem porro
+      ducimus animi itaque aspernatur explicabo dicta, dolorum libero nobis rerum incidunt optio veritatis, modi dolore
+      magni quod sunt esse ratione! Doloremque laudantium nisi impedit aliquid earum excepturi, dolorem fuga adipisci
+      laborum, unde libero alias incidunt enim voluptas voluptatibus minima, esse officia! Ab, rem! Saepe vitae,
+      pariatur harum dolorum at dolor eum corporis quo possimus eveniet. Explicabo voluptatum eos ea ipsa totam, magni
+      debitis. Explicabo quibusdam magnam tempora ipsum perferendis et incidunt sequi vero obcaecati deserunt maxime
+      esse, reprehenderit est debitis, itaque deleniti? Voluptas magnam labore eaque. Deleniti qui esse animi tenetur
+      explicabo! Sint beatae nihil, tempore magni earum eveniet quisquam fugiat error illo? Fugit ad velit beatae
+      blanditiis deleniti ullam eveniet a ducimus, odio atque quae placeat ratione illo neque aut praesentium nam ipsum
+      at maiores provident. Sit itaque mollitia tenetur natus a sunt enim reiciendis, recusandae exercitationem
+      laboriosam eum optio? Qui incidunt sit, nostrum aut neque molestiae, rem quisquam natus est rerum autem similique
+      at amet tempore consequuntur? Possimus nostrum sapiente ratione eligendi minima numquam beatae laboriosam sed ad
+      amet quaerat excepturi unde eaque eum vitae, necessitatibus aut dignissimos!
+    </div>
+  </main>
+
+</body>
+
+</html>
