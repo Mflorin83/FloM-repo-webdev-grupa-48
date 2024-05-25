@@ -281,12 +281,11 @@
   "Users": [
     {
       "id": "e460",
-      "surname": "Florin",
+      "surname": "Florin-Ionut",
       "name": "Mihai",
       "phone": "0745135459",
       "email": "florinionut.mihai@gmail.com",
       "password": "12345",
-      "agree": true,
       "role": "admin"
     },
     {
@@ -296,18 +295,7 @@
       "phone": "0745000000",
       "email": "daniel.daniel@yahoo.com",
       "password": "123456",
-      "agree": true,
-      "role": "user"
-    },
-    {
-      "id": "2c0c",
-      "surname": "Dani",
-      "name": "Dani",
-      "phone": "",
-      "email": "d@d.ro",
-      "password": "12345",
-      "agree": true,
-      "role": "user"
+      "role": "admin"
     }
   ]
 }

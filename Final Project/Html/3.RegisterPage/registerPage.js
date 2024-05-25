@@ -88,10 +88,10 @@ function sendDataToServer(clientData, apiUrl) {
             return response.json();
         })
         .then(data => {
-            alert('Account created successfully!');
+            alert('Action was succesfully!');
         })
         .catch(error => {
-            alert('Failed to create account.');
+            alert('Failed!');
         });
 }
 
