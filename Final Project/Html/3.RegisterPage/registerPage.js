@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-        if (verifyFormInput()) { // Apelăm funcția de verificare a validității
+        if (verifyFormInput()) { 
             const clientData = createClientFromForm();
             const apiUrl = 'http://localhost:5500/Users';
             sendDataToServer(clientData, apiUrl);
@@ -61,7 +61,6 @@ function createClientFromForm() {
         phone: form.querySelector('#phone').value,
         email: form.querySelector('#email').value,
         password: form.querySelector('#password').value,
-        agree: form.querySelector('#agree').checked,
         role: 'user'
     };
 }
@@ -88,7 +87,7 @@ function sendDataToServer(clientData, apiUrl) {
             return response.json();
         })
         .then(data => {
-            alert('Action was succesfully!');
+            alert('New Account Created');
         })
         .catch(error => {
             alert('Failed!');
@@ -113,3 +112,4 @@ function showPassword(PassId, switchButtonId, switchiconID) {
         toggleIcon.classList.toggle('bi-eye-slash');
     });
 }
+

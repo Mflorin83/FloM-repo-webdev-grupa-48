@@ -286,7 +286,7 @@
       "phone": "074513545",
       "email": "florinionut.mihai@gmail.com",
       "password": "12345",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "",
@@ -295,7 +295,107 @@
       "phone": "fdsa",
       "email": "fda",
       "password": "fdaf",
-      "role": "userdas"
+      "role": "user"
+    },
+    {
+      "id": "e301",
+      "surname": "Test",
+      "name": "test",
+      "phone": "test",
+      "email": "test@gmail.com",
+      "password": "12345",
+      "role": "admin"
+    },
+    {
+      "id": "f1d0",
+      "surname": "Andrei",
+      "name": "cel Mare",
+      "phone": "fara numar",
+      "email": "andrei@celmare.ro",
+      "password": "1122",
+      "agree": true,
+      "role": "user"
+    },
+    {
+      "id": "dd8b",
+      "surname": "test",
+      "name": "incaun test",
+      "phone": "000000000",
+      "email": "abc@a.ro",
+      "password": "1122",
+      "role": "user"
+    },
+    {
+      "id": "b40f",
+      "surname": "ffff",
+      "name": "ffff",
+      "phone": "fff",
+      "email": "fff@fff",
+      "password": "fdfdsf",
+      "role": "user"
+    },
+    {
+      "id": "b3d5",
+      "surname": "Florin ",
+      "name": "FLorin",
+      "phone": "074555",
+      "email": "a@a.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "cdf0",
+      "surname": "teste",
+      "name": "nume",
+      "phone": "tel",
+      "email": "around@r.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "44ea",
+      "surname": "test",
+      "name": "tree",
+      "phone": "",
+      "email": "t@t.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "a9f9",
+      "surname": "Florin",
+      "name": "dsaf",
+      "phone": "07451224",
+      "email": "abc@abc.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "15f1",
+      "surname": "test",
+      "name": "test",
+      "phone": "test",
+      "email": "test@test.ro",
+      "password": "test",
+      "role": "user"
+    },
+    {
+      "id": "03d4",
+      "surname": "florin",
+      "name": "florinm",
+      "phone": "0745135459",
+      "email": "test@test.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "bf71",
+      "surname": "test",
+      "name": "teste",
+      "phone": "0745",
+      "email": "sfhdsha@gmail.com",
+      "password": "123",
+      "role": "user"
     }
   ]
 }
