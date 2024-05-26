@@ -38,3 +38,14 @@
 
 }
 
+
+.dropdown-menu {
+    width: fit-content;
+    min-width: auto;
+    /* Overwrites the default Bootstrap minimum width */
+  }
+  
+  .dropdown-menu .dropdown-item {
+    display: inline-block;
+  }
+  

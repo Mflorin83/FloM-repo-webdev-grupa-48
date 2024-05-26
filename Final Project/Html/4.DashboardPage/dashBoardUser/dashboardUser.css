@@ -60,6 +60,11 @@
 }
 
 
+.card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
 @media (max-width: 767.98px) {
   .nav-flush-to-bottom {
     margin-top: auto;
@@ -72,3 +77,4 @@
   }
 
 }
+

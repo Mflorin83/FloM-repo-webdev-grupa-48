@@ -289,16 +289,6 @@
       "role": "user"
     },
     {
-      "id": "6fb6",
-      "surname": "test",
-      "name": "test",
-      "phone": "fara",
-      "email": "test@test.ro",
-      "password": "123456",
-      "agree": true,
-      "role": "user"
-    },
-    {
       "id": "",
       "surname": "sfdsaf",
       "name": "dfda",
