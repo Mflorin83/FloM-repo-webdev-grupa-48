@@ -95,27 +95,25 @@
             <img id="logo" src="../../../Media/logo-dark.png" alt="Logo">
           </a>
 
-              <ul class="  navbar-nav justify-content-end   pe-3  fs-5">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fs-5 mx-5" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fa-solid fa-globe fs-4"></i>
-                  </a>
-                  <ul class="dropdown-menu p-0">
-                    <li><a class="dropdown-item fs-5 p-2 d-flex align-items-center " id="usaflag"
-                        onclick="loadEnLogin()">
+          <ul class="  navbar-nav justify-content-end   pe-3  fs-5">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5 mx-5" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-globe fs-4"></i>
+              </a>
+              <ul class="dropdown-menu p-0">
+                <li><a class="dropdown-item fs-5 p-2 d-flex align-items-center " id="usaflag" onclick="loadEnLogin()">
 
-                        <img src="../../../Media/us.svg" class="flag-icon" alt="English Flag">English</a></li>
-                    <li><a class=" dropdown-item fs-5 p-2 d-flex align-items-center " id="roFlag"
-                        onclick="loadRoLogin()">
-                        <img src="../../../Media/ro.svg" class="flag-icon" alt="Romanian Flag">Romana</a></li>
-                  </ul>
-                </li>
-
+                    <img src="../../../Media/us.svg" class="flag-icon" alt="English Flag">English</a></li>
+                <li><a class=" dropdown-item fs-5 p-2 d-flex align-items-center " id="roFlag" onclick="loadRoLogin()">
+                    <img src="../../../Media/ro.svg" class="flag-icon" alt="Romanian Flag">Romana</a></li>
               </ul>
+            </li>
 
-            </div>
-          </div>
+          </ul>
+
+        </div>
+        </div>
         </div>
       </nav>
     </header>
@@ -191,24 +189,34 @@
           <li>
             <hr class="dropdown-divider">
           </li>
-          <li><a class="dropdown-item" href="#">Iesi din cont</a></li>
+          <li><a id="signOutLink" class="dropdown-item" href="#">Iesi din cont</a></li>
         </ul>
       </div>
     </div>
 
+
+    
+
     <div class="d-flex flex-column">
       <div class="container mt-5">
-        <div class="alert alert-primary" role="alert">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
           <h4 class="alert-heading">Bine ai venit, Admin!</h4>
-          <p>Bun venit în contul de Power User! În stânga ai panoul de control unde poți accesa toate funcțiile
+          <p>Bun venit în contul de Power User! Sus ai panoul de control unde poți accesa toate funcțiile
             administrative. Utilizează panoul pentru a gestiona setările, vizualiza rapoartele, și multe altele.</p>
           <hr>
           <p class="mb-0">Dacă ai nevoie de ajutor, te rugăm să consulți ghidul nostru sau să ne contactezi pentru
             asistență.</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
 
       <div class="container mt-5 ">
+        <div>
+         
+          <button type="button" id="addNewUser" class="btn btn-primary-me d-flex ms-auto">Adauga User Nou</button>
+
+
+        </div>
         <h2>User Information</h2>
         <form id="userTableForm">
           <div class="table-responsive">

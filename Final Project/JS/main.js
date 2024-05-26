@@ -192,3 +192,14 @@ export function cancelEditingDb() {
     window.location.reload();
 }
 
+export function signOut() {
+    
+    if (localStorage.getItem('authToken')) {
+        localStorage.removeItem('authToken'); 
+        sessionStorage.clear(); 
+    }
+    
+    window.location.href = '../../2.LoginPage/LoginPage.html'; 
+
+
+}

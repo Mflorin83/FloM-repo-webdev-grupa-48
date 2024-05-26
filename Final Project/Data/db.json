@@ -283,19 +283,29 @@
       "id": "e460",
       "surname": "Florin-Ionut",
       "name": "Mihai",
-      "phone": "0745135459",
+      "phone": "074513545",
       "email": "florinionut.mihai@gmail.com",
       "password": "12345",
-      "role": "admin"
+      "role": "user"
     },
     {
-      "id": "343b",
-      "surname": "Daniel",
-      "name": "Daniel",
-      "phone": "0745000000",
-      "email": "daniel.daniel@yahoo.com",
+      "id": "6fb6",
+      "surname": "test",
+      "name": "test",
+      "phone": "fara",
+      "email": "test@test.ro",
       "password": "123456",
-      "role": "admin"
+      "agree": true,
+      "role": "user"
+    },
+    {
+      "id": "",
+      "surname": "sfdsaf",
+      "name": "dfda",
+      "phone": "fdsa",
+      "email": "fda",
+      "password": "fdaf",
+      "role": "userdas"
     }
   ]
 }
