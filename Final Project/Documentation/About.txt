@@ -7,7 +7,7 @@
 		- components
 
 
-formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 3 template-uri. 
+
 
 1. Alegerea Proiectului:
 	Crearea unui website, optimizat pentru mobile si tableta, prin care un utilizator inregistrat 

@@ -335,15 +335,6 @@
       "role": "user"
     },
     {
-      "id": "b3d5",
-      "surname": "Florin ",
-      "name": "FLorin",
-      "phone": "074555",
-      "email": "a@a.ro",
-      "password": "123",
-      "role": "user"
-    },
-    {
       "id": "cdf0",
       "surname": "teste",
       "name": "nume",
@@ -389,13 +380,13 @@
       "role": "user"
     },
     {
-      "id": "bf71",
-      "surname": "test",
-      "name": "teste",
-      "phone": "0745",
-      "email": "sfhdsha@gmail.com",
-      "password": "123",
-      "role": "user"
+      "id": "63f6",
+      "surname": "Florin",
+      "name": "Mihai",
+      "phone": "0745135459",
+      "email": "contact@fmihai.ro",
+      "password": "12345",
+      "role": "admin"
     }
   ]
 }

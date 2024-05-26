@@ -66,7 +66,7 @@ export function getUserFromApi() {
                 <td><input type="text" class="form-control form-control-sm p-1 fw-light fs-6" value="${user.role || 'user'}" disabled></td>
                 <td>
                     <select class="form-select form-select-sm" aria-label="Actions">
-                        <option selected>Add</option>
+                        <option selected>Alege</option>
                         <option value="edit">Edit</option>
                         <option value="delete">Delete</option>
                         <option value="save">Save</option>
