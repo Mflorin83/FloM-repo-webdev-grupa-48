@@ -1,4 +1,4 @@
-import {addNewFormInput, removeInput} from '../../../JS/main.js'
+import {addNewFormInput, removeInput} from '../../JS/main.js'
 
 document.getElementById('inputContainer').addEventListener('click', function(event) {
     if (event.target.classList.contains('add-btn')) {
