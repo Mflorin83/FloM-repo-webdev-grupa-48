@@ -1,18 +1,22 @@
  - documentatie initiala
 	- alegerea proiectului
+	- tehnologii utilizate
 	- general objective
 	- investigare/analiza alte proiecte similare
 		- pages
 		- components
 
 
-formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 3 template-uri. 
 
-1. ALEGEREA PROIECTULUI
+
+1. Alegerea Proiectului:
 	Crearea unui website, optimizat pentru mobile si tableta, prin care un utilizator inregistrat 
 	isi poate crea un Curriculum Vitae din 2 formate prestabilitate, pe care ulterior le poate descarca / trimite pe email.
 
-2. Objectives: 
+2. Tehnologii utilizate:
+	Pentru dezvoltarea site-ului se va folosi HTML, CSS, Bootstrap v5.3,  JavaScript ES6 cu componente reutilizabile si importabile, elemente de inteligenta artificiala.
+
+3 Objectives: 
 
    >Ce trebuie sa faca? 
       -site weightlight, animatii limitate;
@@ -40,11 +44,11 @@ formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 
 	  -pasionati de tehnologie, adepti ai  eficienti, dispusi sa incerce o abordare rapida si testata;
 
 
-3. Investigare proiecte similare:
+4. Investigare proiecte similare:
 
     https://cvmaker.ro 
 
-	Structura pagini:
+5.	Structura pagini:
 
 	> Landing Page	    > Header 
 	  							> Logo
@@ -130,9 +134,11 @@ formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 
 				>Forget pasw? link
 				>Login button
 
-	> Administrative Panel (workInprogress)			
+	> Administrative Panel 		
 	> Contact 
 			> Contact form
 	> Make CV
 			> Forms 
+
+		
 

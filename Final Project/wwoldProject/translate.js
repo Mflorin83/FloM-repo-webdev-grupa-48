@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   innitialFlag();
-  document.getElementById('usaflag').addEventListener('click', function () {
+  document.getElementById('usaFlag').addEventListener('click', function () {
     loadTranslations();
     switchFlags();
   });

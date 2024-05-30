@@ -1,0 +1,43 @@
+
+.theme-toggle {
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+
+.card-wrapper {
+    max-width: 400px;
+    /* Redimensionează formularul */
+    margin-top: 50px;
+    /* Spațiu de la partea de sus a paginii */
+}
+
+.brand img {
+    max-width: 250px;
+    /* Redimensionează logo-ul */
+}
+
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.dropdown-menu{
+    cursor: pointer;
+    background-color: var(--bs-third-color-bcg);
+}
+#logo {
+    max-width: auto;
+    height: 100px;
+    object-fit: contain;
+}
+

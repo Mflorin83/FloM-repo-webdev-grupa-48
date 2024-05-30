@@ -307,6 +307,24 @@
 }
 
 /* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+/* Optimizare pentru DESKTOP */
+
 
 @media (min-width: 768px) {
 
@@ -322,6 +340,33 @@
     width: 20%;
     height: auto;
     object-fit: contain;
+  }
+
+  /* Adauga clase suplimentare pe JS */
+  .transformText {
+    transform: scale(1.1);
+
+  }
+
+  .flag {
+    width: var(--font-size-md);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+  }
+
+  .hidden-flag {
+    display: none;
+  }
+
+  .active-flag {
+    display: inline;
+
+  }
+
+  a:hover::after {
+    transform: translateX(0%);
+    /* Mutați sublinierea complet în vizualizare */
   }
 
   header nav.menu ul.site-nav {
@@ -683,8 +728,25 @@
     padding: var(--padding-xxl);
     gap: var(--margin-xl);
     min-height: 400px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
   }
+
+
+
+  #blendFooter {
+    background-color: var(--text-color);
+  }
+
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+  /* <!-- FOOTER INFO'S  --> */
+
 
   .footer {
     display: flex;
@@ -694,9 +756,6 @@
     background-color: var(--text-color);
   }
 
-  #blendFooter {
-    background-color: var(--text-color);
-  }
 
   .secondary-menu,
   .social-ctn h2,
@@ -753,30 +812,6 @@
     font-size: var(--font-size-xs);
   }
 
-  /* Adauga clase suplimentare pe JS */
-  .transformText {
-    transform: scale(1.1);
 
-  }
-
-  .flag {
-    width: var(--font-size-md);
-    cursor: pointer;
-    border-radius: 50%;
-    transition: opacity 0.3s;
-  }
-
-  .hidden-flag {
-    display: none;
-  }
-
-  .active-flag {
-    display: inline;
-    
-    }
-
-    a:hover::after {
-      transform: translateX(0%); /* Mutați sublinierea complet în vizualizare */
-    }
 
 }
