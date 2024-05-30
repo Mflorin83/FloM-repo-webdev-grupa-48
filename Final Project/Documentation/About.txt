@@ -1,15 +1,20 @@
  - documentatie initiala
 	- alegerea proiectului
 <<<<<<< HEAD
+<<<<<<< HEAD
 	- tehnologii utilizate
 =======
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+	- tehnologii utilizate
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 	- general objective
 	- investigare/analiza alte proiecte similare
 		- pages
 		- components
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -23,13 +28,23 @@
 3 Objectives: 
 =======
 formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 3 template-uri. 
+=======
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 
-1. ALEGEREA PROIECTULUI
+
+1. Alegerea Proiectului:
 	Crearea unui website, optimizat pentru mobile si tableta, prin care un utilizator inregistrat 
 	isi poate crea un Curriculum Vitae din 2 formate prestabilitate, pe care ulterior le poate descarca / trimite pe email.
 
+<<<<<<< HEAD
 2. Objectives: 
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+2. Tehnologii utilizate:
+	Pentru dezvoltarea site-ului se va folosi HTML, CSS, Bootstrap v5.3,  JavaScript ES6 cu componente reutilizabile si importabile, elemente de inteligenta artificiala.
+
+3 Objectives: 
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 
    >Ce trebuie sa faca? 
       -site weightlight, animatii limitate;
@@ -58,6 +73,7 @@ formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Investigare proiecte similare:
 
     https://cvmaker.ro 
@@ -70,6 +86,13 @@ formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 
 
 	Structura pagini:
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+4. Investigare proiecte similare:
+
+    https://cvmaker.ro 
+
+5.	Structura pagini:
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 
 	> Landing Page	    > Header 
 	  							> Logo
@@ -156,17 +179,26 @@ formular de captare a informatiei dupa care sa pui dai Save > download cu 2 sau 
 				>Login button
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	> Administrative Panel 		
 =======
 	> Administrative Panel (workInprogress)			
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+	> Administrative Panel 		
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 	> Contact 
 			> Contact form
 	> Make CV
 			> Forms 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 
 =======
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+		
+
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85

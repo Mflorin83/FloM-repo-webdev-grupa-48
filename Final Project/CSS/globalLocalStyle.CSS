@@ -5,6 +5,7 @@
 
 .secondary-color-bcg {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-color: var(--bs-secondary-color);
 }
 =======
@@ -21,6 +22,10 @@
     background: linear-gradient(to top, transparent, var(--bs-secondary-color));
 }
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+    background-color: var(--bs-secondary-color);
+}
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 
 
 .third-color-bcg {
@@ -52,6 +57,9 @@
     transform-origin: bottom left;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 }
 
 
@@ -64,7 +72,11 @@
   .dropdown-menu .dropdown-item {
     display: inline-block;
   }
+<<<<<<< HEAD
   
 =======
 }
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+  
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85

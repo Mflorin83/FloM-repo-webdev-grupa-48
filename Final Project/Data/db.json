@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 {
   "translateEnLandingPage": [
     {
@@ -336,12 +339,25 @@
       "role": "user"
     },
     {
+<<<<<<< HEAD
+=======
+      "id": "cdf0",
+      "surname": "teste",
+      "name": "nume",
+      "phone": "tel",
+      "email": "around@r.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
       "id": "44ea",
       "surname": "test",
       "name": "tree",
       "phone": "",
       "email": "t@t.ro",
       "password": "123",
+<<<<<<< HEAD
       "role": "admin"
     },
     {
@@ -642,4 +658,45 @@
         }
     ]
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+      "role": "user"
+    },
+    {
+      "id": "a9f9",
+      "surname": "Florin",
+      "name": "dsaf",
+      "phone": "07451224",
+      "email": "abc@abc.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "15f1",
+      "surname": "test",
+      "name": "test",
+      "phone": "test",
+      "email": "test@test.ro",
+      "password": "test",
+      "role": "user"
+    },
+    {
+      "id": "03d4",
+      "surname": "florin",
+      "name": "florinm",
+      "phone": "0745135459",
+      "email": "test@test.ro",
+      "password": "123",
+      "role": "user"
+    },
+    {
+      "id": "63f6",
+      "surname": "Florin",
+      "name": "Mihai",
+      "phone": "0745135459",
+      "email": "contact@fmihai.ro",
+      "password": "12345",
+      "role": "admin"
+    }
+  ]
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 }

@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  function loadEnLandingP() {
 =======
 function loadEnLandingP() {
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+ function loadEnLandingP() {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
   const apiUrl = "http://localhost:5500/translateEnLandingPage";
   fetch(apiUrl)
     .then(response => response.json())
@@ -123,10 +127,14 @@ function loadEnLandingP() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  function loadRoLandingP() {
 =======
 function loadRoLandingP() {
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+ function loadRoLandingP() {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
   const apiUrl = "http://localhost:5500/translateRoLandingPage";
   fetch(apiUrl)
     .then(response => response.json())
@@ -246,10 +254,14 @@ function loadRoLandingP() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  function loadEnRegister() {
 =======
 function loadEnRegister() {
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+ function loadEnRegister() {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
   const apiUrl = "http://localhost:5500/translateEnRegister";
   fetch(apiUrl)
     .then(response => response.json())
@@ -258,10 +270,14 @@ function loadEnRegister() {
       const translations = data[0];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
      
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
@@ -287,10 +303,14 @@ function loadEnRegister() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  function loadRoRegister() {
 =======
 function loadRoRegister() {
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+ function loadRoRegister() {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
   const apiUrl = "http://localhost:5500/translateRoRegister";
   fetch(apiUrl)
     .then(response => response.json())
@@ -299,10 +319,14 @@ function loadRoRegister() {
       const translations = data[0];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
      
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
@@ -321,10 +345,14 @@ function loadRoRegister() {
       document.getElementById('createAcc').innerHTML = translations.createAcc;
       document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
 <<<<<<< HEAD
+<<<<<<< HEAD
       document.getElementById('connect').innerHTML = translations.connect;
 =======
       document.getElementById('connect').innerHTML = translations.connect;      
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+      document.getElementById('connect').innerHTML = translations.connect;
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
 
     })
     .catch(error => console.log('Error loading', error));
@@ -332,10 +360,14 @@ function loadRoRegister() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  function loadEnLogin() {
 =======
 function loadEnLogin() {
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+ function loadEnLogin() {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
   const apiUrl = "http://localhost:5500/translateEnLogin";
   fetch(apiUrl)
     .then(response => response.json())
@@ -344,10 +376,14 @@ function loadEnLogin() {
       const translations = data[0];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
      
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('tryLogin').innerHTML = translations.tryLogin;
@@ -367,10 +403,14 @@ function loadEnLogin() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  function loadRoLogin() {
 =======
 function loadRoLogin() {
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+ function loadRoLogin() {
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
   const apiUrl = "http://localhost:5500/translateRoLogin";
   fetch(apiUrl)
     .then(response => response.json())
@@ -379,10 +419,14 @@ function loadRoLogin() {
       const translations = data[0];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
      
 >>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
+=======
+
+>>>>>>> 3aafbf3fdf78dc5c2250289e9da8dc094e648d85
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('tryLogin').innerHTML = translations.tryLogin;
