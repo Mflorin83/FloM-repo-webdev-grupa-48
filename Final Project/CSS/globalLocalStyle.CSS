@@ -1,0 +1,51 @@
+
+.main-color-bcg {
+    background-color: var(--bs-primary);
+}
+
+.secondary-color-bcg {
+    background-color: var(--bs-secondary-color);
+}
+
+
+.third-color-bcg {
+    background-color: var(--bs-tertiary-bg);
+}
+
+
+.animatel {
+    position: relative;
+    display: inline-block;
+
+}
+
+.animatel::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bs-link-color);
+    transform-origin: bottom left;
+    transition: transform 0.35s ease-out;
+}
+
+.animatel:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+
+.dropdown-menu {
+    width: fit-content;
+    min-width: auto;
+    /* Overwrites the default Bootstrap minimum width */
+  }
+  
+  .dropdown-menu .dropdown-item {
+    display: inline-block;
+  }
+  
