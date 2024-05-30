@@ -1,4 +1,8 @@
+<<<<<<< HEAD
  function loadEnLandingP() {
+=======
+function loadEnLandingP() {
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
   const apiUrl = "http://localhost:5500/translateEnLandingPage";
   fetch(apiUrl)
     .then(response => response.json())
@@ -118,7 +122,11 @@
 }
 
 
+<<<<<<< HEAD
  function loadRoLandingP() {
+=======
+function loadRoLandingP() {
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
   const apiUrl = "http://localhost:5500/translateRoLandingPage";
   fetch(apiUrl)
     .then(response => response.json())
@@ -237,7 +245,11 @@
     .catch(error => console.log('Error loading', error));
 }
 
+<<<<<<< HEAD
  function loadEnRegister() {
+=======
+function loadEnRegister() {
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
   const apiUrl = "http://localhost:5500/translateEnRegister";
   fetch(apiUrl)
     .then(response => response.json())
@@ -245,7 +257,11 @@
 
       const translations = data[0];
 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
@@ -270,7 +286,11 @@
 
 }
 
+<<<<<<< HEAD
  function loadRoRegister() {
+=======
+function loadRoRegister() {
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
   const apiUrl = "http://localhost:5500/translateRoRegister";
   fetch(apiUrl)
     .then(response => response.json())
@@ -278,7 +298,11 @@
 
       const translations = data[0];
 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('register').innerHTML = translations.register;
@@ -296,14 +320,22 @@
       document.getElementById('mustAgree').innerHTML = translations.mustAgree;
       document.getElementById('createAcc').innerHTML = translations.createAcc;
       document.getElementById('allreadyAcc').innerHTML = translations.allreadyAcc;
+<<<<<<< HEAD
       document.getElementById('connect').innerHTML = translations.connect;
+=======
+      document.getElementById('connect').innerHTML = translations.connect;      
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
 
     })
     .catch(error => console.log('Error loading', error));
 }
 
 
+<<<<<<< HEAD
  function loadEnLogin() {
+=======
+function loadEnLogin() {
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
   const apiUrl = "http://localhost:5500/translateEnLogin";
   fetch(apiUrl)
     .then(response => response.json())
@@ -311,7 +343,11 @@
 
       const translations = data[0];
 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('tryLogin').innerHTML = translations.tryLogin;
@@ -330,7 +366,11 @@
 
 }
 
+<<<<<<< HEAD
  function loadRoLogin() {
+=======
+function loadRoLogin() {
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
   const apiUrl = "http://localhost:5500/translateRoLogin";
   fetch(apiUrl)
     .then(response => response.json())
@@ -338,7 +378,11 @@
 
       const translations = data[0];
 
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
       document.getElementById('homeDirect').innerHTML = translations.homeDirect;
       document.getElementById('price').innerHTML = translations.price;
       document.getElementById('tryLogin').innerHTML = translations.tryLogin;

@@ -10,6 +10,7 @@
     
 }
 
+<<<<<<< HEAD
 .secondary-color-bcg {
     position: relative;
     background-color: var(--bs-secondary-color);
@@ -24,6 +25,8 @@
     height: 30px; /* Adjust height to control the fade effect */
     background: linear-gradient(to top, transparent, var(--bs-secondary-color));
    }
+=======
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
 
 
 .col-card-inner {
@@ -84,6 +87,10 @@ min-height: 500px;
 /* Potentiale variabile globale */
 /* Potentiale variabile globale */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
 .highlight {
   
     background: linear-gradient(to bottom, #D81159, #F5F5F5);
@@ -96,7 +103,10 @@ min-height: 500px;
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
 /* Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 
 Mobile Mobile Mobile  Mobile Mobile Mobile  Mobile Mobile Mobile 

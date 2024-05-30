@@ -4,8 +4,23 @@
 }
 
 .secondary-color-bcg {
+<<<<<<< HEAD
     background-color: var(--bs-secondary-color);
 }
+=======
+    position: relative;
+    background-color: var(--bs-secondary-color);
+}
+.secondary-color-bcg::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30px; /* Adjust height to control the fade effect */
+    background: linear-gradient(to top, transparent, var(--bs-secondary-color));
+}
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
 
 
 .third-color-bcg {
@@ -36,6 +51,7 @@
     transform: scaleX(1);
     transform-origin: bottom left;
 
+<<<<<<< HEAD
 }
 
 
@@ -49,3 +65,6 @@
     display: inline-block;
   }
   
+=======
+}
+>>>>>>> 8a8d026aae44815d51e279af9df1089b86c950d8
